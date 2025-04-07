@@ -207,6 +207,16 @@
         }
     </script>
 
+    <script>
+        console.log( window.innerHeight);
+        // Check if the screen resolution is 1080p (1920x1080)
+        if (window.innerHeight <= 1080) {
+            // Apply a 20% zoom out
+            document.body.style.transform = "scale(0.9)";
+            document.body.style.transformOrigin = "0 0"; // Ensure scaling starts from the top-left corner
+        }
+    </script>
+
 </body>
 
 </html>
