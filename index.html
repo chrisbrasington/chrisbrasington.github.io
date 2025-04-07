@@ -115,21 +115,13 @@
 	<script>
 		// Links data for the main dynamic sections
 		const linkData = {
-			"~/Personal ": [
-				{ "name": "Gmail", "url": "https://mail.google.com/mail/u/0/" },
+			"~/gaming 🎮": [
+				{ "name": "Steam", "url": "https://store.steampowered.com/" },
+				{ "name": "Steam/raylinth", "url": "https://steamcommunity.com/id/raylinth/home" },
 				{ "name": "Reddit", "url": "https://www.reddit.com/" },
 				{ "name": "Retro Gaming", "url": "https://www.reddit.com/user/raylinth/m/retro/" },
 				{ "name": "Twitch", "url": "https://www.twitch.tv/" },
-				{ "name": "Steam", "url": "https://store.steampowered.com/" },
-				{ "name": "Steam/raylinth", "url": "https://steamcommunity.com/id/raylinth/home" },
 				{ "name": "Discord", "url": "https://discord.com/login" }
-			],
-			"~/dev ": [
-				{ "name": "GitHub", "url": "https://github.com/chrisbrasington?tab=repositories" },
-				{ "name": "ObsidianMD", "url": "https://www.reddit.com/r/ObsidianMD/" },
-				{ "name": ".NET", "url": "https://devblogs.microsoft.com/dotnet/" },
-				{ "name": "Chat-GPT", "url": "https://chat.openai.com/" },
-				{ "name": "LocalLLaMA", "url": "https://www.reddit.com/r/LocalLLaMA/" }
 			],
 			"~/reading 🕮": [
 				{ "name": "Overdrive", "url": "https://www.overdrive.com/account/libraries" },
@@ -139,6 +131,13 @@
 				{ "name": "light novel world", "url": "https://www.lightnovelworld.com" },
 				{ "name": "Project Gutenberg", "url": "https://www.gutenberg.org/" },
 				{ "name": "ABB", "url": "https://audiobookbay.lu/" }
+			],
+			"~/dev ": [
+				{ "name": "GitHub", "url": "https://github.com/chrisbrasington?tab=repositories" },
+				{ "name": "ObsidianMD", "url": "https://www.reddit.com/r/ObsidianMD/" },
+				{ "name": ".NET", "url": "https://devblogs.microsoft.com/dotnet/" },
+				{ "name": "Chat-GPT", "url": "https://chat.openai.com/" },
+				{ "name": "LocalLLaMA", "url": "https://www.reddit.com/r/LocalLLaMA/" }
 			],
 			"~/linux ": [
 				{ "name": "Debian Wiki", "url": "https://wiki.debian.org/" },
@@ -188,6 +187,7 @@
 
 		// Image links data for icons below the image
 		const imageLinks = [
+			{ href: "https://gmail.com", src: "static/icons/gmail.svg"},
 			{ href: "https://calendar.google.com/calendar/u/0/r", src: "static/icons/calendar.svg", alt: "Calendar Icon" },
 			{ href: "https://tasks.google.com/tasks/", src: "static/icons/tasks.svg", alt: "Tasks Icon" },
 			{ href: "https://drive.google.com/drive/my-drive", src: "static/icons/drive.svg", alt: "Drive Icon" },
