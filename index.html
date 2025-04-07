@@ -2,158 +2,173 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>~/startpage</title>
-	<link rel="icon" href="static/icons/icon.svg" type="image/x-icon" />
-	<link rel="stylesheet" href="static/styles/style.css">
-	<script>
-		// Utility function to get the value of a cookie
-		function getCookie(name) {
-			const value = `; ${document.cookie}`;
-			const parts = value.split(`; ${name}=`);
-			if (parts.length === 2) return parts.pop().split(';').shift();
-			return null;
-		}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~/startpage</title>
+    <link rel="icon" href="static/icons/icon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="static/styles/style.css">
+    <style>
+        .hidden-link {
+            display: none;
+        }
+    </style>
+    <script>
+        // Utility function to get the value of a cookie
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+            return null;
+        }
 
-		// Utility function to set a cookie
-		function setCookie(name, value, days) {
-			const expires = new Date();
-			expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
-			document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
-		}
+        // Utility function to set a cookie
+        function setCookie(name, value, days) {
+            const expires = new Date();
+            expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+            document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+        }
 
-		window.onload = function() {
-			// List of image filenames
-			const images = ['car.jpg', 'anime.webp', 'spice1.jpg', 'spice2.png'];
+        window.onload = function() {
+            // List of image filenames
+            const images = ['car.jpg', 'anime.webp', 'spice1.jpg', 'spice2.png'];
 
-			// Get the last image from the cookie
-			const lastImage = getCookie('lastImage');
-			
-			let randomIndex;
-			
-			// If there's a last image in the cookie, make sure the random index is different
-			do {
-				randomIndex = Math.floor(Math.random() * images.length);
-			} while (images[randomIndex] === lastImage);  // Ensure it's different from the last image
+            // Get the last image from the cookie
+            const lastImage = getCookie('lastImage');
+            
+            let randomIndex;
+            
+            // If there's a last image in the cookie, make sure the random index is different
+            do {
+                randomIndex = Math.floor(Math.random() * images.length);
+            } while (images[randomIndex] === lastImage);  // Ensure it's different from the last image
 
-			// Get the image element and set its src attribute
-			const imageElement = document.getElementById('image-display');
-			imageElement.src = `static/images/${images[randomIndex]}`;
-			
-			// Set the cookie with the new image filename
-			setCookie('lastImage', images[randomIndex], 7);  // Cookie expires in 7 days
-		};
+            // Get the image element and set its src attribute
+            const imageElement = document.getElementById('image-display');
+            imageElement.src = `static/images/${images[randomIndex]}`;
+            
+            // Set the cookie with the new image filename
+            setCookie('lastImage', images[randomIndex], 7);  // Cookie expires in 7 days
+        };
 
-	</script>
+        // Add event listener for Ctrl+A to reveal hidden links
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'a') {
+                // Reveal hidden links
+                const hiddenLinks = document.querySelectorAll('.hidden-link');
+                hiddenLinks.forEach(link => {
+                    link.style.display = 'block';
+                });
+            }
+        });
+    </script>
 </head>
 
 <body>
 
-	<header id="settings-container">
-		<div id="settings-box">
-			<div id="settings-content">
-				<div class="settings-options">
-					<h1>Search Engine</h1>
-					<h1>Colorscheme</h1>
-				</div>
-				<div class="settings-options">
-					<select id="search-engine-selector" class="settings-selector" onchange="changeSearchEngine()">
-						<option value="https://search.brave.com/search">Brave</option>
-						<option value="https://www.google.com/search">Google</option>
-						<option value="https://duckduckgo.com/">DuckDuckGo</option>
-					</select>
+    <header id="settings-container">
+        <div id="settings-box">
+            <div id="settings-content">
+                <div class="settings-options">
+                    <h1>Search Engine</h1>
+                    <h1>Colorscheme</h1>
+                </div>
+                <div class="settings-options">
+                    <select id="search-engine-selector" class="settings-selector" onchange="changeSearchEngine()">
+                        <option value="https://search.brave.com/search">Brave</option>
+                        <option value="https://www.google.com/search">Google</option>
+                        <option value="https://duckduckgo.com/">DuckDuckGo</option>
+                    </select>
 
-					<select id="colorscheme-selector" class="settings-selector" onchange="changeColorScheme()">
-						<option value="dracula-dark">Dracula Dark</option>
-						<option value="dracula-light">Dracula Light</option>
-						<option value="edge">Edge</option>
-						<option value="gruvbox">Gruvbox</option>
-					</select>
-				</div>
-			</div>
+                    <select id="colorscheme-selector" class="settings-selector" onchange="changeColorScheme()">
+                        <option value="dracula-dark">Dracula Dark</option>
+                        <option value="dracula-light">Dracula Light</option>
+                        <option value="edge">Edge</option>
+                        <option value="gruvbox">Gruvbox</option>
+                    </select>
+                </div>
+            </div>
 
-			<button onclick="hideSettings()" id="settings-hide">
-				<img src="static/icons/close.svg" class="svg-icon" alt="Settings Icon">
-			</button>
-		</div>
-	</header>
+            <button onclick="hideSettings()" id="settings-hide">
+                <img src="static/icons/close.svg" class="svg-icon" alt="Settings Icon">
+            </button>
+        </div>
+    </header>
 
-	<button onclick="showSettings()" id="settings-display">
-		<img src="static/icons/settings.svg" class="svg-icon" alt="Settings Icon">
-	</button>
+    <button onclick="showSettings()" id="settings-display">
+        <img src="static/icons/settings.svg" class="svg-icon" alt="Settings Icon">
+    </button>
 
-	<nav id="shortcuts-container">
-		<h1 id="title-display">Welcome back!</h1>
-		<h2 id="date-display"></h2>
+    <nav id="shortcuts-container">
+        <h1 id="title-display">Welcome back!</h1>
+        <h2 id="date-display"></h2>
 
-		<form id="search-form" method="get" onsubmit="return handleSearch(event)">
-			<input type="text" id="search-input" placeholder="Search" name="q" autofocus />
-		</form>
+        <form id="search-form" method="get" onsubmit="return handleSearch(event)">
+            <input type="text" id="search-input" placeholder="Search" name="q" autofocus />
+        </form>
 
-		<!-- Dynamic links will be injected here -->
-		<div id="dynamic-links"></div>
-	</nav>
+        <!-- Dynamic links will be injected here -->
+        <div id="dynamic-links"></div>
+    </nav>
 
-	<!-- Image container -->
-	<div id="image-container">
-		<!-- Main image link -->
-		<a href="https://chrisbrasington.github.io/">
-			<img id="image-display" alt="fem">
-		</a>
+    <!-- Image container -->
+    <div id="image-container">
+        <!-- Main image link -->
+        <a href="https://chrisbrasington.github.io/">
+            <img id="image-display" alt="fem">
+        </a>
 
-		<!-- Icons links rendered dynamically -->
-		<div id="icons-box"></div>
-	</div>
+        <!-- Icons links rendered dynamically -->
+        <div id="icons-box"></div>
+    </div>
 
-	<!-- External scripts -->
-	<script src="scripts/get_date.js"></script>
-	<script src="scripts/get_search_engine.js"></script>
-	<script src="scripts/set_colorscheme.js"></script>
+    <!-- External scripts -->
+    <script src="scripts/get_date.js"></script>
+    <script src="scripts/get_search_engine.js"></script>
+    <script src="scripts/set_colorscheme.js"></script>
 
-	<!-- Dynamic links and image container generator -->
-	<script>
-		// Links data for the main dynamic sections
-		const linkData = {
-			"~/gaming ": [
-				{ "name": "Steam", "url": "https://store.steampowered.com/" },
-				{ "name": "Steam/raylinth", "url": "https://steamcommunity.com/id/raylinth/home" },
-				{ "name": "Reddit", "url": "https://www.reddit.com/" },
-				{ "name": "Retro Gaming", "url": "https://www.reddit.com/user/raylinth/m/retro/" },
-				{ "name": "Twitch", "url": "https://www.twitch.tv/" },
-				{ "name": "Discord", "url": "https://discord.com/login" }
-			],
-			"~/reading 🕮": [
-				{ "name": "Overdrive", "url": "https://www.overdrive.com/account/libraries" },
-				{ "name": "Anna's Archive", "url": "https://annas-archive.org/" },
-				{ "name": "z-lib", "url": "https://z-lib.gs/" },
-				{ "name": "esnovels", "url": "https://esnovels.com/" },
-				{ "name": "light novel world", "url": "https://www.lightnovelworld.com" },
-				{ "name": "Project Gutenberg", "url": "https://www.gutenberg.org/" },
-				{ "name": "ABB", "url": "https://audiobookbay.lu/" }
-			],
-			"~/dev  ⌨": [
-				{ "name": "GitHub", "url": "https://github.com/chrisbrasington?tab=repositories" },
-				{ "name": "ObsidianMD", "url": "https://www.reddit.com/r/ObsidianMD/" },
-				{ "name": ".NET", "url": "https://devblogs.microsoft.com/dotnet/" },
-				{ "name": "Chat-GPT", "url": "https://chat.openai.com/" },
-				{ "name": "LocalLLaMA", "url": "https://www.reddit.com/r/LocalLLaMA/" }
-			],
-			"~/linux ": [
+    <!-- Dynamic links and image container generator -->
+    <script>
+        // Links data for the main dynamic sections
+        const linkData = {
+            "~/gaming ": [
+                { "name": "Steam", "url": "https://store.steampowered.com/" },
+                { "name": "Steam/raylinth", "url": "https://steamcommunity.com/id/raylinth/home" },
+                { "name": "Reddit", "url": "https://www.reddit.com/" },
+                { "name": "Retro Gaming", "url": "https://www.reddit.com/user/raylinth/m/retro/" },
+                { "name": "Twitch", "url": "https://www.twitch.tv/" },
+                { "name": "Discord", "url": "https://discord.com/login" }
+            ],
+            "~/reading 🕮": [
+                { "name": "Overdrive", "url": "https://www.overdrive.com/account/libraries" },
+                { "name": "Anna's Archive", "url": "https://annas-archive.org/", "hidden": true  },
+                { "name": "z-lib", "url": "https://z-lib.gs/", "hidden": true  },
+                { "name": "esnovels", "url": "https://esnovels.com/" },
+                { "name": "light novel world", "url": "https://www.lightnovelworld.com" },
+                { "name": "Project Gutenberg", "url": "https://www.gutenberg.org/" },
+                { "name": "ABB", "url": "https://audiobookbay.lu/", "hidden": true } 
+            ],
+            "~/dev  ⌨": [
+                { "name": "GitHub", "url": "https://github.com/chrisbrasington?tab=repositories" },
+                { "name": "ObsidianMD", "url": "https://www.reddit.com/r/ObsidianMD/" },
+                { "name": ".NET", "url": "https://devblogs.microsoft.com/dotnet/" },
+                { "name": "Chat-GPT", "url": "https://chat.openai.com/" },
+                { "name": "LocalLLaMA", "url": "https://www.reddit.com/r/LocalLLaMA/" }
+            ],
+            "~/linux ": [
 				{ "name": "Debian Wiki", "url": "https://wiki.debian.org/" },
 				{ "name": "Flathub", "url": "https://flathub.org/" },
 				{ "name": "ProtonDB", "url": "https://www.protondb.com/" },
-				{ "name": "valhalla", "url": "https:valhalla:8384" },
-				{ "name": "cb-steamdeck", "url": "https:cb-steamdeck:8384" },
-				{ "name": "cb-sapphire", "url": "https:cb-sapphire:8384" },
-				{ "name": "cb-debian", "url": "https:cb-debian:8384" }
+				{ "name": "valhalla", "url": "https:valhalla:8384", "hidden": true  },
+				{ "name": "cb-steamdeck", "url": "https:cb-steamdeck:8384", "hidden": true  },
+				{ "name": "cb-sapphire", "url": "https:cb-sapphire:8384", "hidden": true  },
+				{ "name": "cb-debian", "url": "https:cb-debian:8384", "hidden": true  }
 			],
 			"~/media 🖭": [
 				{ "name": "Tidal", "url": "https://listen.tidal.com/" },
 				{ "name": "Last.FM", "url": "https://www.last.fm/user/raylinth" },
 				{ "name": "Youtube Subs", "url": "https://www.youtube.com/feed/subscriptions" },
 				{ "name": "Plex", "url": "https://app.plex.tv/desktop/#/" },
-				{ "name": "HDtoday.tv", "url": "https://hdtoday.tv/home" },
+				{ "name": "HDtoday.tv", "url": "https://hdtoday.tv/home", "hidden": true  },
 				{ "name": "TED-Ed", "url": "https://www.youtube.com/@TEDEd" },
 				{ "name": "Wallhaven", "url": "https://wallhaven.cc/" }
 			],
@@ -161,54 +176,36 @@
 				{ "name": "Crunchyroll", "url": "https://www.crunchyroll.com/" },
 				{ "name": "MangaDex", "url": "https://mangadex.org/" }
 			]
-		};
 
-		const container = document.getElementById("dynamic-links");
+        };
 
-		for (const [section, links] of Object.entries(linkData)) {
-			const ul = document.createElement("ul");
+        const container = document.getElementById("dynamic-links");
 
-			const titleLi = document.createElement("li");
-			titleLi.textContent = section;
-			ul.appendChild(titleLi);
+        for (const [section, links] of Object.entries(linkData)) {
+            const ul = document.createElement("ul");
 
-			for (const link of links) {
-				const li = document.createElement("li");
-				const a = document.createElement("a");
-				a.href = link.url;
-				a.textContent = link.name;
-				li.appendChild(a);
-				ul.appendChild(li);
-			}
+            const titleLi = document.createElement("li");
+            titleLi.textContent = section;
+            ul.appendChild(titleLi);
 
-			container.appendChild(ul);
-		}
+            for (const link of links) {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.href = link.url;
+                a.textContent = link.name;
+                
+                // Apply the 'hidden-link' class if the link is hidden
+                if (link.hidden) {
+                    li.classList.add("hidden-link");
+                }
 
-		// Image links data for icons below the image
-		const imageLinks = [
-			{ href: "https://gmail.com", src: "static/icons/gmail.svg"},
-			{ href: "https://calendar.google.com/calendar/u/0/r", src: "static/icons/calendar.svg", alt: "Calendar Icon" },
-			{ href: "https://tasks.google.com/tasks/", src: "static/icons/tasks.svg", alt: "Tasks Icon" },
-			{ href: "https://drive.google.com/drive/my-drive", src: "static/icons/drive.svg", alt: "Drive Icon" },
-			// { href: "https://www.notion.so/", src: "static/icons/notion.svg", alt: "Notion Icon" }
-		];
+                li.appendChild(a);
+                ul.appendChild(li);
+            }
 
-		// Render the image links dynamically
-		const iconsBox = document.getElementById("icons-box");
-
-		imageLinks.forEach(link => {
-			const a = document.createElement("a");
-			a.href = link.href;
-
-			const img = document.createElement("img");
-			img.src = link.src;
-			img.alt = link.alt;
-			img.classList.add("svg-icon");
-
-			a.appendChild(img);
-			iconsBox.appendChild(a);
-		});
-	</script>
+            container.appendChild(ul);
+        }
+    </script>
 
 </body>
 
