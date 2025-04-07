@@ -7,7 +7,45 @@
 	<title>~/startpage</title>
 	<link rel="icon" href="static/icons/icon.svg" type="image/x-icon" />
 	<link rel="stylesheet" href="static/styles/style.css">
+	<script>
+		// Utility function to get the value of a cookie
+		function getCookie(name) {
+			const value = `; ${document.cookie}`;
+			const parts = value.split(`; ${name}=`);
+			if (parts.length === 2) return parts.pop().split(';').shift();
+			return null;
+		}
 
+		// Utility function to set a cookie
+		function setCookie(name, value, days) {
+			const expires = new Date();
+			expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+			document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+		}
+
+		window.onload = function() {
+			// List of image filenames
+			const images = ['car.jpg', 'anime.webp'];
+
+			// Get the last image from the cookie
+			const lastImage = getCookie('lastImage');
+			
+			let randomIndex;
+			
+			// If there's a last image in the cookie, make sure the random index is different
+			do {
+				randomIndex = Math.floor(Math.random() * images.length);
+			} while (images[randomIndex] === lastImage);  // Ensure it's different from the last image
+
+			// Get the image element and set its src attribute
+			const imageElement = document.getElementById('image-display');
+			imageElement.src = `static/images/${images[randomIndex]}`;
+			
+			// Set the cookie with the new image filename
+			setCookie('lastImage', images[randomIndex], 7);  // Cookie expires in 7 days
+		};
+
+	</script>
 </head>
 
 <body>
@@ -60,9 +98,9 @@
 	<!-- Image container -->
 	<div id="image-container">
 		<!-- Main image link -->
-		<a href="https://chrisbrasington.github.io/"><img id="image-display" alt="fem" 
-			src="static/images/car.jpg"
-			></a>
+		<a href="https://chrisbrasington.github.io/">
+			<img id="image-display" alt="fem">
+		</a>
 
 		<!-- Icons links rendered dynamically -->
 		<div id="icons-box"></div>
