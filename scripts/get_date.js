@@ -10,7 +10,7 @@ function showTime() {
 
 	document.getElementById(
 		"date-display"
-	).innerHTML = `${today}, ${time} | ${day}/${month}/${year}`;
+	).innerHTML = `${today}, ${time} | ${month}/${day}/${year}`;
 	setTimeout(showTime, 0);
 }
 
