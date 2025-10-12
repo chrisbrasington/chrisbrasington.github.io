@@ -28,3 +28,8 @@ arduino_start: 2015
 | Umbraco    | {{ site.time | date: "%Y" | minus: page.umbraco_start }} years |
 | Kotlin     | {{ site.time | date: "%Y" | minus: page.kotlin_start }} years |
 | Arduino    | {{ site.time | date: "%Y" | minus: page.arduino_start }} years |
+
+## 🖊️ Writings
+[Tips to reducing pychological “hooks” of the modern internet age](./attention/)
+
+## </> Projects
