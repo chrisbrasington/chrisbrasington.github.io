@@ -2,38 +2,29 @@
 title: About Me
 layout: default
 csharp_start: 2010
+python_start: 2010
+linux_start: 2004
 obsidian_start: 2023
+blazor_start: 2019
+maui_start: 2021
+umbraco_start: 2021
+kotlin_start: 2024
+arduino_start: 2015
 ---
 
 # Hi, I'm {{ site.name }} 
-
-...
-
----
 
 ## 💻 Skills
 
 | Tech     | Experience |
 |----------|------------|
 | C#       | {{ site.time | date: "%Y" | minus: page.csharp_start }} years |
-| Obsidian | {{ site.time | date: "%Y" | minus: page.obsidian_start }} years |
-
----
-
-## 🛠️ Projects
-
-| Project | Description | Link |
-|---------|------------|------|
-| Project One | Short description of what it does | [GitHub](https://github.com/yourusername/project-one) |
-| Project Two | Short description of what it does | [GitHub](https://github.com/yourusername/project-two) |
-| Project Three | Short description of what it does | [GitHub](https://github.com/yourusername/project-three) |
-
----
-
-## 📫 Contact Me
-
-| Method   | Link |
-|----------|------|
-| Email    | [your.email@example.com](mailto:your.email@example.com) |
-| LinkedIn | [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername) |
-| GitHub   | [github.com/yourusername](https://github.com/yourusername) |
+| Python       | {{ site.time | date: "%Y" | minus: page.python_start }} years |
+| [Obsidian.md](https://obsidian.md/) | {{ site.time | date: "%Y" | minus: page.obsidian_start }} years |
+| Linux      | {{ site.time | date: "%Y" | minus: page.linux_start }} years |
+| Obsidian   | {{ site.time | date: "%Y" | minus: page.obsidian_start }} years |
+| Blazor     | {{ site.time | date: "%Y" | minus: page.blazor_start }} years |
+| MAUI       | {{ site.time | date: "%Y" | minus: page.maui_start }} years |
+| Umbraco    | {{ site.time | date: "%Y" | minus: page.umbraco_start }} years |
+| Kotlin     | {{ site.time | date: "%Y" | minus: page.kotlin_start }} years |
+| Arduino    | {{ site.time | date: "%Y" | minus: page.arduino_start }} years |
