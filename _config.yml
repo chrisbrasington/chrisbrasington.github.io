@@ -1,4 +1,4 @@
-# title: CB io
+title: ""
 markdown: kramdown
 # theme: minima
 # theme: cayman
@@ -6,9 +6,9 @@ markdown: kramdown
 # theme: hacker
 # theme: leap-day
 # theme: merlot
-# theme: midnight
+theme: midnight
 # theme: minimal
 # theme: modernist
 # theme: slate
 # theme: tactile
-theme: jekyll-theme-time-machine
+#theme: jekyll-theme-time-machine
