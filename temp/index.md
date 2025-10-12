@@ -101,4 +101,7 @@ If you find yourself navigating to undesirable pages like `r/politics`, consider
 
 # GREAT APPS to actually use
 
-## 
+## [Niagara Launcher](https://play.google.com/store/apps/details?id=bitpit.launcher&hl=en-US)
+Just a nice homepage launcher that does let you hide apps, which can be a start or alternative if you don't want to use ADB to remove certain apps, but have friction in getting to them. 
+
+# GREAT DEVICES to use that aren't a smartphone
