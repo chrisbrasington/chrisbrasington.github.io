@@ -1,14 +1,14 @@
 title: ""
 markdown: kramdown
 # theme: minima
-# theme: cayman
 # theme: dinky
 # theme: hacker
 # theme: leap-day
 # theme: merlot
-theme: midnight
 # theme: minimal
 # theme: modernist
-# theme: slate
 # theme: tactile
-#theme: jekyll-theme-time-machine
+#theme: jekyll-theme-cayman
+#theme: jekyll-theme-midnight
+theme: jekyll-theme-slate
+#theme: jekyll-theme-time-machine 
