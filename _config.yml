@@ -1,3 +1,14 @@
-title: CB io
+# title: CB io
 markdown: kramdown
-theme: minima  # or any built-in theme like 'jekyll-theme-cayman'
+# theme: minima
+# theme: cayman
+# theme: dinky
+# theme: hacker
+# theme: leap-day
+# theme: merlot
+# theme: midnight
+# theme: minimal
+# theme: modernist
+# theme: slate
+# theme: tactile
+theme: time-machine
