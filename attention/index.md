@@ -9,6 +9,7 @@ layout: default
 - [Overview](#the-smartphone-is-a-non-neutral-influence)
     - [What does NOT Work (for me)](#what-does-not-work-for-me)
     - [What Works (for me)](#what-works-for-me)
+        - [Blocking Algorithmic Feeds](#blocking-algorithmic-feeds)
         - [Notifications Mostly Disabled](#notifications-mostly-disabled)
 - [Phone Apps vs Browsers Extensions](#phone-apps-vs-browsers-extensions)
     - [Forcibly removing google apps with addictive feeds](#removing-google-apps)
@@ -39,6 +40,8 @@ App timers give you a button to ignore and reset at midnight - which is a proble
 See [Great Apps to actually use](#great-apps-to-actually-use) - but I think most of us like <i>some</i> components of modern internet life.
 
 ## What Works (for me)
+
+### Blocking Algorithmic Feeds
 
 For the most part, I block the algorithmic feed of sites like youtube/reddit, while still having some access to certain areas like subscriptions or subreddits. This is a balance and may not work well for everyone, but this guide is to help by providing detail of that balance.
 
