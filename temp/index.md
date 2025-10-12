@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Table of Contents
 ### Feed Removal: 
 - [Overview](#the-smartphone-is-a-non-neutral-influence)
