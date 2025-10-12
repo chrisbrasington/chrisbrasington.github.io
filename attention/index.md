@@ -1,12 +1,15 @@
 ---
 layout: default
 ---
+# Tips to reducing pychological "hooks"  of the modern internet age
+### Fight back for control of your attention.
 
 # Table of Contents
-### Feed Removal: 
+### Algorithmic Feed Removal: 
 - [Overview](#the-smartphone-is-a-non-neutral-influence)
     - [What does NOT Work (for me)](#what-does-not-work-for-me)
     - [What Works (for me)](#what-works-for-me)
+        - [Notifications Mostly Disabled](#notifications-mostly-disabled)
 - [Phone Apps vs Browsers Extensions](#phone-apps-vs-browsers-extensions)
     - [Forcibly removing google apps with addictive feeds](#removing-google-apps)
 - [Firefox Extensions](#firefox-extensions)
@@ -15,14 +18,14 @@ layout: default
     - [Reddit & Others - hide the feed - SocialFocus](#reddit--others---hide-the-feed---socialfocus)
     - [(optional) redirector](#optional-redirector)
 
-### Lifestyle:
+### Lifestyle Alternatives:
 - [Operating Systems](#operating-system---ditching-windows)
 - [Great Apps to use](#great-apps-to-actually-use)
 - [Great Devices to use](#great-devices-to-use-that-arent-a-smartphone)
 
 # The Smartphone is a Non-neutral influence
 
-It's not your fault when you spend too much time on your smartphone. There are thousans of corporate entities that have designed this rectangle to be as addictive and engaging as possible. And if you don't want to be zombified in the process, then you'll have to engage in a creative sort of mental warfair. 
+It's not your fault when you spend too much time on your smartphone. There are thousands of corporate entities that have designed this rectangle to be as addictive and engaging as possible. This is the `Attention Economy`. And if you don't want to be zombified in the process, then you'll have to engage in a creative sort of mental warfair. 
 
 Here's what you can do about it. Here's how you can stay connected to the friends and information of the internet that enriches your life while disabling the algorithmic feed from view. 
 
@@ -114,6 +117,11 @@ For the most part, I block the algorithmic feed of sites like youtube/reddit, wh
   </tr>
 </table>
 
+### Notifications Mostly Disabled
+I disable nearly all notifications on my phone except direct contact to a few individuals. Even then, have them enabled on my smartwatch but not my phone, so I can look at my watch without exactly getting sucked into my phone. 
+
+### Phone charger away from bed
+A good idea.
 
 # Phone Apps vs Browsers Extensions
 
@@ -189,6 +197,9 @@ A way to track your reading. An excellent replacement to the amazon owned goodre
 
 ### [Libby / Overdrive](https://libbyapp.com)
 Using your local library card, gain access to an impressive amount of audiobooks and ebooks.
+
+### [Smart AudioBook Player](https://play.google.com/store/apps/details?id=ak.alizandro.smartaudiobookplayer&hl=en-US)
+A fantastic file based audiobook player app.
 
 ### [Calibre ebook management (PC)](https://calibre-ebook.com/)
 calibre is a powerful and easy to use e-book manager. 
