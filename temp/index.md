@@ -213,8 +213,6 @@ Great for writing, not recommended for reading.
 
 ## Gaming Handhelds
 
-<img src="../resources/handheld.jpg" style="width:50%;" />
-
 ### [Steam Deck](https://store.steampowered.com/steamdeck)
 Running linux, a steam deck lets you play steam and non-steam games and is extremely customizable.
 
@@ -225,3 +223,5 @@ Running linux, a steam deck lets you play steam and non-steam games and is extre
 ### [Anbernic](https://retrogamecorps.com/2024/06/07/anbernic-rg35xx-family-starter-guide/) (rg34xx)
 
 ### [Retroid](https://www.goretroid.com/)
+
+<img src="../resources/handheld.jpg" style="width:60%;" />
