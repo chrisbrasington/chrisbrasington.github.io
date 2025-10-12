@@ -11,4 +11,4 @@ markdown: kramdown
 # theme: modernist
 # theme: slate
 # theme: tactile
-theme: time-machine
+theme: jekyll-theme-time-machine
