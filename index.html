@@ -142,10 +142,11 @@
                 { "name": "Discord", "url": "https://discord.com/login" }
             ],
             "~/reading 🕮": [
+                { "name": "storygraph", "url": "https://app.thestorygraph.com/"},
                 { "name": "Overdrive", "url": "https://www.overdrive.com/account/libraries" },
                 { "name": "Anna's Archive", "url": "https://annas-archive.org/", "hidden": true  },
                 { "name": "z-lib", "url": "https://z-lib.gs/", "hidden": true  },
-                { "name": "esnovels", "url": "https://esnovels.com/" },
+                { "name": "esnovels", "url": "https://esnovels.com/", "hidden": true },
                 { "name": "zero translation", "url": "https://zetrotranslation.com/" },
                 { "name": "Project Gutenberg", "url": "https://www.gutenberg.org/" },
                 { "name": "ABB", "url": "https://audiobookbay.lu/", "hidden": true } 
@@ -216,6 +217,38 @@
             document.body.style.transform = "scale(0.9)";
             document.body.style.transformOrigin = "0 0"; // Ensure scaling starts from the top-left corner
         }
+    </script>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+
+            // Day of the week
+            const weekday = now.toLocaleDateString(undefined, { weekday: 'long' });
+
+            // Time (12h format with AM/PM)
+            const timeString = now.toLocaleTimeString(undefined, { 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                hour12: true 
+            });
+
+            // Date (MM/DD/YYYY)
+            const dateString = now.toLocaleDateString(undefined, { 
+                month: '2-digit', 
+                day: '2-digit', 
+                year: 'numeric' 
+            });
+
+            document.getElementById('date-display').textContent = 
+                `${weekday}, ${timeString} | ${dateString}`;
+        }
+
+        // Update immediately
+        updateDateTime();
+
+        // Update every second
+        setInterval(updateDateTime, 1000);
     </script>
 
 </body>
