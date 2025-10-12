@@ -29,22 +29,69 @@ See [Great Apps to actually use](#great-apps-to-actually-use) - but I think most
 
 For the most part, I block the algorithmic feed of sites like youtube/reddit, while still having some access to certain areas like subscriptions or subreddits. This is a balance and may not work well for everyone, but this guide is to help by providing detail of that balance.
 
-<div style="font-size: 18px;">
+<table style="font-size:18px; border-collapse: collapse; border: 1px solid #ccc;">
+  <tr>
+    <th style="border: 1px solid #ccc; padding: 4px;"></th>
+    <th style="border: 1px solid #ccc; padding: 4px;">Phone</th>
+    <th style="border: 1px solid #ccc; padding: 4px;">Browser</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 4px;">Chrome</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘ App Forcibly Removed</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 4px;">Firefox</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✔</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✔</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 4px;">Discord</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✔</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✔</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 4px;">Reddit</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘ App<br/>✇ Feed restricted</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✇ Feed restricted</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 4px;">Youtube</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘ App Forcibly Removed<br/>✇ Feed restricted</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✇ Feed restricted</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 4px;">Facebook</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 4px;">Twitter</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 4px;">Tiktok</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 4px;">Linkedin</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 4px;">Other Socials</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 4px;">Microsoft Teams</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+    <td style="border: 1px solid #ccc; padding: 4px;">✘</td>
+  </tr>
+</table>
 
-||Phone|Browser|
-|--|--|--|
-|Chrome|✘ App Forcibly Removed|✘|
-|Firefox|✔|✔|
-|Discord|✔|✔|
-|Reddit|✇ Feed restricted| ✇ Feed restricted|
-|Youtube|✘ App Forcibly Removed<br/>✇ Feed restricted|✇ Feed restricted|
-|Facebook|✘|✘|
-|Twitter|✘|✘|
-|Tiktok|✘|✘|
-|Linkedin|✘|✘|
-|Other Socials|✘|✘|
-|Microsoft Teams|✘|✘|
-</div>
 
 # Phone Apps vs Browsers Extensions
 
