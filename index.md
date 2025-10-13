@@ -71,27 +71,21 @@ new Chart(ctx, {
 ## 🛹 Hobbies
 
 <div style="max-width:1080px; margin: 0 auto;">
-
-<table>
-  <tr>
-    <td align="center">
+  <div class="img-row">
+    <div style="flex:1; text-align:center;">
       <strong>Skateboarding</strong><br>
-      <img src="./resources/skate2.jpg" style="max-height:360px; width:auto;">
-    </td>
-    <td align="center">
+      <img src="./resources/skate2.jpg" style="max-width:100%; height:auto;">
+    </div>
+    <div style="flex:1; text-align:center;">
       <strong>Gaming</strong><br>
-      <img src="./resources/handheld3.jpg" style="max-height:360px; width:auto;">
-    </td>
-    <td align="center">
+      <img src="./resources/handheld3.jpg" style="max-width:100%; height:auto;">
+    </div>
+    <div style="flex:1; text-align:center;">
       <strong>Reading</strong><br>
-      <img src="./resources/books1.jpg" style="max-height:360px; width:auto;">
-    </td>
-  </tr>
-</table>
-
+      <img src="./resources/books1.jpg" style="max-width:100%; height:auto;">
+    </div>
+  </div>
 </div>
-
-
 
 ## </> Professional Projects
 
