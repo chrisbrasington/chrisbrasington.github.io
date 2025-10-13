@@ -8,12 +8,7 @@ table th, table td {
   vertical-align: top !important;
   white-space: normal;
   overflow: visible !important;
-  padding: 10px; /* gives some breathing room */
-}
-
-/* Allow rows to expand naturally */
-table tr {
-  height: auto !important;
+  padding: 10px;
 }
 
 /* Image gallery column */
@@ -24,14 +19,13 @@ table td:last-child {
   align-items: flex-start;
   gap: 12px;
   overflow: visible !important;
-  min-height: 600px; /* force tall rows */
 }
 
-/* Large, 16:9 images */
+/* Only apply large height to cells that actually have images */
 table td:last-child img {
   width: auto;
-  height: 550px;       /* set large height for the row */
-  max-height: 600px;   /* caps the height slightly */
+  height: 550px;       /* large height for rows with images */
+  max-height: 600px;
   aspect-ratio: 16 / 9;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
@@ -45,7 +39,12 @@ table td:last-child img {
 
 /* Hover zoom effect */
 table td:last-child img:hover {
-  transform: scale(1.8); /* enlarge on hover */
+  transform: scale(1.8); 
   z-index: 10;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Ensure table row grows only if last cell has an image */
+table td:last-child:has(img) {
+  min-height: 600px;
 }

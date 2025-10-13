@@ -1,5 +1,5 @@
 ---
-title: About Me
+title: Christopher Brasington
 layout: default
 csharp_start: 2010
 python_start: 2010
