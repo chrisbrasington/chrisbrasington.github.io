@@ -70,11 +70,23 @@ new Chart(ctx, {
 
 ## 🛹 Hobbies
 
-| | | |
-|--------------|------------|-------|
-| Skateboarding | | <img src="./resources/skate2.jpg" height="200px">
-| Gaming       | | <img src="./resources/handheld3.jpg" height="200px">
-| Reading      | | <img src="./resources/books1.jpg" height="200px">
+<table>
+  <tr>
+    <td align="center">
+      <strong>Skateboarding</strong><br>
+      <img src="./resources/skate2.jpg" style="max-height:400px; width:auto;">
+    </td>
+    <td align="center">
+      <strong>Gaming</strong><br>
+      <img src="./resources/handheld3.jpg" style="max-height:400px; width:auto;">
+    </td>
+    <td align="center">
+      <strong>Reading</strong><br>
+      <img src="./resources/books1.jpg" style="max-height:400px; width:auto;">
+    </td>
+  </tr>
+</table>
+
 
 ## </> Professional Projects
 
