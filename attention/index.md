@@ -168,8 +168,8 @@ adb shell pm uninstall --user 0 com.google.android.youtube
 
 
 ## Reading
-|  |  |
-|------|-------------|
+| | |
+|------------|-------------|
 | [StoryGraph](https://thestorygraph.com/) | A way to track your reading. An excellent replacement to the Amazon-owned Goodreads. |
 | [Libby / Overdrive](https://libbyapp.com) | Using your local library card, gain access to an impressive amount of audiobooks and ebooks. |
 | [Smart AudioBook Player](https://play.google.com/store/apps/details?id=ak.alizandro.smartaudiobookplayer&hl=en-US) | A fantastic file-based audiobook player app. |
