@@ -22,11 +22,12 @@ table td, table th {
 /* Make images scale nicely within table cells */
 table img {
   display: inline-block;
-  max-width: 30%;
-  height: auto;
-  margin: 2px;
+  height: 600px; /* or 180px, 200px — adjust to taste */
+  width: auto;
+  margin: 4px;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  object-fit: cover; /* keeps consistent framing */
 }
 
 /* Optional: make the row a little taller for multi-image cells */
