@@ -168,6 +168,7 @@ adb shell pm uninstall --user 0 com.google.android.youtube
 
 
 ## Reading
+
 | | |
 |------------|-------------|
 | [StoryGraph](https://thestorygraph.com/) | A way to track your reading. An excellent replacement to the Amazon-owned Goodreads. |
@@ -176,12 +177,17 @@ adb shell pm uninstall --user 0 com.google.android.youtube
 | [Calibre ebook management (PC)](https://calibre-ebook.com/) | Calibre is a powerful and easy-to-use e-book manager. |
 | [mpv](https://mpv.io/) | Command-line media player that will play files and YouTube URLs. |
 
+## Streaming
+
+| | |
+|------------|-------------|
+| [kanopy](https://www.kanopy.com/) | Using your local library card, watch Movies and TV shows. |
+
 ## Gaming
 
 | | |
 |------|-------------|
 | [RetroArch](https://www.retroarch.com/) | RetroArch is a frontend for emulators, allowing you to run multiple game systems from a single interface. |
-
 
 # GREAT DEVICES to use that aren't a smartphone
 
