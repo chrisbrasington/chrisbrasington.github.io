@@ -5,10 +5,16 @@
   background-color: #2e2e2e !important; /* dark gray */
   color: #fff !important;
 }
+
+.main_content_wrap {
+  background-color: #2e2e2e !important;
+}
+
 /* Make all headers white */
 h1, h2, h3, h4, h5, h6 {
   color: #fff !important;
 }
+
 /* Links readable on gray */
 a, a:visited {
   color: #80c0ff;
@@ -18,6 +24,7 @@ a:hover, a:focus {
   background: none !important;
   text-decoration: underline;
 }
+
 /* ===============================
  Table styling
  =============================== */
@@ -31,9 +38,11 @@ table th, table td {
   overflow: visible !important;
   padding: 10px;
 }
+
 /* ===============================
  Table images side by side
  =============================== */
+/* Existing .img-row container */
 .img-row {
   display: flex !important;
   flex-wrap: wrap;
@@ -54,6 +63,51 @@ table th, table td {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: default;
 }
+
+/* Ensure td containing .img-row is tall */
 table td:has(.img-row) {
   min-height: 600px;
 }
+
+/* ===============================
+ Automatic flex for Markdown table cells with multiple images
+ =============================== */
+table td:has(img + img):not(.img-row) {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+table td:has(img + img):not(.img-row) img {
+  display: block;
+  height: 400px;
+  max-height: 600px;
+  width: auto;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  object-fit: contain;
+  margin: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
+
+/* Make rows tall only if images exist in automatic cells */
+table td:has(img + img):not(.img-row) {
+  min-height: 600px;
+}
+
+/* ===============================
+ Optional hover-to-zoom/lightbox for images
+ =============================== */
+/* Uncomment to enable simple zoom on hover */
+/*
+table td img:hover {
+  transform: scale(1.5);
+  z-index: 10;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+  cursor: zoom-in;
+}
+*/

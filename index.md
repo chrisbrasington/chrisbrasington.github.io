@@ -36,7 +36,7 @@ arduino_start: 2015
 
 | Site | | |
 |----------|------------|------------|
-| [dmns.org](https://www.dmns.org/) | Denver Museum of Nature & Science | <div class="img-row"><img src="./resources/dmns1.png"><img src="./resources/dmns2.png"></div>
+| [dmns.org](https://www.dmns.org/) | Denver Museum of Nature & Science | ![](./resources/dmns1.png) ![](./resources/dmns2.png) |
 | dmns kiosk | Payment kiosks | ![](./resources/dmnskiosk1.jpg)
 | dmns curiosity cruiser | roving science | ![](./resources/dmnscruiser1.jpg)
 | dmns member app | | ![](./resources/dmnsapp1.jpg)
@@ -50,7 +50,7 @@ arduino_start: 2015
 
 | Android | | |
 |----------|------------|------------|
-| Launcher (WIP) | Minimalist launcher / media player | <div class="img-row"><img src="./resources/launcher1.png"><img src="./resources/launcher2.png"><img src="./resources/launcher3.png"></div> |
+| Launcher (WIP) | Minimalist launcher / media player | ![](./resources/launcher1.png) ![](./resources/launcher2.png) ![](./resources/launcher3.png) |
 
 | Manga | | |
 |----------|------------|------------|
