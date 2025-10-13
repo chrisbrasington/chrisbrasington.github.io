@@ -17,17 +17,16 @@ I am a software engineer at a science museum. This is a site for projects and wr
 
 ## 💻 Skills
 
-| Tech     | Experience |
-|----------|------------|
-| C#       | {{ site.time | date: "%Y" | minus: page.csharp_start }} years |
-| Python       | {{ site.time | date: "%Y" | minus: page.python_start }} years |
+| Tech                     | Experience |
+|--------------------------|------------|
+| Linux                    | {{ site.time | date: "%Y" | minus: page.linux_start }} years |
+| C#                       | {{ site.time | date: "%Y" | minus: page.csharp_start }} years |
+| Python                   | {{ site.time | date: "%Y" | minus: page.python_start }} years |
+| Arduino                  | {{ site.time | date: "%Y" | minus: page.arduino_start }} years |
+| Blazor/MAUI              | {{ site.time | date: "%Y" | minus: page.blazor_start }} years |
+| Umbraco                  | {{ site.time | date: "%Y" | minus: page.umbraco_start }} years |
 | [Obsidian.md](https://obsidian.md/) | {{ site.time | date: "%Y" | minus: page.obsidian_start }} years |
-| Linux      | {{ site.time | date: "%Y" | minus: page.linux_start }} years |
-| Obsidian   | {{ site.time | date: "%Y" | minus: page.obsidian_start }} years |
-| Blazor/MAUI     | {{ site.time | date: "%Y" | minus: page.blazor_start }} years |
-| Umbraco    | {{ site.time | date: "%Y" | minus: page.umbraco_start }} years |
-| Kotlin     | {{ site.time | date: "%Y" | minus: page.kotlin_start }} years |
-| Arduino    | {{ site.time | date: "%Y" | minus: page.arduino_start }} years |
+| Kotlin                   | {{ site.time | date: "%Y" | minus: page.kotlin_start }} years |
 
 ## 🖊️ Writings
 [Tips to reducing pychological “hooks” of the modern internet age](./attention/)
