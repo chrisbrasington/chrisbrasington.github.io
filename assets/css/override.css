@@ -1,9 +1,4 @@
-/* override.css */
-.inner {
-    max-width: 1020px;
-}
-
-/* Prevent table overflow and force proper wrapping */
+/* General table layout */
 table {
   table-layout: fixed;
   width: 100%;
@@ -11,31 +6,47 @@ table {
   word-wrap: break-word;
 }
 
-/* Keep all cells contained and vertically aligned */
-table td, table th {
-  vertical-align: top;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
+table tr {
+  height: auto !important;
 }
 
-/* Make the third column act as a responsive gallery */
+table td, table th {
+  vertical-align: top !important;
+  overflow: visible !important;
+  text-overflow: unset;
+  word-break: break-word;
+  white-space: normal;
+}
+
+/* --- Image gallery column --- */
 table td:last-child {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  gap: 8px;
+  overflow: visible !important;
 }
 
-/* Style and size the screenshots */
+/* --- Large image thumbnails --- */
 table td:last-child img {
-  display: inline-block;
-  width: 45%;          /* two per row, nice and large */
-  max-width: 360px;    /* don’t exceed this size */
+  width: 45%;          /* two per row */
+  max-width: 480px;    /* allow wide layout */
   height: auto;
   aspect-ratio: 16 / 9;
   margin: 6px;
   border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   object-fit: contain;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: zoom-in;
+  position: relative;
+  z-index: 0;
+}
+
+/* --- Hover zoom effect --- */
+table td:last-child img:hover {
+  transform: scale(2.5); /* how big it grows on hover */
+  z-index: 10;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
 }
