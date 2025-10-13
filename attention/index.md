@@ -166,7 +166,6 @@ adb shell pm uninstall --user 0 com.google.android.youtube
 |------------|-------------|
 | [Niagara Launcher](https://play.google.com/store/apps/details?id=bitpit.launcher&hl=en-US) | Just a nice homepage launcher that lets you hide apps, which can be a start or alternative if you don't want to use ADB to remove certain apps, but may have some friction in getting to them. |
 
-
 ## Reading
 
 | | |
@@ -175,19 +174,27 @@ adb shell pm uninstall --user 0 com.google.android.youtube
 | [Libby / Overdrive](https://libbyapp.com) | Using your local library card, gain access to an impressive amount of audiobooks and ebooks. |
 | [Smart AudioBook Player](https://play.google.com/store/apps/details?id=ak.alizandro.smartaudiobookplayer&hl=en-US) | A fantastic file-based audiobook player app. |
 | [Calibre ebook management (PC)](https://calibre-ebook.com/) | Calibre is a powerful and easy-to-use e-book manager. |
-| [mpv](https://mpv.io/) | Command-line media player that will play files and YouTube URLs. |
+| [mpv (PC)](https://mpv.io/) | Command-line media player that will play files and YouTube URLs. |
 
 ## Streaming
 
 | | |
 |------------|-------------|
 | [kanopy](https://www.kanopy.com/) | Using your local library card, watch Movies and TV shows. |
+| [plex](https://www.plex.tv/) | Media server |
+| [jellyfin](https://jellyfin.org/) | Media server (I use plex, but this is newer) |
 
 ## Gaming
 
 | | |
 |------|-------------|
 | [RetroArch](https://www.retroarch.com/) | RetroArch is a frontend for emulators, allowing you to run multiple game systems from a single interface. |
+
+## Gaming
+
+| | |
+|------|-------------|
+| [VSCodium](https://vscodium.com/) | Microsoft's vscode repository built into freely-licensed binaries with a community-driven default configuration. |
 
 # GREAT DEVICES to use that aren't a smartphone
 
