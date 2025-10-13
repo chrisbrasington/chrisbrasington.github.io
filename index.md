@@ -77,6 +77,7 @@ new Chart(ctx, {
 | dmns kiosk | Payment kiosks | ![](./resources/dmnskiosk1.jpg)
 | dmns member app | | ![](./resources/dmnsapp1.jpg)
 | mitek blackpoint | CAD automation and materials manager | ![](./resources/blackpoint.webp)
+| hohmann & barnard | submittal package generation and estimation | ![](./resources/hb.jpg) ![](./resources/hb2.jpg)
 
 ## </> Projects
 
@@ -150,12 +151,12 @@ new Chart(ctx, {
 
 | Obsolete / Unmaintained  OLD | | |
 |----------|------------|------------|
+| [hackathon-led](https://github.com/chrisbrasington/hackathon-led) | ![](./resources/hackathon.jpg)
 | [obsidian - light-novel-markdown-creator](https://github.com/chrisbrasington/light-novel-markdown-creator) | Use [obsidian-book-search-plugin](https://github.com/anpigon/obsidian-book-search-plugin) which added manga support
 | [quicktask](https://github.com/chrisbrasington/quicktask) | Creates quick task markdown for obsidian | Abandoned for google keep and/or manual obsidian entry
 | [jameswebb-downloader](https://github.com/chrisbrasington/jameswebb-downloader)
 | [audiobook parser/synchronization app](https://github.com/chrisbrasington/audiobook-sync-app) | uses author/title | ![](./resources/audobooksync.png)
 | [discord-anything-status](https://github.com/chrisbrasington/discord-anything-status)
-| [hackathon-led](https://github.com/chrisbrasington/hackathon-led)
 | [comic books weekly RSS](https://github.com/chrisbrasington/comic-books-weekly)
 | [gnucash savings report](https://github.com/chrisbrasington/gnucash-savings)
 | [gnucash budge report](https://github.com/chrisbrasington/gnucash-budget)
