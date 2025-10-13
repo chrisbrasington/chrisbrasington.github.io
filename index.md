@@ -76,7 +76,7 @@ new Chart(ctx, {
 </script>
 
 ## 🖊️ Writings
-[Tips to reducing pychological “hooks” of the modern internet age](./attention/)
+### [Tips to reducing pychological “hooks” of the modern internet age](./attention/)
 
 ## </> Professional Projects
 
