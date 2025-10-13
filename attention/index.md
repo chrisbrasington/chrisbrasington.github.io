@@ -148,6 +148,7 @@ adb shell pm uninstall --user 0 com.google.android.youtube
 | [uBlock-Origin](https://github.com/gorhill/uBlock#ublock-origin) | Ad blocker. Blocks all ads and unwanted content. |
 | [unHOOK](https://unhook.app/) | Disable the YouTube home feed, restrict to subscriptions. Helps reduce algorithmic addiction. Optionally enable the feed once a week for discovery. |
 | [SocialFocus](https://socialfocus.app/) | Hide feeds on Reddit and other social sites. Supports Facebook, Gmail, Instagram, LinkedIn, Reddit, Twitter, YouTube. Useful to reduce distraction. |
+| [Video Background Play Fix](addons.mozilla.org/en-US/firefox/addon/video-background-play-fix/) | When unfocusing firefox (opening another app or locking phone), this allows video playback audio to automatically continue playing. Great for background listening.
 | [Redirector](https://einaregilsson.com/redirector/) | Optional. Redirect specific URLs (like r/politics) to a blank page or another URL to avoid unwanted content. |
 
 # Operating System - ditching Windows
