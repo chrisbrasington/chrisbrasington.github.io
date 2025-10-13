@@ -14,6 +14,10 @@
   background:#2e2e2e !important; 
 }
 
+.inner {
+  max-width: 1000px;
+}
+
 /* Make all headers white */
 h1, h2, h3, h4, h5, h6 {
   color: #fff !important;
