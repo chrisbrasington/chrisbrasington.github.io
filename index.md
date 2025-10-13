@@ -69,6 +69,7 @@ new Chart(ctx, {
 ### [Tips to reducing pychological “hooks” of the modern internet age](./attention/)
 
 ## 🛹 Hobbies
+
 | | | |
 |----------|------------|------------|
 | Skateboarding | | ![](./resources/skate1.jpg)
