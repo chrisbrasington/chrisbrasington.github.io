@@ -226,6 +226,7 @@ Unlike amazon kindle's locked ecosystem, kobo lets you manage files via USB and 
 Great for writing, not recommended for reading.
 
 ## Gaming Handhelds
+A dedicated gaming handheld can provide distraction-free gaming.
 
 ### [Steam Deck](https://store.steampowered.com/steamdeck)
 Running linux, a steam deck lets you play steam and non-steam games and is extremely customizable.
@@ -234,8 +235,8 @@ Running linux, a steam deck lets you play steam and non-steam games and is extre
 
 ### [Miyoo Mini Plus](https://retrogamecorps.com/2022/05/15/miyoo-mini-v2-guide/)
 
-### [Anbernic](https://retrogamecorps.com/2024/06/07/anbernic-rg35xx-family-starter-guide/) (rg34xx)
-
 ### [Retroid](https://www.goretroid.com/)
 
-<img src="../resources/handheld.jpg" style="width:60%;" />
+### [Anbernic](https://retrogamecorps.com/2024/06/07/anbernic-rg35xx-family-starter-guide/) (rg34xx)
+
+![](../resources/rg34xx)
