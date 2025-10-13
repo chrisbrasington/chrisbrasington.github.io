@@ -142,48 +142,16 @@ adb shell pm uninstall --user 0 com.android.chrome
 adb shell pm uninstall --user 0 com.google.android.youtube
 ```
 # Firefox extensions
-
-I recommend installing these extensions on both your phone and PC usage.
-
-## Ad Block - [uBlock-Origin](https://github.com/gorhill/uBlock#ublock-origin)
-
-Fuck ads.
-
-## Youtube - hide the feed - [unHOOK](https://unhook.app/)
-
-Disable the home feed, restrict to subscriptions.
-
-Once a week, it's ok to enable the home feed and poke around the algorithm for new content. Queue up some new videos or subscriptions - just keep in mind the FEED is the addictive controlling part of these sites, even simply redirecting from it to your subscriptions can have an impact.
-
-Keep your subscriptions relevant and tailored to YOU. Don't remake the feed.
-
-![](../resources/unhook.png)
-
-## Reddit & Others - hide the feed - [SocialFocus](https://socialfocus.app/)
-
-This can be redundant to youtube-unhook, but I use it only for Reddit.
-
-* Facebook
-* Gmail
-* Instagram
-* LinkedIn
-* Reddit
-* Twitter
-* YouTube
-
-![](../resources/socialfocus_reddit.png)
-
-<!-- ![](../resources/socialfocus_reddit_large.png) -->
-<img src="../resources/socialfocus_reddit_large.png" style="width:40%;" />
-
-
-## (optional) [Redirector](https://einaregilsson.com/redirector/)
-
-If you find yourself navigating to undesirable pages like `r/politics`, consider making a rule to redirect you to somewhere else or a blank page.
+| | |
+|-----------|---------------------|
+| [uBlock-Origin](https://github.com/gorhill/uBlock#ublock-origin) | Ad blocker. Blocks all ads and unwanted content. |
+| [unHOOK](https://unhook.app/) | Disable the YouTube home feed, restrict to subscriptions. Helps reduce algorithmic addiction. Optionally enable the feed once a week for discovery. |
+| [SocialFocus](https://socialfocus.app/) | Hide feeds on Reddit and other social sites. Supports Facebook, Gmail, Instagram, LinkedIn, Reddit, Twitter, YouTube. Useful to reduce distraction. |
+| [Redirector](https://einaregilsson.com/redirector/) | Optional. Redirect specific URLs (like r/politics) to a blank page or another URL to avoid unwanted content. |
 
 # Operating System - ditching Windows
 
-| Distribution | Description |
+| | |
 |--------------|-------------|
 | [Fedora](https://fedoraproject.org/) | Cutting-edge Linux distribution with the latest software, backed by Red Hat. Great for users who want new features and technologies. |
 | [Debian](https://www.debian.org/) | Extremely stable and reliable, with a vast repository of packages. Ideal for servers and long-term support setups. |
@@ -210,8 +178,10 @@ If you find yourself navigating to undesirable pages like `r/politics`, consider
 
 ## Gaming
 
-### [Retroarch](https://www.retroarch.com/)
-RetroArch is a frontend for emulators
+| | |
+|------|-------------|
+| [RetroArch](https://www.retroarch.com/) | RetroArch is a frontend for emulators, allowing you to run multiple game systems from a single interface. |
+
 
 # GREAT DEVICES to use that aren't a smartphone
 
