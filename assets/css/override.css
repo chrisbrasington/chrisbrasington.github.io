@@ -2,3 +2,34 @@
 .inner {
     max-width: 1020px;
 }
+
+/* Prevent table overflow and force proper wrapping */
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  word-wrap: break-word;
+}
+
+/* Keep all cells contained and vertically aligned */
+table td, table th {
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+/* Make images scale nicely within table cells */
+table img {
+  display: inline-block;
+  max-width: 30%;
+  height: auto;
+  margin: 2px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Optional: make the row a little taller for multi-image cells */
+table td:last-child {
+  line-height: 1.2;
+}
