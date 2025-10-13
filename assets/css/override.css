@@ -10,6 +10,10 @@
   background-color: #2e2e2e !important;
 }
 
+#main_content_wrap {
+  background:#2e2e2e !important; 
+}
+
 /* Make all headers white */
 h1, h2, h3, h4, h5, h6 {
   color: #fff !important;
@@ -102,12 +106,10 @@ table td:has(img + img):not(.img-row) {
 /* ===============================
  Optional hover-to-zoom/lightbox for images
  =============================== */
-/* Uncomment to enable simple zoom on hover */
-/*
 table td img:hover {
   transform: scale(1.5);
   z-index: 10;
   box-shadow: 0 6px 24px rgba(0,0,0,0.6);
   cursor: zoom-in;
 }
-*/
+
