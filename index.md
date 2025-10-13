@@ -3,6 +3,7 @@ title: Christopher Brasington
 layout: default
 csharp_start: 2010
 python_start: 2010
+javascript_start: 2008
 linux_start: 2004
 obsidian_start: 2023
 blazor_start: 2019
@@ -29,6 +30,7 @@ const ctx = document.getElementById('experienceChart').getContext('2d');
 const currentYear = {{ site.time | date: "%Y" }};
 const experienceData = [
     currentYear - {{ page.linux_start }},
+    currentYear - {{ page.javascript_start }},
     currentYear - {{ page.csharp_start }},
     currentYear - {{ page.python_start }},
     currentYear - {{ page.arduino_start }},
@@ -40,7 +42,7 @@ const experienceData = [
 ];
 
 const data = {
-    labels: ["Linux", "C#", "Python", "Arduino", "Azure CI/CD", "Blazor/MAUI", "Umbraco", "Obsidian", "Kotlin"],
+    labels: ["Linux", "Javascript", "C#", "Python", "Arduino", "Azure CI/CD", "Blazor/MAUI", "Umbraco", "Obsidian", "Kotlin"],
     datasets: [{
         label: 'Years of Experience',
         data: experienceData,
