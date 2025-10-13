@@ -36,7 +36,7 @@ arduino_start: 2015
 
 | Site | | |
 |----------|------------|------------|
-| [dmns.org](https://www.dmns.org/) | Denver Museum of Nature & Science | <div class="img-row"><img src="./resources/dmns1.png" style="height: 20%;"><img src="./resources/dmns2.png" style="height: 20%;"></div>
+| [dmns.org](https://www.dmns.org/) | Denver Museum of Nature & Science | <div class="img-row"><img src="./resources/dmns1.png"><img src="./resources/dmns2.png"></div>
 | dmns kiosk | Payment kiosks | ![](./resources/dmnskiosk1.jpg)
 | dmns curiosity cruiser | roving science | ![](./resources/dmnscruiser1.jpg)
 | dmns member app | | ![](./resources/dmnsapp1.jpg)
