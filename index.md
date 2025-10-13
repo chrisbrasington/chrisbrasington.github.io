@@ -9,6 +9,7 @@ blazor_start: 2019
 umbraco_start: 2021
 kotlin_start: 2024
 arduino_start: 2015
+azure_start: 2018
 ---
 
 # Hi, I'm [{{ site.name }}](https://www.linkedin.com/in/brasington/)
@@ -17,20 +18,7 @@ I am a software engineer at a science museum. This is a site for projects and wr
 
 ## 💻 Skills
 
-<!-- | Tech                     | Experience |
-|--------------------------|------------|
-| Linux                    | {{ site.time | date: "%Y" | minus: page.linux_start }} years |
-| C#                       | {{ site.time | date: "%Y" | minus: page.csharp_start }} years |
-| Python                   | {{ site.time | date: "%Y" | minus: page.python_start }} years |
-| Arduino                  | {{ site.time | date: "%Y" | minus: page.arduino_start }} years |
-| Blazor/MAUI              | {{ site.time | date: "%Y" | minus: page.blazor_start }} years |
-| Umbraco                  | {{ site.time | date: "%Y" | minus: page.umbraco_start }} years |
-| [Obsidian.md](https://obsidian.md/) | {{ site.time | date: "%Y" | minus: page.obsidian_start }} years |
-| Kotlin                   | {{ site.time | date: "%Y" | minus: page.kotlin_start }} years | -->
-
 # Tech Experience Chart
-
-<canvas id="experienceChart" style="width: 50%; height: 50%;"></canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
@@ -38,22 +26,26 @@ const ctx = document.getElementById('experienceChart').getContext('2d');
 
 // Dynamically calculate years from front matter
 const currentYear = {{ site.time | date: "%Y" }};
-const experienceData = [
-    currentYear - {{ page.linux_start }},
-    currentYear - {{ page.csharp_start }},
-    currentYear - {{ page.python_start }},
-    currentYear - {{ page.arduino_start }},
-    currentYear - {{ page.blazor_start }},
-    currentYear - {{ page.umbraco_start }},
-    currentYear - {{ page.obsidian_start }},
-    currentYear - {{ page.kotlin_start }}
+const experiences = [
+    { label: "Linux", years: currentYear - {{ page.linux_start }} },
+    { label: "C#", years: currentYear - {{ page.csharp_start }} },
+    { label: "Python", years: currentYear - {{ page.python_start }} },
+    { label: "Arduino", years: currentYear - {{ page.arduino_start }} },
+    { label: "Blazor/MAUI", years: currentYear - {{ page.blazor_start }} },
+    { label: "Umbraco", years: currentYear - {{ page.umbraco_start }} },
+    { label: "Obsidian", years: currentYear - {{ page.obsidian_start }} },
+    { label: "Kotlin", years: currentYear - {{ page.kotlin_start }} },
+    { label: "Azure", years: currentYear - {{ page.azure_start }} }
 ];
 
+// Sort alphabetically by label
+experiences.sort((a, b) => a.label.localeCompare(b.label));
+
 const data = {
-    labels: ["Linux", "C#", "Python", "Arduino", "Blazor/MAUI", "Umbraco", "Obsidian", "Kotlin"],
+    labels: experiences.map(e => e.label),
     datasets: [{
         label: 'Years of Experience',
-        data: experienceData,
+        data: experiences.map(e => e.years),
         backgroundColor: 'rgba(54, 162, 235, 0.6)',
         borderColor: 'rgba(54, 162, 235, 1)',
         borderWidth: 1
