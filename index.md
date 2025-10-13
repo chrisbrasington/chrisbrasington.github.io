@@ -73,8 +73,8 @@ new Chart(ctx, {
 | Site | | |
 |----------|------------|------------|
 | [dmns.org](https://www.dmns.org/) | Denver Museum of Nature & Science | ![](./resources/dmns1.png) ![](./resources/dmns2.png) |
-| dmns kiosk | Payment kiosks | ![](./resources/dmnskiosk1.jpg)
 | dmns curiosity cruiser | roving science | ![](./resources/dmnscruiser1.jpg)
+| dmns kiosk | Payment kiosks | ![](./resources/dmnskiosk1.jpg)
 | dmns member app | | ![](./resources/dmnsapp1.jpg)
 | mitek blackpoint | CAD automation and materials manager | ![](./resources/blackpoint.webp)
 
