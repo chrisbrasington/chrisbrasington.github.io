@@ -36,7 +36,7 @@ arduino_start: 2015
 
 | Site | | |
 |----------|------------|------------|
-| [github.io](https://github.com/chrisbrasington/chrisbrasington.github.io) | [site](https://chrisbrasington.github.io/), [homepage](https://chrisbrasington.github.io/home/), and [articles](https://chrisbrasington.github.io/attention/) | ![](./resources/site.png) |
+| [github.io](https://github.com/chrisbrasington/chrisbrasington.github.io) | [site](https://chrisbrasington.github.io/), [homepage](https://chrisbrasington.github.io/home/), and [articles](https://chrisbrasington.github.io/attention/) | <img src="./resources/site.png" width="80%"> |
 
 | Android | | |
 |----------|------------|------------|
