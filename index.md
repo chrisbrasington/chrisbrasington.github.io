@@ -35,7 +35,7 @@ const experiences = [
     { label: "Umbraco", years: currentYear - {{ page.umbraco_start }} },
     { label: "Obsidian", years: currentYear - {{ page.obsidian_start }} },
     { label: "Kotlin", years: currentYear - {{ page.kotlin_start }} },
-    { label: "Azure", years: currentYear - {{ page.azure_start }} }
+    { label: "Azure CI/CD", years: currentYear - {{ page.azure_start }} }
 ];
 
 // Sort alphabetically by label
