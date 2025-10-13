@@ -143,8 +143,8 @@ adb shell pm uninstall --user 0 com.google.android.youtube
 ```
 # Firefox extensions
 
-| |  |
-|-----------|---------------------|
+| Extension | Description |
+|-----------|-------------|
 | [uBlock-Origin](https://github.com/gorhill/uBlock#ublock-origin) | Ad blocker. Blocks all ads and unwanted content. |
 | [unHOOK](https://unhook.app/) | Disable the YouTube home feed, restrict to subscriptions. Helps reduce algorithmic addiction. Optionally enable the feed once a week for discovery. |
 | [SocialFocus](https://socialfocus.app/) | Hide feeds on Reddit and other social sites. Supports Facebook, Gmail, Instagram, LinkedIn, Reddit, Twitter, YouTube. Useful to reduce distraction. |
@@ -152,8 +152,8 @@ adb shell pm uninstall --user 0 com.google.android.youtube
 
 # Operating System - ditching Windows
 
-| | |
-|--------------|-------------|
+| OS | Description |
+|----|-------------|
 | [Fedora](https://fedoraproject.org/) | Cutting-edge Linux distribution with the latest software, backed by Red Hat. Great for users who want new features and technologies. |
 | [Debian](https://www.debian.org/) | Extremely stable and reliable, with a vast repository of packages. Ideal for servers and long-term support setups. |
 | [Arch](https://archlinux.org/) | Minimalist and highly customizable Linux distribution. Rolling release model for users who want full control and the latest software. |

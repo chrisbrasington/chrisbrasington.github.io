@@ -26,25 +26,23 @@ document.addEventListener("DOMContentLoaded", function() {
     const ctx = document.getElementById('experienceChart').getContext('2d');
 
     const currentYear = {{ site.time | date: "%Y" }};
-    const experiences = [
-        { label: "Linux", years: currentYear - {{ page.linux_start }} },
-        { label: "C#", years: currentYear - {{ page.csharp_start }} },
-        { label: "Python", years: currentYear - {{ page.python_start }} },
-        { label: "Arduino", years: currentYear - {{ page.arduino_start }} },
-        { label: "Blazor/MAUI", years: currentYear - {{ page.blazor_start }} },
-        { label: "Umbraco", years: currentYear - {{ page.umbraco_start }} },
-        { label: "Obsidian", years: currentYear - {{ page.obsidian_start }} },
-        { label: "Kotlin", years: currentYear - {{ page.kotlin_start }} },
-        { label: "Azure CI/CD", years: currentYear - {{ page.azure_start }} }
+    const experienceData = [
+        currentYear - {{ page.linux_start }},
+        currentYear - {{ page.csharp_start }},
+        currentYear - {{ page.python_start }},
+        currentYear - {{ page.arduino_start }},
+        currentYear - {{ page.azure_start }},
+        currentYear - {{ page.blazor_start }},
+        currentYear - {{ page.umbraco_start }},
+        currentYear - {{ page.obsidian_start }},
+        currentYear - {{ page.kotlin_start }}
     ];
 
-    experiences.sort((a, b) => a.label.localeCompare(b.label));
-
     const data = {
-        labels: experiences.map(e => e.label),
+        labels: ["Linux", "C#", "Python", "Arduino", "Azure CI/CD", "Blazor/MAUI", "Umbraco", "Obsidian", "Kotlin"],
         datasets: [{
             label: 'Years of Experience',
-            data: experiences.map(e => e.years),
+            data: experienceData,
             backgroundColor: 'rgba(54, 162, 235, 0.6)',
             borderColor: 'rgba(54, 162, 235, 1)',
             borderWidth: 1
@@ -55,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         type: 'bar',
         data: data,
         options: {
-            indexAxis: 'y',
+            indexAxis: 'y',  // Horizontal bars
             scales: {
                 x: {
                     beginAtZero: true,
