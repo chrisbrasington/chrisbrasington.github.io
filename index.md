@@ -20,48 +20,48 @@ I am a software engineer at a science museum. This is a site for projects and wr
 
 # Tech Experience Chart
 
+<canvas id="experienceChart" style="width: 50%; height: 50%;"></canvas>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const ctx = document.getElementById('experienceChart').getContext('2d');
+const ctx = document.getElementById('experienceChart').getContext('2d');
 
-    const currentYear = {{ site.time | date: "%Y" }};
-    const experienceData = [
-        currentYear - {{ page.linux_start }},
-        currentYear - {{ page.csharp_start }},
-        currentYear - {{ page.python_start }},
-        currentYear - {{ page.arduino_start }},
-        currentYear - {{ page.azure_start }},
-        currentYear - {{ page.blazor_start }},
-        currentYear - {{ page.umbraco_start }},
-        currentYear - {{ page.obsidian_start }},
-        currentYear - {{ page.kotlin_start }}
-    ];
+const currentYear = {{ site.time | date: "%Y" }};
+const experienceData = [
+    currentYear - {{ page.linux_start }},
+    currentYear - {{ page.csharp_start }},
+    currentYear - {{ page.python_start }},
+    currentYear - {{ page.arduino_start }},
+    currentYear - {{ page.azure_start }},
+    currentYear - {{ page.blazor_start }},
+    currentYear - {{ page.umbraco_start }},
+    currentYear - {{ page.obsidian_start }},
+    currentYear - {{ page.kotlin_start }}
+];
 
-    const data = {
-        labels: ["Linux", "C#", "Python", "Arduino", "Azure CI/CD", "Blazor/MAUI", "Umbraco", "Obsidian", "Kotlin"],
-        datasets: [{
-            label: 'Years of Experience',
-            data: experienceData,
-            backgroundColor: 'rgba(54, 162, 235, 0.6)',
-            borderColor: 'rgba(54, 162, 235, 1)',
-            borderWidth: 1
-        }]
-    };
+const data = {
+    labels: ["Linux", "C#", "Python", "Arduino", "Azure CI/CD", "Blazor/MAUI", "Umbraco", "Obsidian", "Kotlin"],
+    datasets: [{
+        label: 'Years of Experience',
+        data: experienceData,
+        backgroundColor: 'rgba(54, 162, 235, 0.6)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1
+    }]
+};
 
-    new Chart(ctx, {
-        type: 'bar',
-        data: data,
-        options: {
-            indexAxis: 'y',  // Horizontal bars
-            scales: {
-                x: {
-                    beginAtZero: true,
-                    stepSize: 1
-                }
+new Chart(ctx, {
+    type: 'bar',
+    data: data,
+    options: {
+        indexAxis: 'y',  // Horizontal bars
+        scales: {
+            x: {
+                beginAtZero: true,
+                stepSize: 1
             }
         }
-    });
+    }
 });
 </script>
 
