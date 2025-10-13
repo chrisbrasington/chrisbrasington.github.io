@@ -22,48 +22,48 @@ I am a software engineer at a science museum. This is a site for projects and wr
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-const ctx = document.getElementById('experienceChart').getContext('2d');
+document.addEventListener("DOMContentLoaded", function() {
+    const ctx = document.getElementById('experienceChart').getContext('2d');
 
-// Dynamically calculate years from front matter
-const currentYear = {{ site.time | date: "%Y" }};
-const experiences = [
-    { label: "Linux", years: currentYear - {{ page.linux_start }} },
-    { label: "C#", years: currentYear - {{ page.csharp_start }} },
-    { label: "Python", years: currentYear - {{ page.python_start }} },
-    { label: "Arduino", years: currentYear - {{ page.arduino_start }} },
-    { label: "Blazor/MAUI", years: currentYear - {{ page.blazor_start }} },
-    { label: "Umbraco", years: currentYear - {{ page.umbraco_start }} },
-    { label: "Obsidian", years: currentYear - {{ page.obsidian_start }} },
-    { label: "Kotlin", years: currentYear - {{ page.kotlin_start }} },
-    { label: "Azure CI/CD", years: currentYear - {{ page.azure_start }} }
-];
+    const currentYear = {{ site.time | date: "%Y" }};
+    const experiences = [
+        { label: "Linux", years: currentYear - {{ page.linux_start }} },
+        { label: "C#", years: currentYear - {{ page.csharp_start }} },
+        { label: "Python", years: currentYear - {{ page.python_start }} },
+        { label: "Arduino", years: currentYear - {{ page.arduino_start }} },
+        { label: "Blazor/MAUI", years: currentYear - {{ page.blazor_start }} },
+        { label: "Umbraco", years: currentYear - {{ page.umbraco_start }} },
+        { label: "Obsidian", years: currentYear - {{ page.obsidian_start }} },
+        { label: "Kotlin", years: currentYear - {{ page.kotlin_start }} },
+        { label: "Azure CI/CD", years: currentYear - {{ page.azure_start }} }
+    ];
 
-// Sort alphabetically by label
-experiences.sort((a, b) => a.label.localeCompare(b.label));
+    experiences.sort((a, b) => a.label.localeCompare(b.label));
 
-const data = {
-    labels: experiences.map(e => e.label),
-    datasets: [{
-        label: 'Years of Experience',
-        data: experiences.map(e => e.years),
-        backgroundColor: 'rgba(54, 162, 235, 0.6)',
-        borderColor: 'rgba(54, 162, 235, 1)',
-        borderWidth: 1
-    }]
-};
+    const data = {
+        labels: experiences.map(e => e.label),
+        datasets: [{
+            label: 'Years of Experience',
+            data: experiences.map(e => e.years),
+            backgroundColor: 'rgba(54, 162, 235, 0.6)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+        }]
+    };
 
-new Chart(ctx, {
-    type: 'bar',
-    data: data,
-    options: {
-        indexAxis: 'y',  // Horizontal bars
-        scales: {
-            x: {
-                beginAtZero: true,
-                stepSize: 1
+    new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: {
+            indexAxis: 'y',
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    stepSize: 1
+                }
             }
         }
-    }
+    });
 });
 </script>
 
