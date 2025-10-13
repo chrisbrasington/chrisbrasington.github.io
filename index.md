@@ -30,7 +30,7 @@ I am a software engineer at a science museum. This is a site for projects and wr
 
 # Tech Experience Chart
 
-<canvas id="experienceChart" width="600" height="400"></canvas>
+<canvas id="experienceChart" style="width: 50%; height: 50%;"></canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
