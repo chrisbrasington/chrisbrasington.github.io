@@ -118,7 +118,7 @@ new Chart(ctx, {
 | [MangaDex Covers Downloader](https://github.com/chrisbrasington/mangadex-covers) | Generate cover images from MangaDex URL | ![](./resources/dandadan.png) | 
 | [kobo-to-obsidian-import](https://github.com/chrisbrasington/kobo-to-obsidian-import) | export as markdown | ![](./resources/kobo_markdown.png)
 | [book-scanner](https://github.com/chrisbrasington/book-scanner) | Use a barcode scanner, scans into database/csv | ![](./resources/bookscan.png)
-| [image-organizer] | CLI tool for sorting images into folders | ![](./resources/imagesort.png)
+| [image-organizer](https://github.com/chrisbrasington/image-organizer) | CLI tool for sorting images into folders | ![](./resources/imagesort.png)
 | [obsidian-tagger](https://github.com/chrisbrasington/obsidian-tagger) | Bulk apply tags to a folder of markdown files
 | [discord-canary-updater](https://github.com/chrisbrasington/discord-canary-updater) | Automates update of .deb discord canary
 | [obsidian-sort](https://github.com/chrisbrasington/obsidian-sort) | manages sort metadata value for folder of mardown files
