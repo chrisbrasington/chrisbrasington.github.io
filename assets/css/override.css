@@ -51,25 +51,27 @@ table th, table td {
  Table images side by side
  =============================== */
 /* Existing .img-row container */
-.img-row {
-  display: flex !important;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
+/* Hover zoom for images inside tables or .img-row */
+table td img,
 .img-row img {
   display: block;
-  height: 400px;
-  max-height: 600px;
-  width: auto;
-  aspect-ratio: 16/9;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
   object-fit: contain;
   margin: 0;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: default;
+  position: relative;
+}
+
+table td img:hover,
+.img-row img:hover {
+  transform: scale(1.5);
+  z-index: 1000;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+  cursor: zoom-in;
 }
 
 /* Ensure td containing .img-row is tall */
