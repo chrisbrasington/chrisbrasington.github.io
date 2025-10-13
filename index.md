@@ -17,7 +17,7 @@ I am a software engineer at a science museum. This is a site for projects and wr
 
 ## 💻 Skills
 
-| Tech                     | Experience |
+<!-- | Tech                     | Experience |
 |--------------------------|------------|
 | Linux                    | {{ site.time | date: "%Y" | minus: page.linux_start }} years |
 | C#                       | {{ site.time | date: "%Y" | minus: page.csharp_start }} years |
@@ -26,7 +26,39 @@ I am a software engineer at a science museum. This is a site for projects and wr
 | Blazor/MAUI              | {{ site.time | date: "%Y" | minus: page.blazor_start }} years |
 | Umbraco                  | {{ site.time | date: "%Y" | minus: page.umbraco_start }} years |
 | [Obsidian.md](https://obsidian.md/) | {{ site.time | date: "%Y" | minus: page.obsidian_start }} years |
-| Kotlin                   | {{ site.time | date: "%Y" | minus: page.kotlin_start }} years |
+| Kotlin                   | {{ site.time | date: "%Y" | minus: page.kotlin_start }} years | -->
+
+# Tech Experience Chart
+
+<canvas id="experienceChart" width="600" height="400"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const ctx = document.getElementById('experienceChart').getContext('2d');
+const data = {
+    labels: ["Linux", "C#", "Python", "Arduino", "Blazor/MAUI", "Umbraco", "Obsidian", "Kotlin"],
+    datasets: [{
+        label: 'Years of Experience',
+        data: [21, 15, 15, 10, 6, 4, 2, 1],
+        backgroundColor: 'rgba(54, 162, 235, 0.6)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1
+    }]
+};
+new Chart(ctx, {
+    type: 'bar',
+    data: data,
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                stepSize: 1
+            }
+        }
+    }
+});
+</script>
+
 
 ## 🖊️ Writings
 [Tips to reducing pychological “hooks” of the modern internet age](./attention/)
