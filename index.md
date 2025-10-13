@@ -44,12 +44,9 @@ arduino_start: 2015
 
 ## </> Projects
 
-| Site | | |
+| Personal | | |
 |----------|------------|------------|
 | [github.io](https://github.com/chrisbrasington/chrisbrasington.github.io) | [site](https://chrisbrasington.github.io/), [homepage](https://chrisbrasington.github.io/home/), and [articles](https://chrisbrasington.github.io/attention/) | ![](./resources/site.png) |
-
-| Android | | |
-|----------|------------|------------|
 | Launcher (WIP) | Minimalist launcher / media player | ![](./resources/launcher1.png) ![](./resources/launcher2.png) ![](./resources/launcher3.png) |
 
 | Manga | | |
