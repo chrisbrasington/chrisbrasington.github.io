@@ -1,3 +1,9 @@
+/* override.css */
+body {
+  background-color: #121212; /* dark background, change to whatever you like */
+  color: #eee; /* optional: make text readable on dark background */
+}
+
 /* Table basics */
 table {
   width: 100%;
