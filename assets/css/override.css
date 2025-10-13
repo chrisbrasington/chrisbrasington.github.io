@@ -1,7 +1,7 @@
 /* override.css */
 body {
-  background-color: #121212; /* dark background, change to whatever you like */
-  color: #eee; /* optional: make text readable on dark background */
+  background-color: #121212 !important;
+  color: #eee !important;
 }
 
 /* Table basics */
@@ -45,11 +45,11 @@ table td:last-child img {
 }
 
 /* Hover zoom effect */
-table td:last-child img:hover {
+/* table td:last-child img:hover {
   transform: scale(1.8);
   z-index: 10;
   box-shadow: 0 6px 24px rgba(0,0,0,0.6);
-}
+} */
 
 /* Only make rows tall if images exist */
 table td:last-child:has(img) {
