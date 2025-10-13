@@ -183,32 +183,30 @@ If you find yourself navigating to undesirable pages like `r/politics`, consider
 
 # Operating System - ditching Windows
 
-- [Fedora](https://fedoraproject.org/)
-- [Debian](https://www.debian.org/)
-- [Arch](https://archlinux.org/)
+| Distribution | Description |
+|--------------|-------------|
+| [Fedora](https://fedoraproject.org/) | Cutting-edge Linux distribution with the latest software, backed by Red Hat. Great for users who want new features and technologies. |
+| [Debian](https://www.debian.org/) | Extremely stable and reliable, with a vast repository of packages. Ideal for servers and long-term support setups. |
+| [Arch](https://archlinux.org/) | Minimalist and highly customizable Linux distribution. Rolling release model for users who want full control and the latest software. |
+
 
 # GREAT APPS to actually use
 
 ## Android Launcher
 
-### [Niagara Launcher](https://play.google.com/store/apps/details?id=bitpit.launcher&hl=en-US)
-Just a nice homepage launcher that does let you hide apps, which can be a start or alternative if you don't want to use ADB to remove certain apps, but have friction in getting to them. 
+| | |
+|------------|-------------|
+| [Niagara Launcher](https://play.google.com/store/apps/details?id=bitpit.launcher&hl=en-US) | Just a nice homepage launcher that lets you hide apps, which can be a start or alternative if you don't want to use ADB to remove certain apps, but may have some friction in getting to them. |
+
 
 ## Reading
-### [StoryGraph](https://thestorygraph.com/)
-A way to track your reading. An excellent replacement to the amazon owned goodreads.
-
-### [Libby / Overdrive](https://libbyapp.com)
-Using your local library card, gain access to an impressive amount of audiobooks and ebooks.
-
-### [Smart AudioBook Player](https://play.google.com/store/apps/details?id=ak.alizandro.smartaudiobookplayer&hl=en-US)
-A fantastic file based audiobook player app.
-
-### [Calibre ebook management (PC)](https://calibre-ebook.com/)
-calibre is a powerful and easy to use e-book manager. 
-
-### [mpv](https://mpv.io/)
-commandline media player that will play files and youtube urls
+|  |  |
+|------|-------------|
+| [StoryGraph](https://thestorygraph.com/) | A way to track your reading. An excellent replacement to the Amazon-owned Goodreads. |
+| [Libby / Overdrive](https://libbyapp.com) | Using your local library card, gain access to an impressive amount of audiobooks and ebooks. |
+| [Smart AudioBook Player](https://play.google.com/store/apps/details?id=ak.alizandro.smartaudiobookplayer&hl=en-US) | A fantastic file-based audiobook player app. |
+| [Calibre ebook management (PC)](https://calibre-ebook.com/) | Calibre is a powerful and easy-to-use e-book manager. |
+| [mpv](https://mpv.io/) | Command-line media player that will play files and YouTube URLs. |
 
 ## Gaming
 
@@ -217,26 +215,21 @@ RetroArch is a frontend for emulators
 
 # GREAT DEVICES to use that aren't a smartphone
 
-## [Kobo e-readers](https://us.kobobooks.com/collections/eReaders)
+|  |  |
+|------|-------------|
+| [Kobo e-readers](https://us.kobobooks.com/collections/eReaders) | Unlike Amazon Kindle's locked ecosystem, Kobo lets you manage files via USB and supports modification with interfaces like [KOReader](https://koreader.rocks/). |
+| [Supernote 7"](https://supernote.com/) | Great for writing, not recommended for reading. |
 
-Unlike amazon kindle's locked ecosystem, kobo lets you manage files via USB and supports modification with interfaces like [KOReader](https://koreader.rocks/)
-
-## [Supernote 7"](https://supernote.com/)
-
-Great for writing, not recommended for reading.
 
 ## Gaming Handhelds
 A dedicated gaming handheld can provide distraction-free gaming.
 
-### [Steam Deck](https://store.steampowered.com/steamdeck)
-Running linux, a steam deck lets you play steam and non-steam games and is extremely customizable.
+|  |  |
+|--------|-------------|
+| [Steam Deck](https://store.steampowered.com/steamdeck) | Running Linux, a Steam Deck lets you play Steam and non-Steam games and is extremely customizable. |
+| 3DS | Best for dual screen DS/3DS games|
+| [Miyoo Mini Plus](https://retrogamecorps.com/2022/05/15/miyoo-mini-v2-guide/) | Gameboy-sized |
+| [Retroid](https://www.goretroid.com/) | Android-based |
+| [Anbernic (RG34xx)](https://retrogamecorps.com/2024/06/07/anbernic-rg35xx-family-starter-guide/) | GBA clone<br/>![](../resources/rg34xx) |
 
-### 3DS
 
-### [Miyoo Mini Plus](https://retrogamecorps.com/2022/05/15/miyoo-mini-v2-guide/)
-
-### [Retroid](https://www.goretroid.com/)
-
-### [Anbernic](https://retrogamecorps.com/2024/06/07/anbernic-rg35xx-family-starter-guide/) (rg34xx)
-
-![](../resources/rg34xx)
