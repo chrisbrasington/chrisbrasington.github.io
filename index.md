@@ -96,7 +96,7 @@ new Chart(ctx, {
 | dmns kiosk | Payment kiosks | ![](./resources/dmnskiosk1.jpg)
 | dmns member app | | ![](./resources/dmnsapp1.jpg)
 | mitek blackpoint | CAD automation and materials manager | ![](./resources/blackpoint.webp)
-| hohmann & barnard | submittal package generation and estimation | ![](./resources/hb.jpg) ![](./resources/hb2.jpg)
+| hohmann & barnard | submittal package generation and estimation | ![](./resources/hb.jpg)
 
 ## </> Projects
 
