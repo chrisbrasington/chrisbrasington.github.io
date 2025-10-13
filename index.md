@@ -70,6 +70,8 @@ new Chart(ctx, {
 
 ## 🛹 Hobbies
 
+<div style="max-width:1080px; margin: 0 auto;">
+
 <table>
   <tr>
     <td align="center">
@@ -86,6 +88,9 @@ new Chart(ctx, {
     </td>
   </tr>
 </table>
+
+</div>
+
 
 
 ## </> Professional Projects
