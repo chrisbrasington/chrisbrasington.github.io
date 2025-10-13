@@ -151,7 +151,7 @@ new Chart(ctx, {
 
 | Obsolete / Unmaintained  OLD | | |
 |----------|------------|------------|
-| [hackathon-led](https://github.com/chrisbrasington/hackathon-led) | ![](./resources/hackathon.jpg)
+| [hackathon-led](https://github.com/chrisbrasington/hackathon-led) | | ![](./resources/hackathon.jpg)
 | [obsidian - light-novel-markdown-creator](https://github.com/chrisbrasington/light-novel-markdown-creator) | Use [obsidian-book-search-plugin](https://github.com/anpigon/obsidian-book-search-plugin) which added manga support
 | [quicktask](https://github.com/chrisbrasington/quicktask) | Creates quick task markdown for obsidian | Abandoned for google keep and/or manual obsidian entry
 | [jameswebb-downloader](https://github.com/chrisbrasington/jameswebb-downloader)
