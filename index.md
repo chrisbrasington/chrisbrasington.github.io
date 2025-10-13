@@ -12,7 +12,7 @@ kotlin_start: 2024
 arduino_start: 2015
 ---
 
-# Hi, I'm {{ site.name }} 
+# Hi, I'm [{{ site.name }}](https://www.linkedin.com/in/brasington/)
 
 ## 💻 Skills
 
@@ -31,6 +31,13 @@ arduino_start: 2015
 
 ## 🖊️ Writings
 [Tips to reducing pychological “hooks” of the modern internet age](./attention/)
+
+## </> Professional Projects
+
+| Site | | |
+|----------|------------|------------|
+| [dmns.org](https://www.dmns.org/) | Denver Museum of Nature & Science | ![](./resources/dmns1.png) ![](./resources/dmns2.png)
+
 
 ## </> Projects
 

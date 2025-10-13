@@ -19,18 +19,22 @@ table td, table th {
   word-break: break-word;
 }
 
-/* Make images scale nicely within table cells */
-table img {
-  display: inline-block;
-  height: 600px; /* or 180px, 200px — adjust to taste */
-  width: auto;
-  margin: 4px;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  object-fit: cover; /* keeps consistent framing */
+/* Make the third column act as a responsive gallery */
+table td:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centers each row of images */
+  align-items: flex-start;
+  gap: 8px;
 }
 
-/* Optional: make the row a little taller for multi-image cells */
-table td:last-child {
-  line-height: 1.2;
+/* Style and size the screenshots */
+table td:last-child img {
+  flex: 0 1 32%;     /* ~3 per row */
+  max-width: 32%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  object-fit: contain; /* keeps full image visible */
 }
