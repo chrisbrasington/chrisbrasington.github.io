@@ -71,10 +71,10 @@ new Chart(ctx, {
 ## 🛹 Hobbies
 
 | | | |
-|----------|------------|------------|
-| Skateboarding | | ![](./resources/skate1.jpg)
-| Gaming | | ![](./resources/handheld2.jpg)
-| Reading | | ![](./resources/books1.jpg)
+|--------------|------------|-------|
+| Skateboarding | | <img src="./resources/skate2.jpg" height="200px">
+| Gaming       | | <img src="./resources/handheld3.jpg" height="200px">
+| Reading      | | <img src="./resources/books1.jpg" height="200px">
 
 ## </> Professional Projects
 
