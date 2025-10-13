@@ -37,6 +37,7 @@ arduino_start: 2015
 | Site | | |
 |----------|------------|------------|
 | [dmns.org](https://www.dmns.org/) | Denver Museum of Nature & Science | ![](./resources/dmns1.png) ![](./resources/dmns2.png)
+| [dmns kiosk] | Payment kiosks | ![](./resources/dmnskiosk1.jpg)
 
 
 ## </> Projects

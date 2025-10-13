@@ -23,18 +23,19 @@ table td, table th {
 table td:last-child {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* centers each row of images */
+  justify-content: center;
   align-items: flex-start;
-  gap: 8px;
 }
 
 /* Style and size the screenshots */
 table td:last-child img {
-  flex: 0 1 32%;     /* ~3 per row */
-  max-width: 32%;
-  aspect-ratio: 16 / 9;
+  display: inline-block;
+  width: 45%;          /* two per row, nice and large */
+  max-width: 360px;    /* don’t exceed this size */
   height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 6px;
   border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-  object-fit: contain; /* keeps full image visible */
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+  object-fit: contain;
 }
