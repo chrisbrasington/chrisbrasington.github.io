@@ -24,7 +24,7 @@ table td:last-child {
 /* Large images, tall, floating side by side */
 table td:last-child img {
   display: inline-block;      /* lets multiple images sit side by side */
-  height: 550px;              /* large tall height */
+  height: 400px;              /* large tall height */
   max-height: 600px;
   width: auto;                /* keep width proportional to height */
   aspect-ratio: 16 / 9;
