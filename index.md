@@ -43,28 +43,28 @@ I am a software engineer at a science museum. This is a site for projects and wr
   </div>
 
 <!-- Column 3: Hobbies -->
-
-
-<div style="text-align:center; display:block; margin-top:12px;">
+<div style="flex:1 1 300px; min-width:300px; text-align:center;">
   <h3>🛹 Hobbies</h3>
 
-  <div style="margin-bottom:12px;">
-    <strong>Skateboarding</strong><br>
-    <img src="./resources/skate2.jpg" width="150" style="border-radius:8px;">
-  </div>
+  <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
 
-  <div style="margin-bottom:12px;">
-    <strong>Gaming</strong><br>
-    <img src="./resources/handheld3.jpg" width="150" style="border-radius:8px;">
-  </div>
+    <div style="flex:0 0 150px; text-align:center;">
+      <strong>Skateboarding</strong><br>
+      <img src="./resources/skate2.jpg" width="150" style="border-radius:8px;">
+    </div>
 
-  <div style="margin-bottom:12px;">
-    <strong>Reading</strong><br>
-    <img src="./resources/books1.jpg" width="150" style="border-radius:8px;">
-  </div>
+    <div style="flex:0 0 150px; text-align:center;">
+      <strong>Gaming</strong><br>
+      <img src="./resources/handheld3.jpg" width="150" style="border-radius:8px;">
+    </div>
 
+    <div style="flex:0 0 150px; text-align:center;">
+      <strong>Reading</strong><br>
+      <img src="./resources/books1.jpg" width="150" style="border-radius:8px;">
+    </div>
+
+  </div>
 </div>
-
 
 </div>
 
