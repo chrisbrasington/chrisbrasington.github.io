@@ -46,23 +46,23 @@ I am a software engineer at a science museum. This is a site for projects and wr
 <div style="flex:1 1 300px; min-width:300px; text-align:center;">
   <h3>🛹 Hobbies</h3>
 
-  <table style="margin:0 auto; border-collapse:collapse; border-spacing:12px;">
+  <table style="margin:0 auto; border-collapse:collapse; border-spacing:12px; border:none;">
     <tr>
-      <td style="text-align:center;">
+      <td style="text-align:center; border:none;">
         <strong>Skateboarding</strong><br>
         <img src="./resources/skate2.jpg" width="150" class="img-row">
       </td>
-      <td style="text-align:center;">
+      <td style="text-align:center; border:none;">
         <strong>Gaming</strong><br>
         <img src="./resources/handheld3.jpg" width="150" class="img-row">
       </td>
     </tr>
     <tr>
-      <td style="text-align:center;">
+      <td style="text-align:center; border:none;">
         <strong>Reading</strong><br>
         <img src="./resources/books1.jpg" width="150" class="img-row">
       </td>
-      <td style="text-align:center;">
+      <td style="text-align:center; border:none;">
         <strong>Camping</strong><br>
         <img src="./resources/camper.jpg" width="150" class="img-row">
       </td>
