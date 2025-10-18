@@ -6,12 +6,8 @@
   color: #fff !important;
 }
 
-.main_content_wrap {
+.main_content_wrap, #main_content_wrap {
   background-color: #2e2e2e !important;
-}
-
-#main_content_wrap {
-  background:#2e2e2e !important; 
 }
 
 .inner {
@@ -40,6 +36,7 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
+
 table th, table td {
   vertical-align: top !important;
   white-space: normal;
@@ -51,21 +48,21 @@ table th, table td {
  Table images side by side
  =============================== */
 .img-row {
-  display: flex;        /* important: keeps columns side by side */
-  flex-wrap: nowrap;    /* prevent wrapping */
-  gap: 12px;            /* spacing between columns */
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
 .img-row > div {
-  flex: 1;              /* each column takes equal width */
+  flex: 1;
   text-align: center;
 }
 
 .img-row img {
-  max-width: 100%;      /* fill column width */
-  height: auto;         /* preserve aspect ratio */
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
   object-fit: contain;
@@ -75,21 +72,7 @@ table th, table td {
   position: relative;
 }
 
-.img-row img:hover {
-  transform: scale(1.5);
-  z-index: 1000;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
-  cursor: zoom-in;
-}
-
-/* Ensure td containing .img-row is tall */
-table td:has(.img-row) {
-  min-height: 600px;
-}
-
-/* ===============================
- Automatic flex for Markdown table cells with multiple images
- =============================== */
+/* Automatic flex for Markdown table cells with multiple images */
 table td:has(img + img):not(.img-row) {
   display: flex !important;
   flex-wrap: wrap;
@@ -103,7 +86,6 @@ table td:has(img + img):not(.img-row) img {
   height: 400px;
   max-height: 600px;
   width: auto;
-  /* aspect-ratio: 16/9; */
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
   object-fit: contain;
@@ -112,22 +94,24 @@ table td:has(img + img):not(.img-row) img {
   cursor: default;
 }
 
-/* Make rows tall only if images exist in automatic cells */
+/* Ensure td containing images is tall enough */
+table td:has(.img-row),
 table td:has(img + img):not(.img-row) {
   min-height: 600px;
 }
 
 /* ===============================
- Optional hover-to-zoom/lightbox for images
+ Hover-to-zoom / lightbox for images
  =============================== */
- table td img:hover {
+table td img:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1); /* initial scale overridden by height */
+  transform: translate(-50%, -50%);
   max-height: 100vh; /* full viewport height */
   width: auto;        /* maintain aspect ratio */
-  z-index: 10;
+  z-index: 1000;
   box-shadow: 0 6px 24px rgba(0,0,0,0.6);
   cursor: zoom-in;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
