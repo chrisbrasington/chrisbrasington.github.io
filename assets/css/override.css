@@ -120,10 +120,14 @@ table td:has(img + img):not(.img-row) {
 /* ===============================
  Optional hover-to-zoom/lightbox for images
  =============================== */
-table td img:hover {
-  transform: scale(1.5);
+ table td img:hover {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1); /* initial scale overridden by height */
+  max-height: 100vh; /* full viewport height */
+  width: auto;        /* maintain aspect ratio */
   z-index: 10;
   box-shadow: 0 6px 24px rgba(0,0,0,0.6);
   cursor: zoom-in;
 }
-
