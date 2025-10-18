@@ -17,11 +17,51 @@ azure_start: 2018
 
 I am a software engineer at a science museum. This is a site for projects and writings.
 
-## 💻 Skills
+## 💻 Skills, Writings & Hobbies
 
-# Tech Experience Chart
+<div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between;">
 
-<canvas id="experienceChart" style="width: 50%; height: 50%;"></canvas>
+  <!-- Column 1: Skills Chart -->
+  <div style="flex:1 1 300px; min-width:300px; text-align:center;">
+    <h3>Tech Experience</h3>
+    <canvas id="experienceChart" style="width:100%; height:300px;"></canvas>
+  </div>
+
+  <!-- Column 2: Writings -->
+  <div style="flex:1 1 300px; min-width:300px;">
+    <h3>🖊️ Writings</h3>
+    <ul>
+      <li><a href="./attention/">Tips to reducing psychological “hooks” of the modern internet age</a></li>
+    </ul>
+    
+    <h3>🎮 NextFest Reviews</h3>
+    <div style="font-size:16px; line-height:1.5;">
+      <strong>2025:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_October.md" target="_blank">October</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_June.md" target="_blank">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_Feb.md" target="_blank">February</a><br>
+      <strong>2024:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_June.md" target="_blank">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_Feb.md" target="_blank">February</a><br>
+      <strong>2023:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2023.md" target="_blank">February</a>
+    </div>
+  </div>
+
+  <!-- Column 3: Hobbies -->
+  <div style="flex:1 1 300px; min-width:300px; text-align:center;">
+    <h3>🛹 Hobbies</h3>
+    <div style="display:flex; flex-direction:column; gap:15px;">
+      <div>
+        <strong>Skateboarding</strong><br>
+        <img src="./resources/skate2.jpg" style="max-width:100%; height:auto;">
+      </div>
+      <div>
+        <strong>Gaming</strong><br>
+        <img src="./resources/handheld3.jpg" style="max-width:100%; height:auto;">
+      </div>
+      <div>
+        <strong>Reading</strong><br>
+        <img src="./resources/books1.jpg" style="max-width:100%; height:auto;">
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
@@ -67,33 +107,6 @@ new Chart(ctx, {
 });
 </script>
 
-## 🖊️ Writings
-### [Tips to reducing pychological “hooks” of the modern internet age](./attention/)
-
-## 🎮 NextFest Reviews
-
-<div style="font-size:20px; line-height:1.5; white-space:nowrap;">
-<strong>2025:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_October.md" target="_blank">October</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_June.md" target="_blank">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_Feb.md" target="_blank">February</a> &nbsp;&nbsp;|&nbsp;&nbsp; <strong>2024:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_June.md" target="_blank">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_Feb.md" target="_blank">February</a> &nbsp;&nbsp;|&nbsp;&nbsp; <strong>2023:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2023.md" target="_blank">February</a>
-</div>
-
-## 🛹 Hobbies
-
-<div style="max-width:1080px; margin: 0 auto;">
-  <div class="img-row">
-    <div style="flex:1; text-align:center;">
-      <strong>Skateboarding</strong><br>
-      <img src="./resources/skate2.jpg" style="max-width:100%; height:auto;">
-    </div>
-    <div style="flex:1; text-align:center;">
-      <strong>Gaming</strong><br>
-      <img src="./resources/handheld3.jpg" style="max-width:100%; height:auto;">
-    </div>
-    <div style="flex:1; text-align:center;">
-      <strong>Reading</strong><br>
-      <img src="./resources/books1.jpg" style="max-width:100%; height:auto;">
-    </div>
-  </div>
-</div>
 
 ## </> Professional Projects
 
