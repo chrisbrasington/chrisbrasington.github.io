@@ -15,7 +15,7 @@ azure_start: 2018
 
 # Hi, I'm [{{ site.name }}](https://www.linkedin.com/in/brasington/)
 
-I am a software engineer at a [science museum](https://www.dmns.org/). This is a site for projects and writings.
+I am a software engineer at a wonderful [science museum](https://www.dmns.org/). This is a site for projects and writings.
 
 ## 💻 Skills, Writings & Hobbies
 
