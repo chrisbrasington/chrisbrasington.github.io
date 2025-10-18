@@ -73,9 +73,7 @@ new Chart(ctx, {
 ## 🎮 NextFest Reviews
 
 <div style="font-size:20px; line-height:1.5; white-space:nowrap;">
-
-**2025:** [October](https://github.com/chrisbrasington/nextfest/blob/main/2025_October.md) · [June](https://github.com/chrisbrasington/nextfest/blob/main/2025_June.md) · [February](https://github.com/chrisbrasington/nextfest/blob/main/2025_Feb.md) &nbsp;&nbsp;|&nbsp;&nbsp; **2024:** [June](https://github.com/chrisbrasington/nextfest/blob/main/2024_June.md) · [February](https://github.com/chrisbrasington/nextfest/blob/main/2024_Feb.md) &nbsp;&nbsp;|&nbsp;&nbsp; **2023:** [February](https://github.com/chrisbrasington/nextfest/blob/main/2023.md)
-
+<strong>2025:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_October.md" target="_blank">October</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_June.md" target="_blank">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_Feb.md" target="_blank">February</a> &nbsp;&nbsp;|&nbsp;&nbsp; <strong>2024:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_June.md" target="_blank">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_Feb.md" target="_blank">February</a> &nbsp;&nbsp;|&nbsp;&nbsp; <strong>2023:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2023.md" target="_blank">February</a>
 </div>
 
 ## 🛹 Hobbies
