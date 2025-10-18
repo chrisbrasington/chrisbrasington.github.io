@@ -70,6 +70,14 @@ new Chart(ctx, {
 ## 🖊️ Writings
 ### [Tips to reducing pychological “hooks” of the modern internet age](./attention/)
 
+## 🎮 NextFest Reviews
+
+<div style="font-size:20px; line-height:1.5; white-space:nowrap;">
+
+**2025:** [October](https://github.com/chrisbrasington/nextfest/blob/main/2025_October.md) · [June](https://github.com/chrisbrasington/nextfest/blob/main/2025_June.md) · [February](https://github.com/chrisbrasington/nextfest/blob/main/2025_Feb.md) &nbsp;&nbsp;|&nbsp;&nbsp; **2024:** [June](https://github.com/chrisbrasington/nextfest/blob/main/2024_June.md) · [February](https://github.com/chrisbrasington/nextfest/blob/main/2024_Feb.md) &nbsp;&nbsp;|&nbsp;&nbsp; **2023:** [February](https://github.com/chrisbrasington/nextfest/blob/main/2023.md)
+
+</div>
+
 ## 🛹 Hobbies
 
 <div style="max-width:1080px; margin: 0 auto;">
