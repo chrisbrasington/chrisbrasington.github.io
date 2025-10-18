@@ -46,21 +46,26 @@ I am a software engineer at a science museum. This is a site for projects and wr
 <div style="flex:1 1 300px; min-width:300px; text-align:center;">
   <h3>🛹 Hobbies</h3>
 
-  <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
+  <div class="img-row" style="flex-wrap: wrap; justify-content: center; gap:12px;">
 
-    <div style="flex:0 0 150px; text-align:center;">
+    <div>
       <strong>Skateboarding</strong><br>
-      <img src="./resources/skate2.jpg" width="150" style="border-radius:8px;">
+      <img src="./resources/skate2.jpg" width="150">
     </div>
 
-    <div style="flex:0 0 150px; text-align:center;">
+    <div>
       <strong>Gaming</strong><br>
-      <img src="./resources/handheld3.jpg" width="150" style="border-radius:8px;">
+      <img src="./resources/handheld3.jpg" width="150">
     </div>
 
-    <div style="flex:0 0 150px; text-align:center;">
+    <div>
       <strong>Reading</strong><br>
-      <img src="./resources/books1.jpg" width="150" style="border-radius:8px;">
+      <img src="./resources/books1.jpg" width="150">
+    </div>
+
+    <div>
+      <strong>Camping</strong><br>
+      <img src="./resources/camper.jpg" width="150">
     </div>
 
   </div>
