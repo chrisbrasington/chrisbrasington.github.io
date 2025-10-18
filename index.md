@@ -44,7 +44,7 @@ I am a software engineer at a wonderful [science museum](https://www.dmns.org/).
 <div style="flex:1 1 300px; min-width:300px; text-align:center;">
   <h3>🛹 Hobbies</h3>
 
-  <table style="margin:0 auto; border-collapse:collapse; border-spacing:12px; border:none;">
+  <table class="scale3-hover" style="margin:0 auto; border-collapse:collapse; border-spacing:12px; border:none;">
     <tr>
       <td style="text-align:center; border:none;">
         <strong>Skateboarding</strong><br>
