@@ -45,22 +45,21 @@ I am a software engineer at a science museum. This is a site for projects and wr
 <!-- Column 3: Hobbies -->
 <div style="flex:1 1 300px; min-width:300px; text-align:center;">
   <h3>🛹 Hobbies</h3>
-  <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-    <div style="text-align:center;">
+  <div class="img-row">
+    <div>
       <strong>Skateboarding</strong><br>
-      <img src="./resources/skate2.jpg" style="max-width:100px; height:auto; border-radius:8px;">
+      <img src="./resources/skate2.jpg" style="width:150px; height:auto;">
     </div>
-    <div style="text-align:center;">
+    <div>
       <strong>Gaming</strong><br>
-      <img src="./resources/handheld3.jpg" style="max-width:100px; height:auto; border-radius:8px;">
+      <img src="./resources/handheld3.jpg" style="width:150px; height:auto;">
     </div>
-    <div style="text-align:center;">
+    <div>
       <strong>Reading</strong><br>
-      <img src="./resources/books1.jpg" style="max-width:100px; height:auto; border-radius:8px;">
+      <img src="./resources/books1.jpg" style="width:150px; height:auto;">
     </div>
   </div>
 </div>
-
 
 </div>
 
