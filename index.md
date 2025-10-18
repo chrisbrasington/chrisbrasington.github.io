@@ -42,24 +42,25 @@ I am a software engineer at a science museum. This is a site for projects and wr
     </div>
   </div>
 
-  <!-- Column 3: Hobbies -->
-  <div style="flex:1 1 300px; min-width:300px; text-align:center;">
-    <h3>🛹 Hobbies</h3>
-    <div style="display:flex; flex-direction:column; gap:15px;">
-      <div>
-        <strong>Skateboarding</strong><br>
-        <img src="./resources/skate2.jpg" style="max-width:100%; height:auto;">
-      </div>
-      <div>
-        <strong>Gaming</strong><br>
-        <img src="./resources/handheld3.jpg" style="max-width:100%; height:auto;">
-      </div>
-      <div>
-        <strong>Reading</strong><br>
-        <img src="./resources/books1.jpg" style="max-width:100%; height:auto;">
-      </div>
+<!-- Column 3: Hobbies -->
+<div style="flex:1 1 300px; min-width:300px; text-align:center;">
+  <h3>🛹 Hobbies</h3>
+  <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+    <div style="text-align:center;">
+      <strong>Skateboarding</strong><br>
+      <img src="./resources/skate2.jpg" style="max-width:100px; height:auto; border-radius:8px;">
+    </div>
+    <div style="text-align:center;">
+      <strong>Gaming</strong><br>
+      <img src="./resources/handheld3.jpg" style="max-width:100px; height:auto; border-radius:8px;">
+    </div>
+    <div style="text-align:center;">
+      <strong>Reading</strong><br>
+      <img src="./resources/books1.jpg" style="max-width:100px; height:auto; border-radius:8px;">
     </div>
   </div>
+</div>
+
 
 </div>
 
