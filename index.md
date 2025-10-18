@@ -17,8 +17,6 @@ azure_start: 2018
 
 I am a software engineer at a wonderful [science museum](https://www.dmns.org/). This is a site for projects and writings.
 
-## 💻 Skills, Writings & Hobbies
-
 <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between;">
 
   <!-- Column 1: Skills Chart -->
