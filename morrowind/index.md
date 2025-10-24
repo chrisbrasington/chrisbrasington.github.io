@@ -9,7 +9,7 @@
 
 I'll spare you the tale of the savior of `Vvardenfall` and tell you the lesser known details of the Nerevarine.
 
-Etria wore dark red peasant robes, gloves, and hid their race behind a common Redoran watchman's helmet (perhaps for this reason they were hated by the Redoran). Despite being the native race to Morrowind, the dark elves, they never let this show - their pale gloves often being mistaken for Breton. It is perhaps due to the hatred they received from the House Telvanni that Etria found alliance with the House Telvanni - though a great many mysterious deaths of high Telvanni house members occurred at this time.
+Etria wore dark red peasant robes, gloves, and hid their race behind a common Redoran watchman's helmet (perhaps for this reason they were hated by the Redoran). Despite being the native race to Morrowind, the dark elves, they never let this show - their pale gloves often being mistaken for Breton. It is perhaps due to the hatred they received from the House Redoran that Etria found alliance with the House Telvanni - though a great many mysterious deaths of high Telvanni house members occurred at this time.
 
 Etria later wore a second heretical piece - stolen from the High Ordinators of the Tribunal, they wore "Her Hand's" armor shoulder pauldrons, holes cut in their robes, enchanted with an intimidating glow. Perhaps like the Redoran helmet, Etria had a disdain for the governing order of the realms. No doubt pissing off any member of the two clans on sight. 
 
