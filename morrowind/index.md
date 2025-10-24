@@ -37,7 +37,7 @@ After the disapperance of `Etria the Nerevarine`, a mysterious robed Breton was 
 
 ![](img/ray2.jpeg)
 
-It is rumored that Raylinth witnessed Etria the Nerevarine split the Vivec meteor in half from `Old Ebonheart` and was inspired to join the mages guild.
+It is rumored that Raylinth witnessed Etria the Nerevarine split the Vivec meteor in half from `Old Ebonheart` and was awed by not only that act, but the protective barrier the mages guild used to save the lower city quarters from the rushing risk wave. Thus Raylinth joined the mages guild.
 
 Seemingly doing oddjobs for the mages guild in `Old Ebonheart`, Raylinth eventually unconvered a ploy where a soul of former member, Miss Rhyle, had become trapped in a soul gem. While soul gems are common in mage circles, Raylinth ultimately was able to free Miss Rhyle having a conversation about her death and freeing her from her entrapment of this plane. Here it is said that Raylinth became obsessed with death - or at least ensuring that souls are able to move on from our mortal plane. 
 
