@@ -21,7 +21,7 @@ But that was how Etria was - an oursider - and they wore it literally.
 
 After the Red Ash stopped falling, Etria walked across the water south near `Vivec` to `Old Ebonheart` and down the Thirr river. The simple, rural people of this area were in awe of the water-walker and had not yet heard of the strife in `Vvardenfall`, only murmors of old gods. A great many plantations existed along the river, providing goods into the heart of Vvardenfell - but it is said that Etria went on a rampage. Killing numerous plantation owners and rich families and freeing every slave Argonian and Khajit. With their army, they settled in `Roa Dyr` the city of lights, and controled the ports of `Aimrah` to `Almas Thirr`. 
 
-Word of united tribal nations in `Vvardenfall` spread south from the island. Revealed as Nerevarine bought Etria a seat at the table of `Old Ebonheart` in the trade route to `Cyrodiil`. At the political table was the god-incarnate Vivec. And while having spared the God Vivec previously, Etrai ultimately killed Vivec to prove a point of forcing change on the land. Upon killing Vivec, Etria is said to have sliced Vivec city's suspended meteor in half as it crashed between the sea of `Ebonheart` and `Old Ebonheart`. This was enough of a threat to end slavery for good in the region. It is said that Etria grew bored of stubborn politicians and retired far-far south in the `Black Marshland` of the Argonians they had freed.
+Word of united tribal nations in `Vvardenfall` spread south from the island. Revealed as Nerevarine bought Etria a seat at the table of `Old Ebonheart` in the trade route to `Cyrodiil`. At the political table was the god-incarnate Vivec. And while having spared the God Vivec previously, Etrai ultimately killed Vivec to prove a point of forcing change on the land. Upon killing Vivec and with no magic to keep Vivec city's meteor in suspension, Etria is said to have sliced Vivec city's fallen meteor in half as it crashed between the sea of `Ebonheart` and `Old Ebonheart` saving the city of `Vivec`. A tidal wave wrecked the ships at `Old Ebonheart` port yet the castle held. This was enough of a threat to end slavery for good in the region. It is said that Etria grew bored of stubborn politicians and retired far-far south in the `Black Marshland` of the Argonians they had freed.
 
 ![](img/etria3.jpeg)
 
@@ -33,7 +33,7 @@ Word of united tribal nations in `Vvardenfall` spread south from the island. Rev
 
 ![](img/ray1.jpeg)
 
-After the disapperance of `Etrian the Nerevarine`, a mysterious robed Breton was seen wandering around `Sedya Neen`. They were unusually tall - wearing their hair straight-up as if to increase their presense. 
+After the disapperance of `Etria the Nerevarine`, a mysterious robed Breton was seen wandering around `Sedya Neen`. They were unusually tall - wearing their hair straight-up as if to increase their presense. 
 
 ![](img/ray2.jpeg)
 
