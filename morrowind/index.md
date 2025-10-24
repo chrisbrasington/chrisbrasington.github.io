@@ -53,7 +53,7 @@ A year later, an explosion rocked the sacred tombs of `Necrom` city of the dead.
 
 ![](img/ray6.jpeg)
 
-It is unknown what Raylinth found or took from the sacred tombs of `Necrom`. Some say they sook vengenance to free old gods from imprisonment. Others say they stole something to further their exploration in rumored Necromancy - that they were hunting for a particular soul of the dead. All that is known is they escaped certain death for sacrilege from the Ordinators in Mourning and they never returned to Morrowind. 
+It is unknown what Raylinth found or took from the sacred tombs of `Necrom`. Some say they sought vengenance to free old gods or friends from imprisonment. Others say they stole something to further their exploration in rumored Necromancy - that they were hunting for a particular soul of the dead. All that is known is they escaped certain death for sacrilege from the Ordinators in Mourning and they never returned to Morrowind. 
 
 ![](img/ray4.jpeg)
 ![](img/ray7.jpeg)
