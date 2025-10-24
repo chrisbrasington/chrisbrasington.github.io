@@ -15,7 +15,7 @@ Etria later wore a second heretical piece - stolen from the High Ordinators of t
 
 Etria favored a slinder samurai sword and through either desturction magic or the use of oils, it was said to glow red hot as it would strike their foes down. 
 
-But that was how Etria was - an oursider - and they wore it literally. 
+That was who Etria was - an oursider - and they wore it literally. 
 
 ![](img/etria2.jpeg)
 
