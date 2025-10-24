@@ -1,9 +1,9 @@
 # Tales of Greater Morrowind
-- [Etrian the Nerevarine](#etria-the-nerevarine)
-- [Raylinth the Wanderer](#raylinth-the-wanderer)
+- [Etrian the Hidden Nerevarine](#etria-the-hidden-nerevarine)
+- [Raylinth the Silent Wanderer](#raylinth-the-silent-wanderer)
 - [Ciel of Narsis](#ciel-of-narsis)
 
-# Etria the Nerevarine
+# Etria the Hidden Nerevarine
 
 ![](img/etria1.jpeg)
 
@@ -29,7 +29,7 @@ Being Nerevarine bought them a seat at the table of `Old Ebonheart` in the trade
 
 ![](img/etria5.jpeg)
 
-# Raylinth the Wanderer
+# Raylinth the Silent Wanderer
 
 ![](img/ray1.jpeg)
 
