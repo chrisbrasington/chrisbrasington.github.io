@@ -1,11 +1,18 @@
 <div class="game-entry">
 
-<img class="game-boxart" src="../assets//img/zelda_la.png" width="50%" alt="Link's Awakening box art">
-## 1 - Legend of Zelda: Link's Awakening
-While trying not to make this list full nostalgia bait, a borrowed gameboy pocket is what started it all. Every screen, every dungeon room was intriguing. Everything here clicked in my brain and captivated me like nothing else had. Ten year old me - not band or sports or social conversations - this game spoke to me internally. Explore, search, find, dig, rush that boss, keep looking for answers. 
+<img class="game-boxart" src="/assets/img/games/links_awakening.jpg" alt="Link's Awakening box art">
+
+<h2 class="game-title">
+  1 — The Legend of Zelda: Link’s Awakening
+  <small>(Game Boy)</small>
+</h2>
+
+While trying not to make this list full nostalgia bait, a borrowed Game Boy Pocket is what started it all…
 
 This game taught me that fun for fun's sake is of value.
+
 </div>
+
 ## 2 - Pokemon Gold
 When I saved up yard mowing money and bought my own purple clear gameboy color, Pokemon Gold kept me for years. Again, an entire dense world in my pocket yet different. Slightly larger and a bit more lived in. And way more options.
 
