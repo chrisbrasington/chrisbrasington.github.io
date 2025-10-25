@@ -136,20 +136,28 @@ table td img:hover {
 }
 
 .game-entry {
-  overflow: auto; /* so the container wraps around the floated image */
+  overflow: auto; /* wraps floated image */
   margin-bottom: 2.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #e1e4e8; /* nice subtle separator */
+  border-bottom: 1px solid #e1e4e8;
 }
 
 .game-entry img.game-boxart {
   float: left;
-  height: 200px;       /* all images same height */
-  width: auto;         /* width scales proportionally */
+  height: 200px;       /* fixed height */
+  width: auto;         /* proportional width */
   margin: 0 1rem 0.5rem 0;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  object-fit: contain; /* ensures image fits nicely if any transparent padding exists */
+  object-fit: contain;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: zoom-in;
+}
+
+.game-entry img.game-boxart:hover {
+  transform: scale(1.5);
+  z-index: 1000;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
 }
 
 @media (max-width: 600px) {
@@ -157,16 +165,16 @@ table td img:hover {
     float: none;
     display: block;
     margin: 0 auto 1rem auto;
-    height: 150px; /* slightly smaller on mobile */
+    height: 150px;
     width: auto;
   }
 }
 
 .game-title {
-  display: block; /* make it block so it takes full width */
+  display: block; /* ensures title is above content */
   font-size: 1.35rem;
   font-weight: 700;
-  margin: 0 0 0.75rem 0; /* a bit more space below title */
+  margin: 0 0 0.75rem 0;
   padding: 0.25rem 0.75rem;
   background: linear-gradient(135deg, #4a90e2, #9013fe);
   color: #fff;
@@ -181,4 +189,3 @@ table td img:hover {
   margin-left: 0.4rem;
   font-weight: 400;
 }
-
