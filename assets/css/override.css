@@ -163,11 +163,11 @@ table td img:hover {
 }
 
 .game-title {
+  display: block; /* make it block so it takes full width */
   font-size: 1.35rem;
   font-weight: 700;
-  margin: 0 0 0.35rem 0;
+  margin: 0 0 0.75rem 0; /* a bit more space below title */
   padding: 0.25rem 0.75rem;
-  display: inline-block;
   background: linear-gradient(135deg, #4a90e2, #9013fe);
   color: #fff;
   border-radius: 6px;
