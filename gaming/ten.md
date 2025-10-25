@@ -1,5 +1,8 @@
+# 10 Games to Get to Know Me
+
+A list of the games that have shaped me over the years — the ones that grabbed my attention, taught me something, or just stuck with me.
 <div class="game-entry">
-<img class="game-boxart" src="../assets/gaming/img/zelda_la.png" alt="Link's Awakening box art">
+<img class="game-boxart" src="../assets/img/games/zelda_la.png" alt="Link's Awakening box art">
 <h2 class="game-title">
   1 — The Legend of Zelda: Link’s Awakening
   <small>(Game Boy)</small>
@@ -9,7 +12,7 @@ While trying not to make this list full nostalgia bait, a borrowed Game Boy Pock
 This game taught me that fun for fun's sake is of value.
 </div>
 <div class="game-entry">
-<img class="game-boxart" src="../assets/games/img/pokemon_gold.png" alt="Pokémon Gold box art">
+<img class="game-boxart" src="../assets/img/games/pokemon_gold.png" alt="Pokémon Gold box art">
 <h2 class="game-title">
   2 — Pokémon Gold
   <small>(Game Boy Color)</small>
@@ -39,7 +42,7 @@ Again but different - turned base battles but grid orientation where placement m
 This game locked me in as a tactics fan.
 </div>
 <div class="game-entry">
-<img class="game-boxart" src="../assets/img/games/ico.jpg" alt="Ico box art">
+<img class="game-boxart" src="../assets/img/games/ico2.jpg" alt="Ico box art">
 <h2 class="game-title">
   5 — Ico
   <small>(PlayStation 2)</small>
