@@ -127,3 +127,10 @@ table td img:hover {
   cursor: zoom-in;
 }
 
+/* Only this table */
+.scale3-hover td img:hover {
+  transform: scale(3);
+  z-index: 10;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+  cursor: zoom-in;
+}

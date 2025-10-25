@@ -3,6 +3,7 @@ title: Christopher Brasington
 layout: default
 csharp_start: 2010
 python_start: 2010
+javascript_start: 2008
 linux_start: 2004
 obsidian_start: 2023
 blazor_start: 2019
@@ -14,13 +15,61 @@ azure_start: 2018
 
 # Hi, I'm [{{ site.name }}](https://www.linkedin.com/in/brasington/)
 
-I am a software engineer at a science museum. This is a site for projects and writings.
+I am a software engineer at a wonderful [science museum](https://www.dmns.org/). This is a site for projects and writings.
 
-## 💻 Skills
+<div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between;">
 
-# Tech Experience Chart
+  <!-- Column 1: Skills Chart -->
+  <div style="flex:1 1 300px; min-width:300px; text-align:center;">
+    <h3>Tech Experience</h3>
+    <canvas id="experienceChart" style="width:100%; height:300px;"></canvas>
+  </div>
 
-<canvas id="experienceChart" style="width: 50%; height: 50%;"></canvas>
+  <!-- Column 2: Writings -->
+  <div style="flex:1 1 300px; min-width:300px;">
+    <h3>🖊️ Writings</h3>
+    <ul>
+    <li><a href="./morrowind/">Tales of Greater Morrowind</a></li>
+      <li><a href="./attention/">Tips to reducing psychological “hooks” of the modern internet age</a></li>
+    </ul>
+    
+    <h3>🎮 NextFest Reviews</h3>
+    <div style="font-size:16px; line-height:1.5;">
+      <strong>2025:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_October.md" target="_blank">October</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_June.md" target="_blank">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_Feb.md" target="_blank">February</a><br>
+      <strong>2024:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_June.md" target="_blank">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_Feb.md" target="_blank">February</a><br>
+      <strong>2023:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2023.md" target="_blank">February</a>
+    </div>
+  </div>
+
+<!-- Column 3: Hobbies -->
+<div style="flex:1 1 300px; min-width:300px; text-align:center;">
+  <h3>🛹 Hobbies</h3>
+
+  <table class="scale3-hover" style="margin:0 auto; border-collapse:collapse; border-spacing:12px; border:none;">
+    <tr>
+      <td style="text-align:center; border:none;">
+        <strong>Skateboarding</strong><br>
+        <img src="./resources/skate2.jpg" width="150" class="img-row">
+      </td>
+      <td style="text-align:center; border:none;">
+        <strong>Gaming</strong><br>
+        <img src="./resources/handheld3.jpg" width="150" class="img-row">
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center; border:none;">
+        <strong>Reading</strong><br>
+        <img src="./resources/books1.jpg" width="150" class="img-row">
+      </td>
+      <td style="text-align:center; border:none;">
+        <strong>Camping</strong><br>
+        <img src="./resources/camper.jpg" width="150" class="img-row">
+      </td>
+    </tr>
+  </table>
+</div>
+
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
@@ -29,6 +78,7 @@ const ctx = document.getElementById('experienceChart').getContext('2d');
 const currentYear = {{ site.time | date: "%Y" }};
 const experienceData = [
     currentYear - {{ page.linux_start }},
+    currentYear - {{ page.javascript_start }},
     currentYear - {{ page.csharp_start }},
     currentYear - {{ page.python_start }},
     currentYear - {{ page.arduino_start }},
@@ -40,7 +90,7 @@ const experienceData = [
 ];
 
 const data = {
-    labels: ["Linux", "C#", "Python", "Arduino", "Azure CI/CD", "Blazor/MAUI", "Umbraco", "Obsidian", "Kotlin"],
+    labels: ["Linux", "Javascript", "C#", "Python", "Arduino", "Azure CI/CD", "Blazor/MAUI", "Umbraco", "Obsidian", "Kotlin"],
     datasets: [{
         label: 'Years of Experience',
         data: experienceData,
@@ -65,27 +115,6 @@ new Chart(ctx, {
 });
 </script>
 
-## 🖊️ Writings
-### [Tips to reducing pychological “hooks” of the modern internet age](./attention/)
-
-## 🛹 Hobbies
-
-<div style="max-width:1080px; margin: 0 auto;">
-  <div class="img-row">
-    <div style="flex:1; text-align:center;">
-      <strong>Skateboarding</strong><br>
-      <img src="./resources/skate2.jpg" style="max-width:100%; height:auto;">
-    </div>
-    <div style="flex:1; text-align:center;">
-      <strong>Gaming</strong><br>
-      <img src="./resources/handheld3.jpg" style="max-width:100%; height:auto;">
-    </div>
-    <div style="flex:1; text-align:center;">
-      <strong>Reading</strong><br>
-      <img src="./resources/books1.jpg" style="max-width:100%; height:auto;">
-    </div>
-  </div>
-</div>
 
 ## </> Professional Projects
 
@@ -96,7 +125,7 @@ new Chart(ctx, {
 | dmns kiosk | Payment kiosks | ![](./resources/dmnskiosk1.jpg)
 | dmns member app | | ![](./resources/dmnsapp1.jpg)
 | mitek blackpoint | CAD automation and materials manager | ![](./resources/blackpoint.webp)
-| hohmann & barnard | submittal package generation and estimation | ![](./resources/hb.jpg) ![](./resources/hb2.jpg)
+| hohmann & barnard | submittal package generation and estimation | ![](./resources/hb.jpg)
 
 ## </> Projects
 
@@ -118,7 +147,7 @@ new Chart(ctx, {
 | [MangaDex Covers Downloader](https://github.com/chrisbrasington/mangadex-covers) | Generate cover images from MangaDex URL | ![](./resources/dandadan.png) | 
 | [kobo-to-obsidian-import](https://github.com/chrisbrasington/kobo-to-obsidian-import) | export as markdown | ![](./resources/kobo_markdown.png)
 | [book-scanner](https://github.com/chrisbrasington/book-scanner) | Use a barcode scanner, scans into database/csv | ![](./resources/bookscan.png)
-| [image-organizer] | CLI tool for sorting images into folders | ![](./resources/imagesort.png)
+| [image-organizer](https://github.com/chrisbrasington/image-organizer) | CLI tool for sorting images into folders | ![](./resources/imagesort.png)
 | [obsidian-tagger](https://github.com/chrisbrasington/obsidian-tagger) | Bulk apply tags to a folder of markdown files
 | [discord-canary-updater](https://github.com/chrisbrasington/discord-canary-updater) | Automates update of .deb discord canary
 | [obsidian-sort](https://github.com/chrisbrasington/obsidian-sort) | manages sort metadata value for folder of mardown files
