@@ -34,7 +34,7 @@ This game locked me in as an RPG fan.
 <div class="game-entry">
 <img class="game-boxart" src="../assets/img/games/fe.gif" alt="Fire Emblem GBA box art">
 <h2 class="game-title">
-  4 — Fire Emblem GBA
+  4 — Fire Emblem
   <small>(Game Boy Advance)</small>
 </h2>
 Again but different - turned base battles but grid orientation where placement mattered. And the story!
