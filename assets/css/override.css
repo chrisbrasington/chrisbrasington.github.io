@@ -135,13 +135,26 @@ table td img:hover {
   cursor: zoom-in;
 }
 
+/* ===============================
+ Game entry container
+ =============================== */
 .game-entry {
-  overflow: auto; /* wraps floated image */
   margin-bottom: 2.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #e1e4e8;
+  position: relative; /* helps with z-index on hover images */
 }
 
+/* clearfix for floated image */
+.game-entry::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ===============================
+ Box art image
+ =============================== */
 .game-entry img.game-boxart {
   float: left;
   height: 200px;       /* fixed height */
@@ -152,14 +165,18 @@ table td img:hover {
   object-fit: contain;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: zoom-in;
+  position: relative;  /* allow it to layer above text */
+  z-index: 10;
 }
 
+/* Hover zoom */
 .game-entry img.game-boxart:hover {
   transform: scale(1.5);
   z-index: 1000;
   box-shadow: 0 6px 24px rgba(0,0,0,0.6);
 }
 
+/* Responsive for mobile */
 @media (max-width: 600px) {
   .game-entry img.game-boxart {
     float: none;
@@ -170,8 +187,11 @@ table td img:hover {
   }
 }
 
+/* ===============================
+ Game title above content
+ =============================== */
 .game-title {
-  display: block; /* ensures title is above content */
+  display: block;  /* ensures title is above content */
   font-size: 1.35rem;
   font-weight: 700;
   margin: 0 0 0.75rem 0;
