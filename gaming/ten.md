@@ -92,7 +92,7 @@ Having played plenty of Halo multiplayer in college or further back, Unreal Tour
 This game taught me the value of friendship. ~cue 🌈~
 </div>
 <div class="game-entry">
-<img class="game-boxart" src="../assets/img/games/mw.jpeg" alt="Morrowind box art">
+<img class="game-boxart" src="../morrowind/img/etria2.jpeg" alt="Morrowind box art">
 <h2 class="game-title">
   10 — Morrowind
   <small>(PC / Xbox)</small>
