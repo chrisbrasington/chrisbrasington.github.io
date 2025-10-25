@@ -29,7 +29,8 @@ I am a software engineer at a wonderful [science museum](https://www.dmns.org/).
   <div style="flex:1 1 300px; min-width:300px;">
     <h3>🖊️ Writings</h3>
     <ul>
-    <li><a href="./morrowind/">Tales of Greater Morrowind</a></li>
+      <li><a href="./gaming/ten.md">10 Games to Get to Know Me</a></li>
+      <li><a href="./morrowind/">Tales of Greater Morrowind</a></li>
       <li><a href="./attention/">Tips to reducing psychological “hooks” of the modern internet age</a></li>
     </ul>
     
