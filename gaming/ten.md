@@ -1,6 +1,6 @@
 <div class="game-entry">
 
-<img class="game-boxart" src="/assets/img/games/links_awakening.jpg" alt="Link's Awakening box art">
+<img class="game-boxart" src="../assets/img/zelda_la.png" alt="Link's Awakening box art">
 
 <h2 class="game-title">
   1 — The Legend of Zelda: Link’s Awakening
