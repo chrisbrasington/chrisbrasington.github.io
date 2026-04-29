@@ -1,211 +1,407 @@
 /* ===============================
- Gray background + white text
- =============================== */
- body, .wrapper, .inner {
-  background-color: #2e2e2e !important; /* dark gray */
-  color: #fff !important;
+   Modern dark theme override
+   =============================== */
+:root {
+  --bg: #0d1017;
+  --bg-elev: #11151d;
+  --surface: #161b25;
+  --card: #1b2230;
+  --card-hover: #222b3c;
+  --border: #2a3245;
+  --border-soft: #1f2738;
+  --text: #e6e8ee;
+  --text-dim: #b8bdc7;
+  --muted: #8a93a3;
+  --accent: #7aa2f7;
+  --accent-2: #c084fc;
+  --accent-3: #5eead4;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.35);
+  --shadow-md: 0 6px 18px rgba(0,0,0,0.40);
+  --shadow-lg: 0 14px 40px rgba(0,0,0,0.55);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
 }
 
-.main_content_wrap {
-  background-color: #2e2e2e !important;
+html { scroll-behavior: smooth; }
+
+body, .wrapper, .inner, #main_content_wrap, #footer_wrap, #header_wrap {
+  background: var(--bg) !important;
+  color: var(--text) !important;
 }
 
-#main_content_wrap {
-  background:#2e2e2e !important; 
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+               'Helvetica Neue', Arial, sans-serif !important;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
 }
 
 .inner {
-  max-width: 1080px;
+  max-width: 1180px;
+  padding: 1.25rem 1.5rem;
 }
 
-/* Make all headers white */
-h1, h2, h3, h4, h5, h6 {
-  color: #fff !important;
-}
-
-/* Links readable on gray */
-a, a:visited {
-  color: #80c0ff;
-}
-a:hover, a:focus {
-  color: #80c0ff !important;
-  background: none !important;
-  text-decoration: underline;
+/* Subtle ambient gradient at top */
+#main_content_wrap {
+  background:
+    radial-gradient(1200px 400px at 10% -10%, rgba(122,162,247,0.10), transparent 60%),
+    radial-gradient(900px 380px at 90% -5%, rgba(192,132,252,0.08), transparent 60%),
+    var(--bg) !important;
 }
 
 /* ===============================
- Table styling
- =============================== */
+   Typography
+   =============================== */
+h1, h2, h3, h4, h5, h6 { color: var(--text) !important; font-weight: 700; letter-spacing: -0.01em; }
+
+h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin: 0.25em 0 0.4em;
+  background: linear-gradient(135deg, #fff 0%, #cdd6f4 60%, var(--accent) 110%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1 a { -webkit-text-fill-color: initial; color: inherit !important; background: none; }
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-soft);
+  position: relative;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -1px;
+  width: 60px; height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin: 0 0 0.9rem;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+
+p { color: var(--text-dim); }
+
+/* Links */
+a, a:visited { color: var(--accent); text-decoration: none; transition: color 0.15s ease, border-color 0.15s ease; }
+a:hover, a:focus {
+  color: #b6cbff !important;
+  background: none !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+/* Inline code */
+code, kbd, samp {
+  font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular,
+               Menlo, Consolas, monospace !important;
+  background: rgba(122,162,247,0.10) !important;
+  color: #cfe1ff !important;
+  border: 1px solid var(--border-soft);
+  padding: 0.1em 0.4em;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+pre code { background: transparent !important; border: none; padding: 0; }
+pre {
+  background: var(--surface) !important;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Horizontal rule */
+hr { border: 0; height: 1px; background: var(--border-soft); margin: 2.5rem 0; }
+
+/* ===============================
+   Hero / intro grid
+   =============================== */
+.hero-intro {
+  font-size: 1.1rem;
+  color: var(--text-dim);
+  margin-bottom: 1.75rem;
+  max-width: 720px;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.card {
+  background: linear-gradient(180deg, var(--card) 0%, var(--surface) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem 1.4rem 1.5rem;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3));
+  opacity: 0.7;
+}
+.card:hover { border-color: #3a4663; box-shadow: var(--shadow-lg); }
+
+.card h3 { margin-top: 0; }
+.card ul { padding-left: 1.1rem; margin: 0; }
+.card ul li { margin: 0.35rem 0; color: var(--text-dim); }
+.card ul li a { color: var(--accent); }
+
+.nextfest {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--text-dim);
+}
+.nextfest strong { color: var(--text); margin-right: 0.4rem; }
+
+/* Hobbies tile grid */
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem;
+}
+.hobby-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem;
+  border-radius: var(--radius-md);
+  background: var(--bg-elev);
+  border: 1px solid var(--border-soft);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.hobby-tile:hover { transform: translateY(-2px); border-color: var(--accent); }
+.hobby-tile img {
+  width: 100%; max-width: 160px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+.hobby-tile strong { font-size: 0.9rem; color: var(--text); }
+
+/* Chart wrapper */
+.chart-wrap {
+  position: relative;
+  width: 100%;
+  height: 320px;
+}
+
+/* Social row */
+.social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.5rem 0 0.25rem;
+}
+.social-row a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text) !important;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+.social-row a:hover {
+  border-color: var(--accent);
+  background: var(--card-hover);
+  text-decoration: none !important;
+  transform: translateY(-1px);
+}
+
+/* ===============================
+   Tables (project lists)
+   =============================== */
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.25rem 0 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
+
 table th, table td {
   vertical-align: top !important;
   white-space: normal;
   overflow: visible !important;
-  padding: 10px;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-soft);
+  color: var(--text-dim);
+}
+table tr:last-child td { border-bottom: none; }
+
+table thead th, table th {
+  background: var(--bg-elev);
+  color: var(--text) !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
 }
 
-/* ===============================
- Table images side by side
- =============================== */
-.img-row {
-  display: flex;        /* important: keeps columns side by side */
-  flex-wrap: nowrap;    /* prevent wrapping */
-  gap: 12px;            /* spacing between columns */
-  justify-content: flex-start;
-  align-items: flex-start;
-}
+table tbody tr { transition: background 0.15s ease; }
+table tbody tr:hover { background: rgba(122,162,247,0.04); }
 
-.img-row > div {
-  flex: 1;              /* each column takes equal width */
-  text-align: center;
+table td:first-child {
+  color: var(--text);
+  font-weight: 500;
+  white-space: nowrap;
 }
+table td:first-child a { font-weight: 600; }
 
-.img-row img {
-  max-width: 100%;      /* fill column width */
-  height: auto;         /* preserve aspect ratio */
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  object-fit: contain;
-  margin: 0;
+/* Single-image cells */
+table td img {
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  max-width: 100%;
+  height: auto;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  cursor: default;
-  position: relative;
-}
-
-.img-row img:hover {
-  transform: scale(1.5);
-  z-index: 1000;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
   cursor: zoom-in;
 }
-
-/* Ensure td containing .img-row is tall */
-table td:has(.img-row) {
-  min-height: 600px;
-}
-
-/* ===============================
- Automatic flex for Markdown table cells with multiple images
- =============================== */
-table td:has(img + img):not(.img-row) {
-  display: flex !important;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-table td:has(img + img):not(.img-row) img {
-  display: block;
-  height: 400px;
-  max-height: 600px;
-  width: auto;
-  /* aspect-ratio: 16/9; */
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  object-fit: contain;
-  margin: 0;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  cursor: default;
-}
-
-/* Make rows tall only if images exist in automatic cells */
-table td:has(img + img):not(.img-row) {
-  min-height: 600px;
-}
-
-/* ===============================
- Optional hover-to-zoom/lightbox for images
- =============================== */
 table td img:hover {
   transform: scale(1.5);
   z-index: 10;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
-  cursor: zoom-in;
+  box-shadow: var(--shadow-lg);
+  position: relative;
 }
 
-/* Only this table */
-.scale3-hover td img:hover {
-  transform: scale(3);
-  z-index: 10;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
-  cursor: zoom-in;
+/* Cells with multiple images side-by-side */
+table td:has(img + img) {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+}
+table td:has(img + img) img {
+  height: 320px;
+  max-height: 480px;
+  width: auto;
+  object-fit: contain;
 }
 
 /* ===============================
- Game entry container
- =============================== */
+   Hobby table override (kept for legacy)
+   =============================== */
+.scale3-hover {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.scale3-hover td {
+  border: none !important;
+  background: transparent !important;
+}
+.scale3-hover td img:hover {
+  transform: scale(2.4);
+  z-index: 50;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Disable old img-row legacy styling collisions */
+.img-row { display: block !important; }
+
+/* ===============================
+   Game entry (used elsewhere)
+   =============================== */
 .game-entry {
   margin-bottom: 2.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #e1e4e8;
-  position: relative; /* helps with z-index on hover images */
+  padding: 1.25rem 1.25rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  position: relative;
 }
+.game-entry::after { content: ""; display: table; clear: both; }
 
-/* clearfix for floated image */
-.game-entry::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* ===============================
- Box art image
- =============================== */
 .game-entry img.game-boxart {
   float: left;
-  height: 200px;       /* fixed height */
-  width: auto;         /* proportional width */
-  margin: 0 1rem 0.5rem 0;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  height: 200px; width: auto;
+  margin: 0 1.1rem 0.6rem 0;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
   object-fit: contain;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: zoom-in;
-  position: relative;  /* allow it to layer above text */
+  position: relative;
   z-index: 10;
 }
-
-/* Hover zoom */
 .game-entry img.game-boxart:hover {
   transform: scale(1.5);
   z-index: 1000;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+  box-shadow: var(--shadow-lg);
 }
-
-/* Responsive for mobile */
 @media (max-width: 600px) {
   .game-entry img.game-boxart {
-    float: none;
-    display: block;
+    float: none; display: block;
     margin: 0 auto 1rem auto;
-    height: 150px;
-    width: auto;
+    height: 160px;
   }
 }
 
-/* ===============================
- Game title above content
- =============================== */
 .game-title {
-  display: block;  /* ensures title is above content */
-  font-size: 1.35rem;
+  display: block;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin: 0 0 0.75rem 0;
-  padding: 0.25rem 0.75rem;
-  background: linear-gradient(135deg, #4a90e2, #9013fe);
-  color: #fff;
-  border-radius: 6px;
-  box-shadow: 0 3px 7px rgba(0,0,0,0.15);
-  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+  margin: 0 0 0.85rem 0;
+  padding: 0.4rem 0.9rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #0d1017 !important;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+.game-title small { font-size: 0.78em; opacity: 0.8; margin-left: 0.5rem; font-weight: 500; }
+
+/* ===============================
+   Footer
+   =============================== */
+#footer_wrap { border-top: 1px solid var(--border-soft); margin-top: 3rem; }
+#footer_wrap footer p, .copyright { color: var(--muted); font-size: 0.9rem; }
+
+/* ===============================
+   Responsive tweaks
+   =============================== */
+@media (max-width: 720px) {
+  .inner { padding: 1rem; }
+  table td:first-child { white-space: normal; }
+  table td:has(img + img) img { height: 220px; }
+  h2 { font-size: 1.35rem; }
 }
 
-.game-title small {
-  font-size: 0.8em;
-  opacity: 0.85;
-  margin-left: 0.4rem;
-  font-weight: 400;
-}
+/* Selection */
+::selection { background: rgba(122,162,247,0.35); color: #fff; }
+
+/* Scrollbar (webkit) */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #2a3245; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #3a4663; }

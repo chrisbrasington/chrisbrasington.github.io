@@ -15,61 +15,61 @@ azure_start: 2018
 
 # Hi, I'm [{{ site.name }}](https://www.linkedin.com/in/brasington/)
 
-I am a software engineer at a wonderful [science museum](https://www.dmns.org/). This is a site for projects and writings.
+<p class="hero-intro">Software engineer at a wonderful <a href="https://www.dmns.org/">science museum</a> in Denver. This site is home to my projects and writings.</p>
 
-<div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between;">
+<div class="social-row">
+  <a href="https://www.linkedin.com/in/brasington/" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://github.com/chrisbrasington" target="_blank" rel="noopener">GitHub</a>
+  <a href="https://www.dmns.org/" target="_blank" rel="noopener">DMNS</a>
+</div>
 
-  <!-- Column 1: Skills Chart -->
-  <div style="flex:1 1 300px; min-width:300px; text-align:center;">
+<div class="intro-grid">
+
+  <div class="card">
     <h3>Tech Experience</h3>
-    <canvas id="experienceChart" style="width:100%; height:300px;"></canvas>
+    <div class="chart-wrap">
+      <canvas id="experienceChart"></canvas>
+    </div>
   </div>
 
-  <!-- Column 2: Writings -->
-  <div style="flex:1 1 300px; min-width:300px;">
+  <div class="card">
     <h3>🖊️ Writings</h3>
     <ul>
       <li><a href="./mods/">Morrowind Modlist</a></li>
       <li><a href="./gaming/ten">10 Games to Get to Know Me</a></li>
       <li><a href="./morrowind/">Tales of Greater Morrowind</a></li>
-      <li><a href="./attention/">Tips to reducing psychological “hooks” of the modern internet age</a></li>
+      <li><a href="./attention/">Reducing psychological “hooks” of the modern internet</a></li>
     </ul>
-    
-    <h3>🎮 NextFest Reviews</h3>
-    <div style="font-size:16px; line-height:1.5;">
+
+    <h3 style="margin-top:1.25rem;">🎮 NextFest Reviews</h3>
+    <div class="nextfest">
       <strong>2025:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_October.md" target="_blank">October</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_June.md" target="_blank">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_Feb.md" target="_blank">February</a><br>
       <strong>2024:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_June.md" target="_blank">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_Feb.md" target="_blank">February</a><br>
       <strong>2023:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2023.md" target="_blank">February</a>
     </div>
   </div>
 
-<!-- Column 3: Hobbies -->
-<div style="flex:1 1 300px; min-width:300px; text-align:center;">
-  <h3>🛹 Hobbies</h3>
-
-  <table class="scale3-hover" style="margin:0 auto; border-collapse:collapse; border-spacing:12px; border:none;">
-    <tr>
-      <td style="text-align:center; border:none;">
-        <strong>Skateboarding</strong><br>
-        <img src="./resources/skate2.jpg" width="150" class="img-row">
-      </td>
-      <td style="text-align:center; border:none;">
-        <strong>Gaming</strong><br>
-        <img src="./resources/handheld3.jpg" width="150" class="img-row">
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:center; border:none;">
-        <strong>Reading</strong><br>
-        <img src="./resources/books1.jpg" width="150" class="img-row">
-      </td>
-      <td style="text-align:center; border:none;">
-        <strong>Camping</strong><br>
-        <img src="./resources/camper.jpg" width="150" class="img-row">
-      </td>
-    </tr>
-  </table>
-</div>
+  <div class="card">
+    <h3>🛹 Hobbies</h3>
+    <div class="hobby-grid">
+      <div class="hobby-tile">
+        <img src="./resources/skate2.jpg" alt="Skateboarding">
+        <strong>Skateboarding</strong>
+      </div>
+      <div class="hobby-tile">
+        <img src="./resources/handheld3.jpg" alt="Gaming">
+        <strong>Gaming</strong>
+      </div>
+      <div class="hobby-tile">
+        <img src="./resources/books1.jpg" alt="Reading">
+        <strong>Reading</strong>
+      </div>
+      <div class="hobby-tile">
+        <img src="./resources/camper.jpg" alt="Camping">
+        <strong>Camping</strong>
+      </div>
+    </div>
+  </div>
 
 </div>
 
@@ -91,14 +91,24 @@ const experienceData = [
     currentYear - {{ page.kotlin_start }}
 ];
 
+const gradient = ctx.createLinearGradient(0, 0, ctx.canvas.width, 0);
+gradient.addColorStop(0, 'rgba(122, 162, 247, 0.85)');
+gradient.addColorStop(1, 'rgba(192, 132, 252, 0.85)');
+
+const textColor = '#b8bdc7';
+const gridColor = 'rgba(255,255,255,0.06)';
+
 const data = {
     labels: ["Linux", "Javascript", "C#", "Python", "Arduino", "Azure CI/CD", "Blazor/MAUI", "Umbraco", "Obsidian", "Kotlin"],
     datasets: [{
         label: 'Years of Experience',
         data: experienceData,
-        backgroundColor: 'rgba(54, 162, 235, 0.6)',
-        borderColor: 'rgba(54, 162, 235, 1)',
-        borderWidth: 1
+        backgroundColor: gradient,
+        borderColor: 'rgba(122, 162, 247, 1)',
+        borderWidth: 0,
+        borderRadius: 6,
+        borderSkipped: false,
+        hoverBackgroundColor: 'rgba(94, 234, 212, 0.85)'
     }]
 };
 
@@ -106,11 +116,34 @@ new Chart(ctx, {
     type: 'bar',
     data: data,
     options: {
-        indexAxis: 'y',  // Horizontal bars
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        layout: { padding: { right: 8 } },
+        plugins: {
+            legend: { display: false },
+            tooltip: {
+                backgroundColor: '#161b25',
+                titleColor: '#e6e8ee',
+                bodyColor: '#b8bdc7',
+                borderColor: '#2a3245',
+                borderWidth: 1,
+                padding: 10,
+                displayColors: false,
+                callbacks: {
+                    label: (ctx) => `${ctx.parsed.x} year${ctx.parsed.x === 1 ? '' : 's'}`
+                }
+            }
+        },
         scales: {
             x: {
                 beginAtZero: true,
-                stepSize: 1
+                ticks: { color: textColor, stepSize: 2 },
+                grid: { color: gridColor, drawBorder: false }
+            },
+            y: {
+                ticks: { color: textColor, font: { size: 12 } },
+                grid: { display: false, drawBorder: false }
             }
         }
     }
