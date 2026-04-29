@@ -1,22 +1,26 @@
 :root {
-    --color-foreground-1: transparent;
-    --color-foreground-2: transparent;
+    --color-foreground-1: #F8F8F2;
+    --color-foreground-2: #B9BBCB;
 
-    --color-background-1: transparent;
-    --color-background-2: transparent;
-    --color-background-3: transparent;
+    --color-background-1: #44475A;
+    --color-background-2: #282A36;
+    --color-background-3: #21222C;
 
-    --color-accent-1: transparent;
-    --color-accent-2: transparent;
+    --color-accent-1: #BD93F9;
+    --color-accent-2: #BD93F933;
 
-    --color-shadow-1: transparent;
-    --color-shadow-2: transparent;
+    --color-shadow-1: #21222C;
+    --color-shadow-2: #D6ACFF;
 
-	--button-inactive: transparent;
-	--button-active: transparent;
+	--button-inactive: invert(25%) sepia(9%) saturate(1455%) hue-rotate(194deg) brightness(93%) contrast(82%);
+	--button-active: invert(68%) sepia(92%) saturate(2532%) hue-rotate(213deg) brightness(101%) contrast(103%);
 
     --transition-speed: 0.25s;
     --border-radius: 0.75rem;
+}
+
+html, body {
+    background: var(--color-background-2);
 }
 
 @font-face {
