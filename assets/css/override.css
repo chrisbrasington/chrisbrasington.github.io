@@ -150,17 +150,19 @@ hr { border: 0; height: 1px; background: var(--border-soft); margin: 2.5rem 0; }
   box-shadow: var(--shadow-md);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   position: relative;
-  overflow: hidden;
 }
 .card::before {
   content: "";
   position: absolute;
-  inset: 0 0 auto 0;
+  top: 0; left: 0; right: 0;
   height: 2px;
   background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3));
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   opacity: 0.7;
+  pointer-events: none;
 }
 .card:hover { border-color: #3a4663; box-shadow: var(--shadow-lg); }
+.card:has(img:hover) { z-index: 1000; }
 
 .card h3 { margin-top: 0; }
 .card ul { padding-left: 1.1rem; margin: 0; }
@@ -198,6 +200,14 @@ hr { border: 0; height: 1px; background: var(--border-soft); margin: 2.5rem 0; }
   object-fit: cover;
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: zoom-in;
+  position: relative;
+}
+.hobby-tile img:hover {
+  transform: scale(2);
+  z-index: 1000;
+  box-shadow: var(--shadow-lg);
 }
 .hobby-tile strong { font-size: 0.9rem; color: var(--text); }
 
@@ -245,7 +255,6 @@ table {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  overflow: hidden;
   box-shadow: var(--shadow-sm);
 }
 
@@ -258,6 +267,17 @@ table th, table td {
   color: var(--text-dim);
 }
 table tr:last-child td { border-bottom: none; }
+
+/* Rounded outer corners (no clipping so zoomed images escape) */
+table thead tr:first-child th:first-child,
+table tr:first-child td:first-child { border-top-left-radius: var(--radius-md); }
+table thead tr:first-child th:last-child,
+table tr:first-child td:last-child { border-top-right-radius: var(--radius-md); }
+table tr:last-child td:first-child { border-bottom-left-radius: var(--radius-md); }
+table tr:last-child td:last-child { border-bottom-right-radius: var(--radius-md); }
+
+/* Lift row above siblings while hovering an image */
+table tr:has(img:hover) { position: relative; z-index: 1000; }
 
 table thead th, table th {
   background: var(--bg-elev);
