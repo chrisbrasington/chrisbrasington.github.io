@@ -18,8 +18,7 @@ const linkData = {
     ],
     "~/dev  ⌨": [
         { "name": "GitHub", "url": "https://github.com/chrisbrasington?tab=repositories" },
-        { "name": ".NET", "url": "https://devblogs.microsoft.com/dotnet/" },
-        { "name": "Chat-GPT", "url": "https://chat.openai.com/" }
+        { "name": ".NET", "url": "https://devblogs.microsoft.com/dotnet/" }
     ],
     "~/linux ": [
         { "name": "Debian Wiki", "url": "https://wiki.debian.org/" },
