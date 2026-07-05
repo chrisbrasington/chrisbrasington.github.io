@@ -1,0 +1,24 @@
+# Christopher Brasington
+
+> Personal site of Christopher Brasington, a software engineer at the Denver
+> Museum of Nature & Science in Denver, Colorado. Portfolio of open-source
+> projects and personal writings.
+
+## Main pages
+
+- [Home / project portfolio](https://chrisincode.com/): professional work
+  (dmns.org, kiosks, member app) and dozens of open-source projects — manga
+  and ebook tools, Obsidian utilities, gaming tools, Discord bots.
+- [Morrowind Modlist for OpenMW](https://chrisincode.com/mods/): curated
+  modlist and settings for OpenMW.
+- [Tales of Greater Morrowind](https://chrisincode.com/morrowind/): character
+  stories from Morrowind playthroughs.
+- [10 Games to Get to Know Me](https://chrisincode.com/gaming/ten): personal
+  gaming history.
+- [Reducing psychological hooks of the modern internet](https://chrisincode.com/attention/):
+  practical guide to blocking algorithmic feeds and reclaiming attention.
+
+## Elsewhere
+
+- [GitHub](https://github.com/chrisbrasington)
+- [LinkedIn](https://www.linkedin.com/in/brasington/)

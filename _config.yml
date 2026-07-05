@@ -1,7 +1,28 @@
-title: ""
-description: ""
-markdown: kramdown
+title: Christopher Brasington
+description: >-
+  Software engineer in Denver, Colorado. Project portfolio and writings on
+  open-source tools, gaming, Morrowind modding, and reclaiming your attention
+  from the modern internet.
+url: https://chrisincode.com
 name: Christopher Brasington
+author: Christopher Brasington
+lang: en-US
+timezone: America/Denver
+
+twitter:
+  card: summary
+social:
+  name: Christopher Brasington
+  links:
+    - https://github.com/chrisbrasington
+    - https://www.linkedin.com/in/brasington/
+
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 # theme: minima
 # theme: dinky
 # theme: hacker
@@ -13,4 +34,4 @@ name: Christopher Brasington
 #theme: jekyll-theme-cayman
 #theme: jekyll-theme-midnight
 theme: jekyll-theme-slate
-#theme: jekyll-theme-time-machine 
+#theme: jekyll-theme-time-machine

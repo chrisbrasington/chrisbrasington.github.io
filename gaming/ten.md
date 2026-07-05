@@ -1,3 +1,11 @@
+---
+layout: default
+title: 10 Games to Get to Know Me
+description: >-
+  Ten games that shaped me over the years, from Link's Awakening on the
+  Game Boy onward.
+---
+
 # 10 Games to Get to Know Me
 
 A list of the games that have shaped me over the years — the ones that grabbed my attention, taught me something, or just stuck with me.

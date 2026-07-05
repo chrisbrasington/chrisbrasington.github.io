@@ -1,3 +1,11 @@
+---
+layout: default
+title: Tales of Greater Morrowind
+description: >-
+  Character tales from Morrowind playthroughs: Etria the Hidden Nerevarine,
+  Raylinth the Silent Wanderer, and Ciel of Narsis.
+---
+
 # Tales of Greater Morrowind
 - [Etrian the Hidden Nerevarine](#etria-the-hidden-nerevarine)
 - [Raylinth the Silent Wanderer](#raylinth-the-silent-wanderer)

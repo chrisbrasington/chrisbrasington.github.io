@@ -1,5 +1,10 @@
 ---
 layout: default
+title: Reducing Psychological Hooks of the Modern Internet
+description: >-
+  Practical tips for reclaiming your attention: blocking algorithmic feeds,
+  disabling notifications, and the browser extensions and phone setup that
+  actually work.
 ---
 # Tips to reducing pychological "hooks"  of the modern internet age
 ### Fight back for control of your attention.

@@ -1,3 +1,11 @@
+---
+layout: default
+title: Morrowind Modlist for OpenMW
+description: >-
+  A curated OpenMW modlist for Morrowind: setup guidance, Tamriel Rebuilt,
+  settings, and mods that enhance the game without straying from vanilla.
+---
+
 # MODLIST for [OPENMW](https://openmw.org/) 0.50
 
 ## Getting Started

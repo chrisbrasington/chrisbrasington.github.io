@@ -1,5 +1,9 @@
 ---
 title: Christopher Brasington
+description: >-
+  Software engineer at the Denver Museum of Nature & Science. Portfolio of
+  open-source projects, utilities, Discord bots, and writings on gaming and
+  digital attention.
 layout: default
 csharp_start: 2010
 python_start: 2010
@@ -28,7 +32,7 @@ azure_start: 2018
   <div class="card">
     <h3>Tech Experience</h3>
     <div class="chart-wrap">
-      <canvas id="experienceChart"></canvas>
+      <canvas id="experienceChart" role="img" aria-label="Bar chart of years of experience by technology: Linux since 2004, JavaScript since 2008, C# and Python since 2010, Arduino since 2015, Azure CI/CD since 2018, Blazor and MAUI since 2019, Umbraco since 2021, Obsidian since 2023, Kotlin since 2024.">Years of experience by technology: Linux (since 2004), JavaScript (2008), C# (2010), Python (2010), Arduino (2015), Azure CI/CD (2018), Blazor/MAUI (2019), Umbraco (2021), Obsidian (2023), Kotlin (2024).</canvas>
     </div>
   </div>
 
@@ -43,9 +47,9 @@ azure_start: 2018
 
     <h3 style="margin-top:1.25rem;">🎮 NextFest Reviews</h3>
     <div class="nextfest">
-      <strong>2025:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_October.md" target="_blank">October</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_June.md" target="_blank">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_Feb.md" target="_blank">February</a><br>
-      <strong>2024:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_June.md" target="_blank">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_Feb.md" target="_blank">February</a><br>
-      <strong>2023:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2023.md" target="_blank">February</a>
+      <strong>2025:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_October.md" target="_blank" rel="noopener">October</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_June.md" target="_blank" rel="noopener">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_Feb.md" target="_blank" rel="noopener">February</a><br>
+      <strong>2024:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_June.md" target="_blank" rel="noopener">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_Feb.md" target="_blank" rel="noopener">February</a><br>
+      <strong>2023:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2023.md" target="_blank" rel="noopener">February</a>
     </div>
   </div>
 
@@ -212,7 +216,7 @@ new Chart(ctx, {
 | Fun | | |
 |----------|------------|------------|
 | [denver-skyimage](https://github.com/chrisbrasington/denver-skyimage) | timelapse | ![](./resources/skyimage.jpg)
-| [washer-dryer-pushover-status-monitor-ESP8266](github.com/chrisbrasington/washer-dryer-pushover-status-monitor-ESP8266) | Get a text when washer/dryer done shaking
+| [washer-dryer-pushover-status-monitor-ESP8266](https://github.com/chrisbrasington/washer-dryer-pushover-status-monitor-ESP8266) | Get a text when washer/dryer done shaking
 
 | Discord BOT  | | |
 |----------|------------|------------|
