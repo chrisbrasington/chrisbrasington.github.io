@@ -162,6 +162,7 @@ new Chart(ctx, {
 | [dmns.org](https://www.dmns.org/) | A custom webstore integration with Umbraco CMS for ticket sales of Denver Museum of Nature & Science | ![](./resources/dmns1.png) ![](./resources/dmns2.png) | C#, Blazor, Umbraco, OIDC
 | dmns kiosk | A vital resource to ticket sales on the floor of the museum. Facilitates ticket sales and entry and throughout the museum with added digital SMS delivery.  | ![](./resources/dmnskiosk1.jpg) | C#
 | dmns member app | | | C#, Maui
+| [denver-skyimage](https://github.com/chrisbrasington/denver-skyimage) | Automated capturing of camera images into timelapse for interactive kiosk - synced to astronomical sunrise/sunset times. | ![](./resources/sky2.png) ![](./resources/sky1.png)  | Python, FastAPI
 
 ## </> Personal Projects
 
@@ -190,10 +191,14 @@ new Chart(ctx, {
 
 | Manga | | |
 |----------|------------|------------|
-| [manga-downloader-sync](https://github.com/chrisbrasington/manga-downloader-sync) | Read manga from mangadex / docker support. manga-api serves webapp and [KOReader](https://koreader.rocks/) plugin for kobo eReader with image delivery and background auto-downloading |  ![](./resources/manga3.png) | Python, FastAPI, Lua
-| [onepiece_dl](https://github.com/chrisbrasington/onepiece_dl) | Download latest one-piece chapter | ![](./resources/onepiece.png)| Python, FastAPI
+| [manga-downloader-sync](https://github.com/chrisbrasington/manga-downloader-sync) | Read manga from mangadex / docker support. manga-api serves webapp and [KOReader](https://koreader.rocks/) plugin for kobo eReader with image delivery and background auto-downloading |  ![](./resources/manga3.png) ![](./resources/manga3.jpg) | Python, FastAPI, Lua
+| [onepiece_dl](https://github.com/chrisbrasington/onepiece_dl) | Download latest one-piece chapter, notify via discord, upload to calibre-web | ![](./resources/onepiece.png) ![](./resources/manga4.jpg) | Python, FastAPI
 
 <!-- | [lightnovel-epub-creator](https://github.com/chrisbrasington/lightnovel-epub-creator) | Download from url - create epub| -->
+
+| Fitness | | |
+|----------|------------|------------|
+| [obsidian workout and habitsync visualizer](https://github.com/chrisbrasington/obsidian-workout-and-habitsync-visualizer) | Reading from markdown or habitsync, a calendar visualizer for workout and meal tracking. | ![](./resources/health3.png) ![](./resources/health4.png) | Python, Javascript
 
 | Utility | | |
 |----------|------------|------------|
@@ -229,9 +234,8 @@ new Chart(ctx, {
 | [disgaea-macro-generator (windows only)](https://github.com/chrisbrasington/disgaea-macro-generator) | uses autohotkey | ![](./resources/disgaea.gif)
 | [final fantasy PR auto-battler (windows only)](https://github.com/chrisbrasington/final-fantasy-auto-auto-battle) | uses autohotkey, has battle detection | ![](./resources/ffauto1.jpg)
 
-| Fun | | |
+| Misc | | |
 |----------|------------|------------|
-| [denver-skyimage](https://github.com/chrisbrasington/denver-skyimage) | timelapse | ![](./resources/skyimage.jpg)
 | [washer-dryer-pushover-status-monitor-ESP8266](https://github.com/chrisbrasington/washer-dryer-pushover-status-monitor-ESP8266) | Get a text when washer/dryer done shaking
 
 | Discord BOT  | | |
