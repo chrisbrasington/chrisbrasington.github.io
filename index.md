@@ -154,24 +154,33 @@ new Chart(ctx, {
 });
 </script>
 
+## </> Professional Projects
+
+| Denver Museum of Nature & Science | | |
+|----------|------------|------------|
+| dmns curiosity cruiser | roving science | ![](./resources/cruiser1.png) | C#, Android, Unity, Azure Devops
+| [dmns.org](https://www.dmns.org/) | A custom webstore integration with Umbraco CMS for ticket sales of Denver Museum of Nature & Science | ![](./resources/dmns1.png) ![](./resources/dmns2.png) | C#, Blazor, Umbraco, OIDC
+| dmns kiosk | A vital resource to ticket sales on the floor of the museum. Facilitates ticket sales and entry and throughout the museum with added digital SMS delivery.  | ![](./resources/dmnskiosk1.jpg) | C#
+| dmns member app | | | C#, Maui
+
 ## </> Personal Projects
 
-| Site | | |
+| Sites | | |
 |----------|------------|------------|
 | [chrisandcodie.com](https://chrisandcodie.com) | Chris and Codie Photography Blog - Originally this was a wordpress blog, until I decided to ditch that and port it into a custom solution optimized for image delivery and self-hosted. | <video src="./resources/blog.webm" autoplay loop muted playsinline></video> <img src="./resources/blog2.png" class="full" alt="chrisandcodie.com blog screenshot"> <img src="./resources/blog3.png" class="full" alt="chrisandcodie.com photo gallery screenshot"> | Python (Starlette + Uvicorn ASGI server), Jinja2 templating (server-rendered HTML), Javascript, FastAPI, Redis, SQL lite, Docker Compose, Network Tunnel
 | [chrisincode.com](https://github.com/chrisbrasington/chrisbrasington.github.io) | You're currently here! |  | Jekyll · kramdown · Liquid · CSS · JavaScript · GitHub Pages
+
+| Apps | | |
+|----------|------------|------------|
 | [youtube-zero](https://github.com/chrisbrasington/youtube-zero) | An internally hosted, algorithmic free youtube webapp where when a youtube video is watched, it disappears. Any instance has the ability to act as a casting screen or remote control and to transfer a stream between devices, including a lightweight android TV app. Bluetooth beacons can detect the nearest screen to a phone. | ![](./resources/ytz2.png) ![](./resources/ytz1.png) ![](./resources/ytz3.png) ![](./resources/ytz4.png) | Python, FastAPI, SQLite, vanilla JavaScript, HTML/CSS, Server-Sent Events, Podman/Docker, Java (Android WebView), Gradle
 
-## </> Professional Projects
+## </> Career Projects
 
-| Site | | |
+| Mitek Industries | | |
 |----------|------------|------------|
-| [dmns.org](https://www.dmns.org/) | Denver Museum of Nature & Science | ![](./resources/dmns1.png) ![](./resources/dmns2.png) |
-| dmns curiosity cruiser | roving science | ![](./resources/dmnscruiser1.jpg)
-| dmns kiosk | Payment kiosks | ![](./resources/dmnskiosk1.jpg)
-| dmns member app | | ![](./resources/dmnsapp1.jpg)
-| mitek blackpoint | CAD automation and materials manager | ![](./resources/blackpoint.webp)
-| hohmann & barnard | submittal package generation and estimation | ![](./resources/hb.jpg)
+| [mitek blackpoint](https://www.mitek-us.com/software/blackpoint/) | Headless autoCAD/revit automation and materials manager | ![](./resources/blackpoint.webp) | C#
+| [mitek mezzanine] Enterprise webapp for Mezzanine construction | ![](./resources/mezz.jpg) | C#, Blazor
+| [hohmann & barnard](https://www.h-b.com/) | Bill of Material gemeration - Order submittal package generation and cost estimation | ![](./resources/hb.jpg) | C#, Blazor
 
 ## </> Projects
 
@@ -181,9 +190,10 @@ new Chart(ctx, {
 
 | Manga | | |
 |----------|------------|------------|
-| [manga-downloader-sync](https://github.com/chrisbrasington/manga-downloader-sync) | Read manga from mangadex / docker support. manga-api serves webapp and [KOReader](https://koreader.rocks/) plugin for kobo eReader with image delivery and background auto-downloading |  ![](./resources/manga3.png)
-| [onepiece_dl](https://github.com/chrisbrasington/onepiece_dl) | Download latest one-piece chapter | ![](./resources/onepiece.png)|
-| [lightnovel-epub-creator](https://github.com/chrisbrasington/lightnovel-epub-creator) | Download from url - create epub|
+| [manga-downloader-sync](https://github.com/chrisbrasington/manga-downloader-sync) | Read manga from mangadex / docker support. manga-api serves webapp and [KOReader](https://koreader.rocks/) plugin for kobo eReader with image delivery and background auto-downloading |  ![](./resources/manga3.png) | Python, FastAPI, Lua
+| [onepiece_dl](https://github.com/chrisbrasington/onepiece_dl) | Download latest one-piece chapter | ![](./resources/onepiece.png)| Python, FastAPI
+
+<!-- | [lightnovel-epub-creator](https://github.com/chrisbrasington/lightnovel-epub-creator) | Download from url - create epub| -->
 
 | Utility | | |
 |----------|------------|------------|
