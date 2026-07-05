@@ -19,7 +19,7 @@ azure_start: 2018
 
 # Hi, I'm [{{ site.name }}](https://www.linkedin.com/in/brasington/)
 
-<p class="hero-intro">Software engineer at a wonderful <a href="https://www.dmns.org/">science museum</a> in Denver. This site is home to my projects and writings.</p>
+<p class="hero-intro">Homelab hobbiest and Professional Software Engineer at a wonderful <a href="https://www.dmns.org/">science museum</a> in Denver. This site is home to my projects and writings.</p>
 
 <div class="social-row">
   <a href="https://www.linkedin.com/in/brasington/" target="_blank" rel="noopener">LinkedIn</a>
@@ -33,23 +33,6 @@ azure_start: 2018
     <h3>Tech Experience</h3>
     <div class="chart-wrap">
       <canvas id="experienceChart" role="img" aria-label="Bar chart of years of experience by technology: Linux since 2004, JavaScript since 2008, C# and Python since 2010, Arduino since 2015, Azure CI/CD since 2018, Blazor and MAUI since 2019, Umbraco since 2021, Obsidian since 2023, Kotlin since 2024.">Years of experience by technology: Linux (since 2004), JavaScript (2008), C# (2010), Python (2010), Arduino (2015), Azure CI/CD (2018), Blazor/MAUI (2019), Umbraco (2021), Obsidian (2023), Kotlin (2024).</canvas>
-    </div>
-  </div>
-
-  <div class="card">
-    <h3>🖊️ Writings</h3>
-    <ul>
-      <li><a href="./mods/">Morrowind Modlist</a></li>
-      <li><a href="./gaming/ten">10 Games to Get to Know Me</a></li>
-      <li><a href="./morrowind/">Tales of Greater Morrowind</a></li>
-      <li><a href="./attention/">Reducing psychological “hooks” of the modern internet</a></li>
-    </ul>
-
-    <h3 style="margin-top:1.25rem;">🎮 NextFest Reviews</h3>
-    <div class="nextfest">
-      <strong>2025:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_October.md" target="_blank" rel="noopener">October</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_June.md" target="_blank" rel="noopener">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_Feb.md" target="_blank" rel="noopener">February</a><br>
-      <strong>2024:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_June.md" target="_blank" rel="noopener">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_Feb.md" target="_blank" rel="noopener">February</a><br>
-      <strong>2023:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2023.md" target="_blank" rel="noopener">February</a>
     </div>
   </div>
 
@@ -72,6 +55,23 @@ azure_start: 2018
         <img src="./resources/camper.jpg" alt="Camping">
         <strong>Camping</strong>
       </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🖊️ Writings</h3>
+    <ul>
+      <li><a href="./mods/">Morrowind Modlist</a></li>
+      <li><a href="./gaming/ten">10 Games to Get to Know Me</a></li>
+      <li><a href="./morrowind/">Tales of Greater Morrowind</a></li>
+      <li><a href="./attention/">Reducing psychological “hooks” of the modern internet</a></li>
+    </ul>
+
+  <h3 style="margin-top:1.25rem;">🎮 NextFest Reviews</h3>
+    <div class="nextfest">
+      <strong>2025:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_October.md" target="_blank" rel="noopener">October</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_June.md" target="_blank" rel="noopener">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2025_Feb.md" target="_blank" rel="noopener">February</a><br>
+      <strong>2024:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_June.md" target="_blank" rel="noopener">June</a> · <a href="https://github.com/chrisbrasington/nextfest/blob/main/2024_Feb.md" target="_blank" rel="noopener">February</a><br>
+      <strong>2023:</strong> <a href="https://github.com/chrisbrasington/nextfest/blob/main/2023.md" target="_blank" rel="noopener">February</a>
     </div>
   </div>
 
@@ -154,11 +154,13 @@ new Chart(ctx, {
 });
 </script>
 
-## </> Sites
+## </> Personal Projects
 
 | Site | | |
 |----------|------------|------------|
-| [chrisandcodie.com](https://www.chrisandcodie.com) | Chris and Codie Photography Blog | <video src="./resources/blog.webm" autoplay loop muted playsinline></video> <img src="./resources/blog2.png" class="full" alt="chrisandcodie.com blog screenshot"> <img src="./resources/blog3.png" class="full" alt="chrisandcodie.com photo gallery screenshot">
+| [chrisandcodie.com](https://chrisandcodie.com) | Chris and Codie Photography Blog - Originally this was a wordpress blog, until I decided to ditch that and port it into a custom solution optimized for image delivery and self-hosted. | <video src="./resources/blog.webm" autoplay loop muted playsinline></video> <img src="./resources/blog2.png" class="full" alt="chrisandcodie.com blog screenshot"> <img src="./resources/blog3.png" class="full" alt="chrisandcodie.com photo gallery screenshot"> | Python (Starlette + Uvicorn ASGI server), Jinja2 templating (server-rendered HTML), Javascript, FastAPI, Redis, SQL lite, Docker Compose, Network Tunnel
+| [chrisincode.com](https://github.com/chrisbrasington/chrisbrasington.github.io) | You're currently here! |  | Jekyll · kramdown · Liquid · CSS · JavaScript · GitHub Pages
+| [youtube-zero](https://github.com/chrisbrasington/youtube-zero) | An internally hosted, algorithmic free youtube webapp where when a youtube video is watched, it disappears. Any instance has the ability to act as a casting screen or remote control and to transfer a stream between devices, including a lightweight android TV app. Bluetooth beacons can detect the nearest screen to a phone. | ![](./resources/ytz2.png) ![](./resources/ytz1.png) ![](./resources/ytz3.png) ![](./resources/ytz4.png) | Python, FastAPI, SQLite, vanilla JavaScript, HTML/CSS, Server-Sent Events, Podman/Docker, Java (Android WebView), Gradle
 
 ## </> Professional Projects
 
@@ -175,7 +177,6 @@ new Chart(ctx, {
 
 | Personal | | |
 |----------|------------|------------|
-| [github.io](https://github.com/chrisbrasington/chrisbrasington.github.io) | [site](https://chrisbrasington.github.io/), [homepage](https://chrisbrasington.github.io/home/), and [articles](https://chrisbrasington.github.io/attention/) | ![](./resources/site.png) |
 | Launcher (WIP) | Minimalist launcher / media player | ![](./resources/launcher1.png) ![](./resources/launcher2.png) ![](./resources/launcher3.png) |
 
 | Manga | | |
