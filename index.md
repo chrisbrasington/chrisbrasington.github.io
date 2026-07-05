@@ -173,7 +173,7 @@ new Chart(ctx, {
 
 | Apps | | |
 |----------|------------|------------|
-| [youtube-zero](https://github.com/chrisbrasington/youtube-zero) | An internally hosted, algorithmic free youtube webapp where when a youtube video is watched, it disappears. Any instance has the ability to act as a casting screen or remote control and to transfer a stream between devices, including a lightweight android TV app. Bluetooth beacons can detect the nearest screen to a phone. | ![](./resources/ytz2.png) ![](./resources/ytz1.png) ![](./resources/ytz3.png) ![](./resources/ytz4.png) | Python, FastAPI, SQLite, vanilla JavaScript, HTML/CSS, Server-Sent Events, Podman/Docker, Java (Android WebView), Gradle
+| [youtube-zero](https://github.com/chrisbrasington/youtube-zero) | An internally hosted, algorithmic free, subscription only youtube webapp. After a youtube video is watched, it disappears. Any instance has the ability to act as a casting screen or remote control and to transfer a stream between devices, including a lightweight android TV app. Bluetooth beacons can detect the nearest screen to a phone. | ![](./resources/ytz2.png) ![](./resources/ytz1.png) ![](./resources/ytz3.png) ![](./resources/ytz4.png) | Python, FastAPI, SQLite, vanilla JavaScript, HTML/CSS, Server-Sent Events, Podman/Docker, Java (Android WebView), Gradle
 
 ## </> Career Projects
 
