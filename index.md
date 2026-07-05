@@ -235,29 +235,8 @@ new Chart(ctx, {
 |----------|------------|------------|
 | [dotfiles](https://github.com/chrisbrasington/dotfiles) | sway | ![](./resources/dotfiles.png)
 
-| OLD music theory | | |
+| Music Theory | | |
 |----------|------------|------------|
 | [ruby music theory](https://github.com/chrisbrasington/ruby-music-theory)
 | [ardunino midi LED](https://github.com/chrisbrasington/arduino-piano)
 | [euterpea-studies](https://github.com/chrisbrasington/Euterpea-Study)
-
-| Obsolete / Unmaintained  OLD | | |
-|----------|------------|------------|
-| [hackathon-led](https://github.com/chrisbrasington/hackathon-led) | | ![](./resources/hackathon.jpg)
-| [obsidian - light-novel-markdown-creator](https://github.com/chrisbrasington/light-novel-markdown-creator) | Use [obsidian-book-search-plugin](https://github.com/anpigon/obsidian-book-search-plugin) which added manga support
-| [quicktask](https://github.com/chrisbrasington/quicktask) | Creates quick task markdown for obsidian | Abandoned for google keep and/or manual obsidian entry
-| [jameswebb-downloader](https://github.com/chrisbrasington/jameswebb-downloader)
-| [audiobook parser/synchronization app](https://github.com/chrisbrasington/audiobook-sync-app) | uses author/title | ![](./resources/audobooksync.png)
-| [discord-anything-status](https://github.com/chrisbrasington/discord-anything-status)
-| [comic books weekly RSS](https://github.com/chrisbrasington/comic-books-weekly)
-| [gnucash savings report](https://github.com/chrisbrasington/gnucash-savings)
-| [gnucash budge report](https://github.com/chrisbrasington/gnucash-budget)
-| [gnucash from text message](https://github.com/chrisbrasington/text-messaging-to-gnucash)
-| [speedtest randomizer runs](https://github.com/chrisbrasington/speedtest-randomizer)
-| [RTD Transit Feed parser](https://github.com/chrisbrasington/rtd)
-| [tunefind playlist generator](https://github.com/chrisbrasington/tunefind-playlist-generator)
-| [lastfm googlemusic playlist generator](https://github.com/chrisbrasington/lastfm-googlemusic-playlist-generator)
-| [crawl stone soup stats](https://github.com/chrisbrasington/crawl-stats) | go play [dungeon crawl stone soup](https://crawl.develz.org/)
-| [guildwars javascript api wrapper](https://github.com/chrisbrasington/guildwars2-javascript-api-wrapper)
-| [LBN511-hack](https://github.com/chrisbrasington/LBN511-hack)
-| [lastfm website](https://github.com/chrisbrasington/lastfm-website)
