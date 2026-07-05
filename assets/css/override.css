@@ -329,6 +329,21 @@ table td:has(img + img) img {
   object-fit: contain;
 }
 
+/* Full-width media in table cells: <img class="full"> or <video> */
+table td video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+table td img.full {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: initial;
+}
+
 /* ===============================
    Hobby table override (kept for legacy)
    =============================== */

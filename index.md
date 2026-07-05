@@ -154,6 +154,11 @@ new Chart(ctx, {
 });
 </script>
 
+## </> Sites
+
+| Site | | |
+|----------|------------|------------|
+| [chrisandcodie.com](https://www.chrisandcodie.com) | Chris and Codie Photography Blog | <video src="./resources/blog.webm" autoplay loop muted playsinline></video> <img src="./resources/blog2.png" class="full" alt="chrisandcodie.com blog screenshot"> <img src="./resources/blog3.png" class="full" alt="chrisandcodie.com photo gallery screenshot">
 
 ## </> Professional Projects
 
