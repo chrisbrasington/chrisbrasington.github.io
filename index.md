@@ -180,8 +180,8 @@ new Chart(ctx, {
 
 | Manga | | |
 |----------|------------|------------|
+| [manga-downloader-sync](https://github.com/chrisbrasington/manga-downloader-sync) | Read manga from mangadex / docker support. manga-api serves webapp and [KOReader](https://koreader.rocks/) plugin for kobo eReader with image delivery and background auto-downloading |  ![](./resources/manga3.png)
 | [onepiece_dl](https://github.com/chrisbrasington/onepiece_dl) | Download latest one-piece chapter | ![](./resources/onepiece.png)|
-| [manga-downloader-sync](https://github.com/chrisbrasington/manga-downloader-sync) | Download from mangadex / docker support |  <img src="./resources/manga1.png" width="40%">|
 | [lightnovel-epub-creator](https://github.com/chrisbrasington/lightnovel-epub-creator) | Download from url - create epub|
 
 | Utility | | |
