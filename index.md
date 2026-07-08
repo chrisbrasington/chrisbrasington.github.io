@@ -22,12 +22,12 @@ azure_start: 2018
 <p class="hero-intro">Homelab hobbiest and Professional Software Engineer at a wonderful <a href="https://www.dmns.org/">science museum</a> in Denver. This site is home to my projects and writings.</p>
 
 <div class="social-row">
-  <a href="https://www.linkedin.com/in/brasington/" target="_blank" rel="noopener">LinkedIn</a>
   <a href="https://github.com/chrisbrasington" target="_blank" rel="noopener">GitHub</a>
+  <a href="https://www.linkedin.com/in/brasington/" target="_blank" rel="noopener">LinkedIn</a>
   <a href="https://www.dmns.org/" target="_blank" rel="noopener">DMNS</a>
 </div>
 
-<div class="intro-grid">
+<div class="intro-grid" style="display: none;">
 
   <div class="card">
     <h3>Tech Experience</h3>
@@ -143,7 +143,12 @@ new Chart(ctx, {
             x: {
                 beginAtZero: true,
                 ticks: { color: textColor, stepSize: 2 },
-                grid: { color: gridColor, drawBorder: false }
+                grid: { color: gridColor, drawBorder: false },
+                title: {
+                    display: true,
+                    text: "Years of Experience",
+                    color: textColor
+                }
             },
             y: {
                 ticks: { color: textColor, font: { size: 12 } },
@@ -158,8 +163,8 @@ new Chart(ctx, {
 
 | Denver Museum of Nature & Science | | |
 |----------|------------|------------|
-| dmns curiosity cruiser | roving science | ![](./resources/cruiser1.png) | C#, Android, Unity, Azure Devops
-| [dmns.org](https://www.dmns.org/) | A custom webstore integration with Umbraco CMS for ticket sales of Denver Museum of Nature & Science | ![](./resources/dmns1.png) ![](./resources/dmns2.png) | C#, Blazor, Umbraco, OIDC
+| [dmns.org](https://www.dmns.org/) | A custom ecommerce implementation and integration with Umbraco CMS for ticket sales of Denver Museum of Nature & Science | ![](./resources/dmns1.png) ![](./resources/dmns2.png) ![](./resources/dmns3.png) | C#, Blazor, Umbraco, OIDC
+| dmns curiosity cruiser - now [Discovery Station](https://www.dmns.org/programs-and-events/discovery-station/) | roving science | ![](./resources/cruiser1.png) | C#, Android, Unity, Azure Devops
 | dmns kiosk | A vital resource to ticket sales on the floor of the museum. Facilitates ticket sales and entry and throughout the museum with added digital SMS delivery.  | ![](./resources/dmnskiosk1.jpg) | C#
 | dmns member app | | | C#, Maui
 | [denver-skyimage](https://github.com/chrisbrasington/denver-skyimage) | Automated capturing of camera images into timelapse for interactive kiosk - synced to astronomical sunrise/sunset times. | ![](./resources/sky2.png) ![](./resources/sky1.png)  | Python, FastAPI
