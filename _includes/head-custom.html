@@ -1,0 +1,21 @@
+<!-- Person entity to complement the WebSite JSON-LD from jekyll-seo-tag.
+     Mirrors the facts published on chrisandcodie.com (app/structured_data.py)
+     and cross-links it via sameAs so search engines merge the two profiles. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "{{ site.url }}/#person",
+  "name": "Christopher Brasington",
+  "alternateName": ["Chris Brasington"],
+  "url": "{{ site.url }}/",
+  "jobTitle": "Software Engineer",
+  "birthPlace": {"@type": "Place", "name": "Sevierville, Tennessee"},
+  "homeLocation": {"@type": "Place", "name": "Denver, Colorado"},
+  "sameAs": [
+    "https://github.com/chrisbrasington",
+    "https://www.linkedin.com/in/brasington/",
+    "https://chrisandcodie.com/"
+  ]
+}
+</script>
