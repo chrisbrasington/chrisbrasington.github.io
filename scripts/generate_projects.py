@@ -70,7 +70,9 @@ def schema_type(url: str) -> str:
         return "SoftwareSourceCode"
     if "chrisandcodie.com" in url or "chrisincode.com" in url:
         return "WebSite"
-    return "SoftwareApplication"
+    # Not SoftwareApplication: Google's rich-result rules demand offers/
+    # ratings/OS for that type, which professional project entries can't honestly provide.
+    return "CreativeWork"
 
 
 def parse(lines: list[str]) -> list[dict]:
