@@ -34,8 +34,9 @@ jobs:
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-          # jekyll-github-metadata needs this for site.github.* (used in default.html)
+          # jekyll-github-metadata needs these for site.github.* (used in default.html)
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAGES_REPO_NWO: ${{ github.repository }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
