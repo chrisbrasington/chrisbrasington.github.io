@@ -7,10 +7,10 @@ description: >-
 ---
 
 # Tales of Greater Morrowind
-- [Zhuangzi, the Pilgrim](#zhuangzi-the-pilgrim) (Summer 2026)
-- [Ciel, the Playwright of Narsis](#ciel-the-playwright-of-narsis) (2026)
-- [Raylinth the Silent Wanderer](#raylinth-the-silent-wanderer) (2025)
-- [Etrian the Hidden Nerevarine](#etria-the-hidden-nerevarine) (2024)
+- [Zhuangzi, the Pilgrim](#zhuangzi-the-pilgrim) (Summer 2026 - TR - prep for Poison Song)
+- [Ciel, the Playwright of Narsis](#ciel-the-playwright-of-narsis) (2026 - TR - Grasping Fortune )
+- [Raylinth the Silent Wanderer](#raylinth-the-silent-wanderer) (2025 - Tamriel Rebuilt)
+- [Etrian the Hidden Nerevarine](#etria-the-hidden-nerevarine) (2024 - main playthrough)
 
 # Zhuangzi, the Pilgrim
 
