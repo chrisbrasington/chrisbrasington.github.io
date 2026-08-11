@@ -84,4 +84,7 @@ Thus Ciel is best known as `The Playwright` within `Narsis`.
 ![](img/ciel4.jpg)
 
 # Zhuangzi, the Pilgrim
-TBD
+
+Currently on the pilgrimage of the `Seven Graces` to join the temple.
+
+![](img/z1.jpg)
