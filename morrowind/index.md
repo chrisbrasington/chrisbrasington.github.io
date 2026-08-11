@@ -9,7 +9,8 @@ description: >-
 # Tales of Greater Morrowind
 - [Etrian the Hidden Nerevarine](#etria-the-hidden-nerevarine)
 - [Raylinth the Silent Wanderer](#raylinth-the-silent-wanderer)
-- [Ciel of Narsis](#ciel-of-narsis)
+- [Ciel, the Playwright of Narsis](#ciel-the-playwright-of-narsis)
+- [Zhuangzi, the Pilgrim](#zhuangzi-the-pilgrim)
 
 # Etria the Hidden Nerevarine
 
@@ -30,6 +31,8 @@ That was who Etria was - an oursider - and they wore it literally.
 After the Red Ash stopped falling, Etria walked across the water south near `Vivec` to `Old Ebonheart` and down the Thirr river. The simple, rural people of this area were in awe of the water-walker and had not yet heard of the strife in `Vvardenfall`, only murmors of old gods. A great many plantations existed along the river, providing goods into the heart of Vvardenfell - but it is said that Etria went on a rampage. Killing numerous plantation owners and rich families and freeing every slave Argonian and Khajit. With their army, they settled in `Roa Dyr` the city of lights, and controled the ports of `Aimrah` to `Almas Thirr`. 
 
 Word of united tribal nations in `Vvardenfall` spread south from the island. Revealed as Nerevarine bought Etria a seat at the table of `Old Ebonheart` in the trade route to `Cyrodiil`. At the political table was the god-incarnate Vivec. And while having spared the God Vivec previously, Etrai ultimately killed Vivec to prove a point of forcing change on the land. Upon killing Vivec and with no magic to keep Vivec city's meteor in suspension, Etria is said to have sliced Vivec city's fallen meteor in half as it crashed between the sea of `Ebonheart` and `Old Ebonheart` saving the city of `Vivec`. A tidal wave wrecked the ships at `Old Ebonheart` port yet the castle held. This was enough of a threat to end slavery for good in the region. It is said that Etria grew bored of stubborn politicians and retired far-far south in the `Black Marshland` of the Argonians they had freed.
+
+Etria was last seen along the `Aanthirin` river.
 
 ![](img/etria3.jpeg)
 
@@ -53,6 +56,8 @@ Soon after quitting the mages guild, a similiarly tall robe figure casting wild 
 
 ![](img/ray5.jpeg)
 
+It is an unverified rumor that Raylinth ever met Etria. Let alone was ever a pupil of Etria, but it is long speculated they were sent by Etrian on a pilgrimage to Necrom.
+
 Raylinth supposedly spent months in `Akamora` gathering intel on `Necrom`, city of the dead, to the east. Doing various jobs that took them back and forth between the two cities on a trade route through the rugged mountian terrain. 
 
 ![](img/ray3.jpeg)
@@ -65,9 +70,18 @@ It is unknown what Raylinth found or took from the sacred tombs of `Necrom`. Som
 
 ![](img/ray4.jpeg)
 ![](img/ray7.jpeg)
+![](img/ray8.jpg)
 
-# Ciel of Narsis
+# Ciel, the Playwright of Narsis
 
+From a deep cave system near an undetermined dwenver ruin, came an orc to the city of `Narsis`. An axe-wielder, he was known as `The Mountain Splitter` and `The Chameleon` for a ring that gave him a blending translucence.
+
+He is only called Ciel by performers of the `Hlaalu Theater` and has been see in trading mysterious masks at the `Grand Bazaar`. It is said that when returns from his ventures out East, he returns with a mask to sell and returns with books to the `Hlaalu Theater` - whether by leaning into this rumor or from hearing tales - is likely to announce a new production for the citizens of `Narsis`. He carries a small vail around his waist that is set to contain a voice of an `Ilmeni` as his own voice has never been heard. 
+
+Thus Ciel is best known as `The Playwright` within `Narsis`.
+
+![](img/ciel5.jpg)
+![](img/ciel4.jpg)
+
+# Zhuangzi, the Pilgrim
 TBD
-
-

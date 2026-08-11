@@ -1,0 +1,73 @@
+# Local dev server. Mirrors .github/workflows/pages.yml (ruby 3.3, bundler 4.0.15).
+#
+#   podman compose up                      -> http://localhost:4000, rebuilds on save
+#   podman compose down
+#   podman compose run --rm projects       -> regenerate _data/projects.json only
+#   podman compose run --rm build          -> one-shot production build into _site/
+#
+# Gems install to ./vendor/bundle (gitignored) so they survive between runs.
+#
+# Watching: --force_polling is required because inotify events don't cross the
+# bind mount reliably in a container. Edits to pages/layouts/includes/assets
+# rebuild automatically; _config.yml changes do NOT — restart the container.
+# Editing the project tables in index.md needs `run --rm projects` to refresh
+# the JSON-LD data file.
+#
+# SELinux: the mount uses :z (shared label), NOT :Z. :Z assigns per-container MCS
+# categories, so the `projects` container relabels the tree and `serve` then dies
+# with "Errno::EACCES: Permission denied @ dir_initialize - /site". Two services
+# sharing one bind mount need the shared label.
+
+x-jekyll: &jekyll
+  image: docker.io/library/ruby:3.3
+  working_dir: /site
+  volumes:
+    - .:/site:z
+  environment:
+    # jekyll-github-metadata needs this for site.github.* (used in _layouts/default.html).
+    - PAGES_REPO_NWO=chrisbrasington/chrisbrasington.github.io
+    # Pass-through, NOT defaulted: an empty JEKYLL_GITHUB_TOKEN makes octokit send
+    # blank credentials and the build dies with "401 Bad credentials". Unset is fine
+    # (anonymous API, rate limited); `export JEKYLL_GITHUB_TOKEN=$(gh auth token)`
+    # if you hit the limit.
+    - JEKYLL_GITHUB_TOKEN
+    - BUNDLE_PATH=vendor/bundle
+
+services:
+  # Regenerates _data/projects.json from the project tables in index.md.
+  projects:
+    image: docker.io/library/python:3-slim
+    working_dir: /site
+    volumes:
+      - .:/site:z
+    command: python3 scripts/generate_projects.py
+
+  serve:
+    <<: *jekyll
+    depends_on:
+      projects:
+        condition: service_completed_successfully
+    ports:
+      - "4000:4000"
+      - "35729:35729" # livereload
+    command: >
+      bash -lc "gem install bundler -v 4.0.15 --no-document &&
+                bundle install &&
+                bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling"
+
+  # Same build CI runs. Writes _site/, then exits.
+  build:
+    <<: *jekyll
+    profiles: [tools]
+    depends_on:
+      projects:
+        condition: service_completed_successfully
+    environment:
+      - JEKYLL_ENV=production
+      - PAGES_REPO_NWO=chrisbrasington/chrisbrasington.github.io
+      - JEKYLL_GITHUB_TOKEN
+      - BUNDLE_PATH=vendor/bundle
+    command: >
+      bash -lc "gem install bundler -v 4.0.15 --no-document &&
+                bundle install &&
+                bundle exec jekyll build"
