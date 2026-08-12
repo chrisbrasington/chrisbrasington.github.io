@@ -57,7 +57,9 @@ Ciel, under the `Atronoch` sign, does not regenerate magic, but is often dependa
 
 Still in rags, Ciel walked into `Hlaalu Guard Tower` near `Narsis` with a full garrison of guards and used chitin throwing stars to harass one guard out of an armory store room, paid a $40 fine, then snuck in and locked themselves in the armory before the guard returned. In the morining, in a full set of `Bonemold Cuirass` armor, they walked right out the front-door and thus quote "joined" the house `Hlaalu` guards.
 
-Ciel is only known by name by performers of the `Hlaalu Theater` in `Narsis` and has been see in trading mysterious masks at the `Grand Bazaar`. It is said that when returns from his ventures out East, he returns with a mask to sell and returns with books to the `Hlaalu Theater` - whether by leaning into this rumor or from hearing tales - is likely to announce a new production for the citizens of `Narsis`. He carries a small vail around his waist that is set to contain a voice of an `Ilmeni` as his own voice has never been heard. 
+Ciel is only known by name by performers of the `Hlaalu Theater` in `Narsis` and has been see in trading mysterious masks at the `Grand Bazaar`. It is said that when returns from his ventures out East, he returns with a mask to sell and returns with books to the `Hlaalu Theater` - whether by leaning into this rumor or from hearing tales - is likely to announce a new production for the citizens of `Narsis`. 
+
+He carries a small vails around his waist that are said to contain a voices of a number of clan `Ilmeni`; as best can anyone tell, each mask he wears appears to have a distinct voice.
 
 Thus Ciel is best known as `The Playwright` within `Narsis`.
 
