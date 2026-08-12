@@ -5,7 +5,12 @@
 #   podman compose run --rm projects       -> regenerate _data/projects.json only
 #   podman compose run --rm build          -> one-shot production build into _site/
 #
-# Gems install to ./vendor/bundle (gitignored) so they survive between runs.
+# Gems install to ./vendor/bundle-container (gitignored) so they survive between
+# runs. That path is deliberately NOT ./vendor/bundle, the default a plain host
+# `bundle install` uses: Debian's ruby writes binstubs with `#!/usr/bin/env ruby3.3`,
+# a binary name that doesn't exist in the ruby:3.3 image (interpreter there is
+# /usr/local/bin/ruby), so a shared path makes `bundle exec jekyll` die with
+# "env: 'ruby3.3': No such file or directory". Separate paths, no collision.
 #
 # Watching: --force_polling is required because inotify events don't cross the
 # bind mount reliably in a container. Edits to pages/layouts/includes/assets
@@ -31,7 +36,7 @@ x-jekyll: &jekyll
     # (anonymous API, rate limited); `export JEKYLL_GITHUB_TOKEN=$(gh auth token)`
     # if you hit the limit.
     - JEKYLL_GITHUB_TOKEN
-    - BUNDLE_PATH=vendor/bundle
+    - BUNDLE_PATH=vendor/bundle-container
 
 services:
   # Regenerates _data/projects.json from the project tables in index.md.
@@ -66,7 +71,7 @@ services:
       - JEKYLL_ENV=production
       - PAGES_REPO_NWO=chrisbrasington/chrisbrasington.github.io
       - JEKYLL_GITHUB_TOKEN
-      - BUNDLE_PATH=vendor/bundle
+      - BUNDLE_PATH=vendor/bundle-container
     command: >
       bash -lc "gem install bundler -v 4.0.15 --no-document &&
                 bundle install &&

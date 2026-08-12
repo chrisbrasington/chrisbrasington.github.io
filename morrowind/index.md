@@ -14,6 +14,14 @@ description: >-
 
 # Zhuangzi, the Pilgrim
 
+> Roleplay: Monk of the temple
+> Goal: `Poison Song` content
+> Weapon: unarmed fists
+> House: `Indoril`
+> Expansion: `Tamriel Rebuild - Poision Song (unreleased)`
+> Region: `Vvardenfell` and `Sundered Scar`
+> Guild: Temple
+
 Zhuangzi, a monk bearing no weapons (except his fists) and having completed the pilgrimage of the `Seven Graces` to join the temple, Zhuangzi is faced with a decision to continue temple tasks in ``Ald`ruhn`` or to head south out of `Vvardenfell` to join `House Indoril`.
 
 TBD
@@ -27,6 +35,14 @@ TBD
 
 # Ciel, the Playwright of Narsis
 
+> Roleplay: Orc with an axe
+> Goal: `Grasping Fortune` content, Hlaalu
+> Weapon: axe
+> House: `Halaal`
+> Expansion: `Tamriel Rebuild - Grasping Fortune`
+> Region: `Narsis` and `Akamora` (eastern Morrowind)
+> Guild: Fighter's Guild
+
 From a deep cave system near an undetermined dwenver ruin, came an orc to the city of `Narsis`. An axe-wielder, he was known as `The Mountain Splitter` and `The Chameleon` for a ring that gave him a blending translucence.
 
 He is only called Ciel by performers of the `Hlaalu Theater` and has been see in trading mysterious masks at the `Grand Bazaar`. It is said that when returns from his ventures out East, he returns with a mask to sell and returns with books to the `Hlaalu Theater` - whether by leaning into this rumor or from hearing tales - is likely to announce a new production for the citizens of `Narsis`. He carries a small vail around his waist that is set to contain a voice of an `Ilmeni` as his own voice has never been heard. 
@@ -37,6 +53,14 @@ Thus Ciel is best known as `The Playwright` within `Narsis`.
 ![](img/ciel4.jpg)
 
 # Raylinth the Silent Wanderer
+
+> Roleplay: Destruction mage
+> Goal: older `Tamriel Rebuilt` content, Mages Guild
+> Weapon: Destruction magic
+> House: `??`
+> Expansion: `Tamriel Rebuild - pre-2024 content`
+> Region: `Old Ebonheart` and various
+> Guild: Mages Guild
 
 ![](img/ray1.jpeg)
 
@@ -70,6 +94,14 @@ It is unknown what Raylinth found or took from the sacred tombs of `Necrom`. Som
 
 # Etria the Hidden Nerevarine
 
+> Roleplay: Base Game
+> Goal: Vanilla experience
+> Weapon: Longsword
+> House: `Telvani`
+> Expansion: Official: `Tribunal` and `Bloodmoon`
+> Region: `Vvardenfell` 
+> Guild: Mages Guild
+
 ![](img/etria1.jpeg)
 
 I'll spare you the tale of the savior of `Vvardenfall` and tell you the lesser known details of the Nerevarine.
@@ -91,8 +123,5 @@ Word of united tribal nations in `Vvardenfall` spread south from the island. Rev
 Etria was last seen along the `Aanthirin` river.
 
 ![](img/etria3.jpeg)
-
 ![](img/etria4.jpeg)
-
 ![](img/etria5.jpeg)
-
