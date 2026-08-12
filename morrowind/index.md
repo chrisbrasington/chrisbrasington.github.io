@@ -6,7 +6,7 @@ description: >-
   Raylinth the Silent Wanderer, and Ciel of Narsis.
 ---
 
-# Tales of Greater Morrowind
+# Tales of Greater Morrowind (Roleplay)
 - [Zhuangzi, the Pilgrim](#zhuangzi-the-pilgrim) (Summer 2026 - TR - prep for Poison Song)
 - [Ciel, the Playwright of Narsis](#ciel-the-playwright-of-narsis) (2026 - TR - Grasping Fortune )
 - [Raylinth the Silent Wanderer](#raylinth-the-silent-wanderer) (2025 - Tamriel Rebuilt)
@@ -14,13 +14,15 @@ description: >-
 
 # Zhuangzi, the Pilgrim
 
+```
 > Roleplay: Monk of the temple
-> Goal: `Poison Song` content
+> Goal: `Tamriel Rebuild - Poision Song (unreleased)`
 > Weapon: unarmed fists
 > House: `Indoril`
 > Expansion: `Tamriel Rebuild - Poision Song (unreleased)`
 > Region: `Vvardenfell` and `Sundered Scar`
 > Guild: Temple
+```
 
 Zhuangzi, a monk bearing no weapons (except his fists) and having completed the pilgrimage of the `Seven Graces` to join the temple, Zhuangzi is faced with a decision to continue temple tasks in ``Ald`ruhn`` or to head south out of `Vvardenfell` to join `House Indoril`.
 
@@ -35,13 +37,15 @@ TBD
 
 # Ciel, the Playwright of Narsis
 
+```with
 > Roleplay: Orc with an axe
-> Goal: `Grasping Fortune` content, Hlaalu
+> Goal: `Tamriel Rebuild - Grasping Fortune` content, Hlaalu
 > Weapon: axe
 > House: `Halaal`
 > Expansion: `Tamriel Rebuild - Grasping Fortune`
 > Region: `Narsis` and `Akamora` (eastern Morrowind)
 > Guild: Fighter's Guild
+```
 
 From a deep cave system near an undetermined dwenver ruin, came an orc to the city of `Narsis`. An axe-wielder, he was known as `The Mountain Splitter` and `The Chameleon` for a ring that gave him a blending translucence.
 
@@ -54,6 +58,7 @@ Thus Ciel is best known as `The Playwright` within `Narsis`.
 
 # Raylinth the Silent Wanderer
 
+```
 > Roleplay: Destruction mage
 > Goal: older `Tamriel Rebuilt` content, Mages Guild
 > Weapon: Destruction magic
@@ -61,6 +66,7 @@ Thus Ciel is best known as `The Playwright` within `Narsis`.
 > Expansion: `Tamriel Rebuild - pre-2024 content`
 > Region: `Old Ebonheart` and various
 > Guild: Mages Guild
+```
 
 ![](img/ray1.jpeg)
 
@@ -94,6 +100,7 @@ It is unknown what Raylinth found or took from the sacred tombs of `Necrom`. Som
 
 # Etria the Hidden Nerevarine
 
+```
 > Roleplay: Base Game
 > Goal: Vanilla experience
 > Weapon: Longsword
@@ -101,6 +108,7 @@ It is unknown what Raylinth found or took from the sacred tombs of `Necrom`. Som
 > Expansion: Official: `Tribunal` and `Bloodmoon`
 > Region: `Vvardenfell` 
 > Guild: Mages Guild
+```
 
 ![](img/etria1.jpeg)
 
