@@ -24,7 +24,7 @@ description: >-
 > Guild: Temple
 ```
 
-Zhuangzi, a monk bearing no weapons (except his fists) and having completed the pilgrimage of the `Seven Graces` to join the temple in `Vvardenfell`. 
+The story of Zhuangzi, a monk bearing no weapons (except his fists), begins with the completion the pilgrimage of the `Seven Graces` to join the temple in `Vvardenfell`. 
 
 Zhuangzi on return from red mountain during pilgrimage was overwhelmed by monsters during an ash storm and running brought an entire horde to `Moonmoth Legion Fort` outside `Balmora` where knights came to assist. He doesn't talk about this part of his pilgrimage, but he is a fantastic endurance runner. 
 
