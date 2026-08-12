@@ -56,7 +56,7 @@ Thus Ciel is best known as `The Playwright` within `Narsis`.
 ![](img/ciel5.jpg)
 ![](img/ciel4.jpg)
 
-# Raylinth the Silent Wanderer
+# Raylinth, the Silent Wanderer
 
 ```
 > Roleplay: Destruction mage
@@ -98,7 +98,7 @@ It is unknown what Raylinth found or took from the sacred tombs of `Necrom`. Som
 ![](img/ray7.jpeg)
 ![](img/ray8.jpg)
 
-# Etria the Hidden Nerevarine
+# Etria, the Hidden Nerevarine
 
 ```
 > Roleplay: Base Game
