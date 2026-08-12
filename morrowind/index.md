@@ -8,7 +8,7 @@ description: >-
 
 # Tales of Greater Morrowind (Roleplay)
 - [Zhuangzi, the Poison-Fist Pilgrim](#zhuangzi-the-poison-fist-pilgrim) (Summer 2026 - TR - prep for Poison Song)
-- [Ciel, the Playwright of Narsis](#ciel-the-playwright-of-narsis) (2026 - TR - Grasping Fortune )
+- [Ciel, the Masked Playwright and Scourge of Narsis](#ciel-the-masked-playwright-and-scourge-of-narsis) (2026 - TR - Grasping Fortune )
 - [Raylinth, the Silent Wanderer](#raylinth-the-silent-wanderer) (2025 - Tamriel Rebuilt)
 - [Etrian, the Hidden Nerevarine](#etria-the-hidden-nerevarine) (2024 - main playthrough)
 
@@ -26,7 +26,7 @@ description: >-
 
 Zhuangzi, a monk bearing no weapons (except his fists) and having completed the pilgrimage of the `Seven Graces` to join the temple in `Vvardenfell`. 
 
-Zhuangzi on return from red mountain during pilgrimage was overwhelmed by monsters during an ash storm and running brought an entire horde to `Moonmoth Legion Fort` outside `Balmora` where knights came to assist. He doesn't talk about this part of his pilgrimage. 
+Zhuangzi on return from red mountain during pilgrimage was overwhelmed by monsters during an ash storm and running brought an entire horde to `Moonmoth Legion Fort` outside `Balmora` where knights came to assist. He doesn't talk about this part of his pilgrimage, but he is a fantastic endurance runner. 
 
 They are now faced with a decision to continue temple tasks in ``Ald`ruhn`` or to head south out of `Vvardenfell` to join `House Indoril`.
 
@@ -39,7 +39,7 @@ They are now faced with a decision to continue temple tasks in ``Ald`ruhn`` or t
 ![](img/z5.jpg)
 ![](img/z6.jpg)
 
-# Ciel, the Playwright of Narsis
+# Ciel, the Masked Playwright and Scourge of Narsis
 
 ```with
 > Roleplay: Orc with an axe
@@ -63,6 +63,8 @@ Thus Ciel is best known as `The Playwright` within `Narsis`.
 
 <u>Story pending...</u>
 
+![](img/cielmask1.png)
+![](img/cielmask2.png)
 ![](img/ciel5.jpg)
 ![](img/ciel4.jpg)
 
@@ -122,7 +124,7 @@ It is unknown what Raylinth found or took from the sacred tombs of `Necrom`. Som
 
 ![](img/etria1.jpeg)
 
-I'll spare you the tale of the savior of `Vvardenfall` and tell you the lesser known details of the Nerevarine.
+I'll spare you the famous tale of the savior of `Vvardenfall` and tell you the lesser known details of the `Nerevarine`.
 
 Etria wore dark red peasant robes, gloves, and hid their race behind a common Redoran watchman's helmet (perhaps for this reason they were hated by the Redoran). Despite being the native race to Morrowind, the dark elves, they never let this show - their pale gloves often being mistaken for Breton. It is perhaps due to the hatred they received from the House Redoran that Etria found alliance with the House Telvanni - though a great many mysterious deaths of high Telvanni house members occurred at this time.
 
