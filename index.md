@@ -164,6 +164,7 @@ new Chart(ctx, {
 | Denver Museum of Nature & Science | | |
 |----------|------------|------------|
 | [dmns.org](https://www.dmns.org/) | A custom ecommerce implementation and integration with Umbraco CMS for ticket sales of Denver Museum of Nature & Science | ![](./resources/dmns1.png) ![](./resources/dmns2.png) ![](./resources/dmns3.png) | C#, Blazor, Umbraco, OIDC
+| [learning.dmns.org](https://learning.dmns.org) | A custom booking and invoicing portal serving schools and teachers in the greater Denver area. | ![](./resources/learning1.png) | C#, Blazor, Umbraco, OIDC
 | dmns curiosity cruiser - now [Discovery Station](https://www.dmns.org/programs-and-events/discovery-station/) | roving science | ![](./resources/cruiser1.png) | C#, Android, Unity, Azure Devops
 | dmns kiosk | A vital resource to ticket sales on the floor of the museum. Facilitates ticket sales and entry and throughout the museum with added digital SMS delivery.  | ![](./resources/dmnskiosk1.jpg) | C#
 | dmns member app | | | C#, Maui
