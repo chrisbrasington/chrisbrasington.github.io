@@ -187,7 +187,7 @@ new Chart(ctx, {
 |----------|------------|------------|
 | [mitek blackpoint](https://www.mitek-us.com/software/blackpoint/) | Headless autoCAD/revit automation and materials manager | ![](./resources/blackpoint.webp) | C#
 | [mitek mezzanine] Enterprise webapp for Mezzanine construction | ![](./resources/mezz.jpg) | C#, Blazor
-| [hohmann & barnard](https://www.h-b.com/) | Bill of Material gemeration - Order submittal package generation and cost estimation | ![](./resources/hb.jpg) | C#, Blazor
+| [hohmann & barnard](https://www.h-b.com/) | Bill of Material generation - Order submittal package generation and cost estimation | ![](./resources/hb.jpg) | C#, Blazor
 
 ## </> Projects
 
