@@ -30,7 +30,7 @@ const linkData = {
         { "name": "cb-debian", "url": "https://cb-debian:8384", "hidden": true }
     ],
     "~/media 🖭": [
-        { "name": "youtube-zero", "url": "http://valhalla:8000/"},
+        { "name": "youtube-zero", "url": "https://youtube.home.chrisincode.com"},
         { "name": "Tidal", "url": "https://listen.tidal.com/" },
         { "name": "Last.FM", "url": "https://www.last.fm/user/raylinth" },
         { "name": "Youtube Subs", "url": "https://www.youtube.com/feed/subscriptions" },
