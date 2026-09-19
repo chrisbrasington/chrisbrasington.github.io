@@ -8,9 +8,33 @@ This is my personalized startpage, designed to be my browser homepage. It includ
 
 ## Repository Structure
 
-- **resources**: This directory contains screenshots of the page.
-- **scripts**: This directory contains the scripts used in the startpage.
-- **static**: This directory contains the CSS and other files used in the startpage.
+- **_build**: Build script and page template. Not published by Jekyll.
+- **scripts**: The scripts used in the startpage.
+- **static**: CSS, font, icons and hero images.
+- **index.html** / **sw.js**: Generated. Do not edit by hand.
+
+## Building
+
+`index.html` is compiled from the sources so the page is a single request with
+nothing left to fetch or lay out after first paint. The stylesheet, scripts and
+settings icons are inlined, and the link list in `scripts/links.js` is rendered
+to static markup instead of being built by JavaScript on load.
+
+Edit `scripts/links.js`, `static/styles/style.css` or `_build/index.template.html`,
+then from this directory run:
+
+```sh
+python3 _build/build.py
+```
+
+That rewrites `index.html` and `sw.js`, and commits go up as usual.
+
+Adding or removing a file in `static/images/` is enough to change the hero image
+rotation - the build picks the directory up automatically.
+
+`sw.js` is a service worker that precaches the font and every hero image, so
+repeat visits paint immediately. The document itself is fetched network-first,
+so a rebuild is never served stale.
 
 ## Keyboard Shortcuts
 
