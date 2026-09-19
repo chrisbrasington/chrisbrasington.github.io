@@ -18,8 +18,6 @@ const linkData = {
         { "name": "Last.FM", "url": "https://www.last.fm/user/raylinth" },
         { "name": "Youtube Subs", "url": "https://www.youtube.com/feed/subscriptions" },
         { "name": "Plex", "url": "https://app.plex.tv/desktop/#/" },
-        { "name": "HDtoday.tv", "url": "https://hdtoday.tv/home", "hidden": true },
-        { "name": "TED-Ed", "url": "https://www.youtube.com/@TEDEd" },
         { "name": "Wallhaven", "url": "https://wallhaven.cc/" }
     ],
     "~/anime 萌": [
