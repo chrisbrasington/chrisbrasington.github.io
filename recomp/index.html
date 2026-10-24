@@ -93,7 +93,13 @@
         const { cls, badge } = STATUS[g.status];
         const card = el(grid, "div", `recomp-card ${cls}`);
         if (g.cover) {
-            const cover = el(card, "div", "recomp-cover");
+            const cover = el(card, g.urls.length ? "a" : "div", "recomp-cover");
+            if (g.urls.length) {
+                cover.href = g.urls[0];
+                cover.target = "_blank";
+                cover.rel = "noopener";
+                cover.title = g.urls[0];
+            }
             const img = el(cover, "img");
             img.src = g.cover;
             img.alt = g.title;

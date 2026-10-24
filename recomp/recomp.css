@@ -124,4 +124,5 @@ body { margin: 0; background: #14191d; color: #f0f0f0; font-family: 'Crimson Tex
 }
 .recomp-note a { color: #4fd1c5; }
 .recomp-grid { justify-content: center; }
+a.recomp-cover { display: block; }
 @media (max-width: 560px) { .recomp-card { width: 100%; } }
