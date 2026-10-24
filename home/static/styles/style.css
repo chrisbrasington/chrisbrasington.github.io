@@ -25,7 +25,12 @@ html, body {
 
 @font-face {
     font-family: "default-font";
-    src: url("../fonts/hack.ttf");
+    src: url("../fonts/hack.woff2") format("woff2");
+    font-display: swap;
+    /* Latin only - CJK/emoji in link labels already fall back to the system font */
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                   U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+                   U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 * {
@@ -285,6 +290,8 @@ li:first-child {
 }
 
 #image-display {
+    display: block;
+    background: var(--color-background-3);
     height: 45rem;
 	width: 30rem;
 	object-fit: cover;
@@ -336,6 +343,14 @@ li:first-child {
 
     #image-container {
         display: none;
+    }
+}
+
+/* replaces the old window.onload body-scale script (it painted, then jumped) */
+@media screen and (max-height: 1080px) {
+    body {
+        transform: scale(0.9);
+        transform-origin: center center;
     }
 }
 

@@ -6,17 +6,31 @@ description: >-
   Raylinth the Silent Wanderer, and Ciel of Narsis.
 ---
 
-# Tales of Greater Morrowind
-- [Zhuangzi, the Pilgrim](#zhuangzi-the-pilgrim) (Summer 2026 - TR - prep for Poison Song)
-- [Ciel, the Playwright of Narsis](#ciel-the-playwright-of-narsis) (2026 - TR - Grasping Fortune )
-- [Raylinth the Silent Wanderer](#raylinth-the-silent-wanderer) (2025 - Tamriel Rebuilt)
-- [Etrian the Hidden Nerevarine](#etria-the-hidden-nerevarine) (2024 - main playthrough)
+# Tales of Greater Morrowind (Roleplay)
+- [Zhuangzi, the Poison-Fist Pilgrim](#zhuangzi-the-poison-fist-pilgrim) (Summer 2026 - TR - prep for Poison Song)
+- [Ciel, the Masked Playwright and Scourge of Narsis](#ciel-the-masked-playwright-and-scourge-of-narsis) (2026 - TR - Grasping Fortune )
+- [Raylinth, the Silent Wanderer](#raylinth-the-silent-wanderer) (2025 - Tamriel Rebuilt)
+- [Etrian, the Hidden Nerevarine](#etria-the-hidden-nerevarine) (2024 - main playthrough)
 
-# Zhuangzi, the Pilgrim
+# Zhuangzi, the Poison-Fist Pilgrim
 
-Zhuangzi, a monk bearing no weapons (except his fists) and having completed the pilgrimage of the `Seven Graces` to join the temple, Zhuangzi is faced with a decision to continue temple tasks in ``Ald`ruhn`` or to head south out of `Vvardenfell` to join `House Indoril`.
+```
+> Roleplay: Monk of the temple
+> Goal: `Tamriel Rebuild - Poision Song (unreleased)`
+> Weapon: unarmed fists
+> House: `Indoril`
+> Expansion: `Tamriel Rebuild - Poision Song (unreleased)`
+> Region: `Vvardenfell` and `Sundered Scar`
+> Guild: Temple
+```
 
-TBD
+The story of Zhuangzi, a monk bearing no weapons (except his fists), begins with the completion the pilgrimage of the `Seven Graces` to join the temple in `Vvardenfell`. 
+
+((It was mostly a calm journey - except - upon  return from red mountain during pilgrimage, Zhuangzi was overwhelmed by monsters during an ash storm and running brought an entire horde to `Moonmoth Legion Fort` outside `Balmora` where knights came to assist. He doesn't talk about this part of his pilgrimage, but he is a fantastic endurance runner.))
+
+They are now faced with a decision to continue temple tasks in ``Ald`ruhn`` or to head south out of `Vvardenfell` to join `House Indoril`.
+
+<u>Story pending...</u>
 
 ![](img/z1.jpg)
 ![](img/z2.jpg)
@@ -25,18 +39,48 @@ TBD
 ![](img/z5.jpg)
 ![](img/z6.jpg)
 
-# Ciel, the Playwright of Narsis
+# Ciel, the Masked Playwright and Scourge of Narsis
+
+```with
+> Roleplay: Orc with an axe
+> Goal: `Tamriel Rebuild - Grasping Fortune` content, Hlaalu
+> Weapon: axe
+> House: `Hlaalu`
+> Expansion: `Tamriel Rebuild - Grasping Fortune`
+> Region: `Narsis` and `Akamora` (eastern Morrowind)
+> Guild: Fighter's Guild kinda..
+```
 
 From a deep cave system near an undetermined dwenver ruin, came an orc to the city of `Narsis`. An axe-wielder, he was known as `The Mountain Splitter` and `The Chameleon` for a ring that gave him a blending translucence.
 
-He is only called Ciel by performers of the `Hlaalu Theater` and has been see in trading mysterious masks at the `Grand Bazaar`. It is said that when returns from his ventures out East, he returns with a mask to sell and returns with books to the `Hlaalu Theater` - whether by leaning into this rumor or from hearing tales - is likely to announce a new production for the citizens of `Narsis`. He carries a small vail around his waist that is set to contain a voice of an `Ilmeni` as his own voice has never been heard. 
+Ciel, under the `Atronoch` sign, does not regenerate magic, but is often dependant upon his `berserk` ability. They joined the Mage's guild, refuse to do any quests, and just take mana potions from the guild. The guild members are terrified but not enough to do anything about it. The Fighter's guild finds it hilarious.
+
+Still in rags, Ciel walked into `Hlaalu Guard Tower` near `Narsis` with a full garrison of guards and used chitin throwing stars to harass one guard out of an armory store room, paid a $40 fine, then snuck in and locked themselves in the armory before the guard returned. In the morining, in a full set of `Bonemold Cuirass` armor, they walked right out the front-door and thus quote "joined" the house `Hlaalu` guards.
+
+Ciel is only known by name by performers of the `Hlaalu Theater` in `Narsis` and has been see in trading mysterious masks at the `Grand Bazaar`. It is said that when returns from his ventures out East, he returns with a mask to sell and returns with books to the `Hlaalu Theater` - whether by leaning into this rumor or from hearing tales - is likely to announce a new production for the citizens of `Narsis`. 
+
+He carries a small vails around his waist that are said to contain a voices of a number of clan `Ilmeni`; as best can anyone tell, each mask he wears appears to have a distinct voice.
 
 Thus Ciel is best known as `The Playwright` within `Narsis`.
 
+<u>Story pending...</u>
+
+![](img/cielmask1.png)
+![](img/cielmask2.png)
 ![](img/ciel5.jpg)
 ![](img/ciel4.jpg)
 
-# Raylinth the Silent Wanderer
+# Raylinth, the Silent Wanderer
+
+```
+> Roleplay: Destruction mage
+> Goal: older `Tamriel Rebuilt` content, Mages Guild
+> Weapon: Destruction magic
+> House: `??`
+> Expansion: `Tamriel Rebuild - pre-2024 content`
+> Region: `Old Ebonheart` and various
+> Guild: Mages Guild
+```
 
 ![](img/ray1.jpeg)
 
@@ -68,11 +112,21 @@ It is unknown what Raylinth found or took from the sacred tombs of `Necrom`. Som
 ![](img/ray7.jpeg)
 ![](img/ray8.jpg)
 
-# Etria the Hidden Nerevarine
+# Etria, the Hidden Nerevarine
+
+```
+> Roleplay: Base Game
+> Goal: Vanilla experience
+> Weapon: Longsword
+> House: `Telvani`
+> Expansion: Official: `Tribunal` and `Bloodmoon`
+> Region: `Vvardenfell` 
+> Guild: Mages Guild
+```
 
 ![](img/etria1.jpeg)
 
-I'll spare you the tale of the savior of `Vvardenfall` and tell you the lesser known details of the Nerevarine.
+I'll spare you the famous tale of the savior of `Vvardenfall` and tell you the lesser known details of the `Nerevarine`.
 
 Etria wore dark red peasant robes, gloves, and hid their race behind a common Redoran watchman's helmet (perhaps for this reason they were hated by the Redoran). Despite being the native race to Morrowind, the dark elves, they never let this show - their pale gloves often being mistaken for Breton. It is perhaps due to the hatred they received from the House Redoran that Etria found alliance with the House Telvanni - though a great many mysterious deaths of high Telvanni house members occurred at this time.
 
@@ -91,8 +145,5 @@ Word of united tribal nations in `Vvardenfall` spread south from the island. Rev
 Etria was last seen along the `Aanthirin` river.
 
 ![](img/etria3.jpeg)
-
 ![](img/etria4.jpeg)
-
 ![](img/etria5.jpeg)
-

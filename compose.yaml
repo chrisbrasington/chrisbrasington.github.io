@@ -5,7 +5,18 @@
 #   podman compose run --rm projects       -> regenerate _data/projects.json only
 #   podman compose run --rm build          -> one-shot production build into _site/
 #
-# Gems install to ./vendor/bundle (gitignored) so they survive between runs.
+# Gems install to ./vendor/bundle (gitignored) so they survive between runs. Keep
+# that path: Jekyll's default excludes cover vendor/bundle/, and anywhere else
+# (vendor/bundle-container/, say) gets scanned as site content and the build dies
+# on the gem's own site_template posts.
+#
+# Do NOT run `bundle install` on the host against this directory. Debian's ruby
+# writes binstubs with `#!/usr/bin/env ruby3.3`, a binary that doesn't exist in the
+# ruby:3.3 image (interpreter there is /usr/local/bin/ruby), and the container then
+# dies with "env: 'ruby3.3': No such file or directory". If that happens, delete
+# ./vendor/bundle and let the container reinstall. There is deliberately no
+# .bundle/config here — a local BUNDLE_PATH there silently overrides the env var
+# set below, which is how the host path leaked in the first place.
 #
 # Watching: --force_polling is required because inotify events don't cross the
 # bind mount reliably in a container. Edits to pages/layouts/includes/assets

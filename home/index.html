@@ -1,65 +1,548 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
     <title>~/startpage</title>
-    <link rel="icon" href="static/icons/icon.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="icon" href="static/icons/icon.svg" type="image/svg+xml">
+    <link rel="preload" href="static/fonts/hack.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- BUILD:STYLE -->
     <style>
-        .hidden-link {
+        :root {
+            --color-foreground-1: #F8F8F2;
+            --color-foreground-2: #B9BBCB;
+
+            --color-background-1: #44475A;
+            --color-background-2: #282A36;
+            --color-background-3: #21222C;
+
+            --color-accent-1: #BD93F9;
+            --color-accent-2: #BD93F933;
+
+            --color-shadow-1: #21222C;
+            --color-shadow-2: #D6ACFF;
+
+        	--button-inactive: invert(25%) sepia(9%) saturate(1455%) hue-rotate(194deg) brightness(93%) contrast(82%);
+        	--button-active: invert(68%) sepia(92%) saturate(2532%) hue-rotate(213deg) brightness(101%) contrast(103%);
+
+            --transition-speed: 0.25s;
+            --border-radius: 0.75rem;
+        }
+
+        html, body {
+            background: var(--color-background-2);
+        }
+
+        @font-face {
+            font-family: "default-font";
+            src: url("../fonts/hack.woff2") format("woff2");
+            font-display: swap;
+            /* Latin only - CJK/emoji in link labels already fall back to the system font */
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                           U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+                           U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        * {
+            font-family: 'default-font', sans-serif;
+            font-size: 18px;
+        }
+
+        html {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 5vw;
+
+            background: var(--color-background-2);
+            color: var(--color-foreground-1);
+        }
+
+        a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            font-size: 1rem;
+            color: var(--color-foreground-1);
+            transition: var(--transition-speed) ease;
+        }
+
+        a:hover {
+            font-weight: bold;
+            color: var(--color-accent-1);
+            transition: var(--transition-speed) ease;
+        }
+
+        ul {
+            margin: 0rem 2rem 0rem 2rem;
+            padding: 0;
+            list-style-type: none;
+            white-space: nowrap;
+        }
+
+        li {
+            line-height: 1.5rem;
+            color: var(--color-accent-1);
+        }
+
+        li:first-child {
+            display: inline-block;
+
+            margin-bottom: 0.5rem;
+
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 2rem;
+        }
+
+        #settings-container {
             display: none;
+            position: fixed;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        	z-index: 2;
+
+            width: 100%;
+            height: 100%;
+
+            background-color: var(--color-accent-2);
+            backdrop-filter: blur(16px);
         }
+
+        #settings-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        	padding: 3rem;
+
+            border-radius: var(--border-radius);
+            background: var(--color-background-3);
+            box-shadow: var(--color-shadow-1) 0rem 0rem 2.75rem;
+        }
+
+        #settings-content {
+        	display: flex;
+        	flex-direction: row;
+        	align-items: center;
+
+        	gap: 3rem;
+        }
+
+        .settings-options {
+            display: flex;
+            flex-direction: column;
+
+            gap: 1rem;
+        }
+
+        .settings-selector {
+            padding: 1rem;
+            appearance: none;
+            cursor: pointer;
+
+            border: none;
+            border-radius: var(--border-radius);
+
+            background-color: var(--color-background-2);
+            color: var(--color-foreground-1);
+        }
+
+        .settings-selector option {
+            height: 3rem;
+            background-color: var(--color-background-2);
+        }
+
+        .settings-selector:hover {
+            background-color: var(--color-background-1);
+            transition: var(--transition-speed) ease-in-out;
+        }
+
+        .settings-selector:focus {
+            outline: none;
+        }
+
+        #settings-display {
+        	display: flex;
+            position: absolute;
+        	justify-content: center;
+        	z-index: 1;
+
+            height: 1.5rem;
+            width: 1.5rem;
+            top: 2vh;
+            right: 2vw;
+
+            border: none;
+            cursor: pointer;
+        	background: none;
+        }
+
+        #settings-hide {
+        	display: flex;
+        	justify-content: center;
+
+            margin-top: 2rem;
+            height: 1.5rem;
+            width: 1.5rem;
+
+            border: none;
+        	background: none;
+        }
+
+        #shortcuts-container {
+            display: grid;
+            grid-row-gap: 1rem;
+            grid-auto-rows: max-content;
+            grid-template-columns: 1fr 1fr;
+
+            padding: 3rem;
+            width: 100%;
+            max-width: 1200px;
+            /* height: 35rem; */
+
+            background: var(--color-background-3);
+            border-radius: var(--border-radius);
+            box-shadow: var(--color-shadow-1) 0rem 1rem 2.75rem;
+        }
+
+        #title-display {
+            margin-bottom: 0;
+            grid-column: 1/-1;
+
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+
+            color: var(--color-foreground-1);
+        }
+
+        #date-display {
+            margin-bottom: 0;
+            grid-column: 1/-1;
+
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+
+            color: var(--color-accent-1);
+        }
+
+        #search-form {
+            margin-top: 0rem;
+            margin-bottom: 2.3rem;
+            grid-column: 1/-1;
+
+            text-align: center;
+        }
+
+        #search-input {
+            justify-content: start;
+            text-align: center;
+
+            margin-top: 1rem;
+            height: 100%;
+            width: 100%;
+
+            font-size: 1rem;
+            border-color: transparent;
+            border-radius: var(--border-radius);
+            border-width: 0.2rem;
+            border-style: solid;
+            background: var(--color-background-2);
+            color: var(--color-foreground-1);
+            transition: var(--transition-speed) ease;
+        }
+
+        #search-input:hover {
+            border-style: solid;
+            border-width: 0.2rem;
+            border-color: var(--color-foreground-2);
+            border-radius: var(--border-radius);
+            background: var(--color-background-2);
+        }
+
+        #search-input::placeholder {
+            font-size: 1rem;
+            border-width: 0.2rem;
+            border-color: transparent;
+            color: var(--color-foreground-2);
+        }
+
+        #search-input:focus {
+            border-color: var(--color-accent-1);
+            border-width: 0.22rem;
+            border-radius: var(--border-radius);
+            border-style: solid;
+            outline: none;
+            background-color: var(--color-background-3);
+        }
+
+        .svg-icon {
+        	width: 1.5rem;
+        	height: 1.5rem;
+            filter: var(--button-inactive);
+        }
+
+        .svg-icon:hover {
+            filter: var(--button-active);
+        	cursor: pointer;
+        }
+
+        #image-display {
+            display: block;
+            background: var(--color-background-3);
+            height: 45rem;
+        	width: 30rem;
+        	object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--color-shadow-1) 0rem 1rem 2.75rem;
+            transition: var(--transition-speed) ease-in-out;
+        }
+
+        #image-display:hover {
+            height: 48rem;
+        	width: 32rem;
+            box-shadow: var(--color-shadow-2) 0rem 0rem 2rem;
+            transition: var(--transition-speed) ease-in-out;
+        }
+
+        #icons-box {
+        	display: flex;
+        	align-items: flex-end;
+        	justify-content: center;
+        	height: 3rem;
+        }
+
+        #image-container {
+            margin-top: 2rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        @media (max-width: 1250px) {
+            #image-container {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            ul {
+                margin: 0vw 2vw 0vw 2vw;
+            }
+
+            #search-input {
+                background: var(--color-background-3);
+            }
+
+            #shortcuts-container {
+                background: none;
+                box-shadow: none;
+        		width: 100%;
+            }
+
+            #image-container {
+                display: none;
+            }
+        }
+
+        /* replaces the old window.onload body-scale script (it painted, then jumped) */
+        @media screen and (max-height: 1080px) {
+            body {
+                transform: scale(0.9);
+                transform-origin: center center;
+            }
+        }
+
+        @media screen and (max-width: 1600px) and (max-height: 900px) {
+            * {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 1366px) and (max-height: 758px) {
+            * {
+                font-size: 14px;
+            }
+        }
+
+        #dynamic-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 1.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #dynamic-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #dynamic-links li:first-child {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        #image-container {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        #icons-box a {
+            margin: 0 1rem;
+        }
+
+        #icons-box img {
+            width: 32px;
+            height: 32px;
+        }
+        .hidden-link { display: none; }
     </style>
+
+    <!-- BUILD:COLORSCHEME - runs before first paint so the saved theme never flashes -->
     <script>
-        // Utility function to get the value of a cookie
-        function getCookie(name) {
-            const value = `; ${document.cookie}`;
-            const parts = value.split(`; ${name}=`);
-            if (parts.length === 2) return parts.pop().split(';').shift();
-            return null;
-        }
-
-        // Utility function to set a cookie
-        function setCookie(name, value, days) {
-            const expires = new Date();
-            expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
-            document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
-        }
-
-        window.onload = function() {
-            // List of image filenames
-            const images = ['car.jpg', 'anime.webp', 'spice1.jpg', 'spice2.png'];
-
-            // Get the last image from the cookie
-            const lastImage = getCookie('lastImage');
-            
-            let randomIndex;
-            
-            // If there's a last image in the cookie, make sure the random index is different
-            do {
-                randomIndex = Math.floor(Math.random() * images.length);
-            } while (images[randomIndex] === lastImage);  // Ensure it's different from the last image
-
-            // Get the image element and set its src attribute
-            const imageElement = document.getElementById('image-display');
-            imageElement.src = `static/images/${images[randomIndex]}`;
-            
-            // Set the cookie with the new image filename
-            setCookie('lastImage', images[randomIndex], 7);  // Cookie expires in 7 days
+        var colorschemeList = {
+            "dracula-dark": {
+                '--color-foreground-1': '#F8F8F2',
+                '--color-foreground-2': '#B9BBCB',
+                '--color-background-1': '#44475A',
+                '--color-background-2': '#282A36',
+                '--color-background-3': '#21222C',
+                '--color-accent-1': '#BD93F9',
+                '--color-accent-2': '#BD93F933',
+                '--color-shadow-1': '#21222C',
+                '--color-shadow-2': '#D6ACFF',
+        		'--button-inactive': 'invert(25%) sepia(9%) saturate(1455%) hue-rotate(194deg) brightness(93%) contrast(82%)',
+        		'--button-active': 'invert(68%) sepia(92%) saturate(2532%) hue-rotate(213deg) brightness(101%) contrast(103%)',
+            },
+            "dracula-light": {
+                '--color-foreground-1': '#44475A',
+                '--color-foreground-2': '#353747',
+                '--color-background-1': '#C4C7D4',
+                '--color-background-2': '#F3F4F6',
+                '--color-background-3': '#DCDDE5',
+                '--color-accent-1': '#BD93F9',
+                '--color-accent-2': '#BD93F933',
+                '--color-shadow-1': '#B2B5C2',
+                '--color-shadow-2': '#D6ACFF',
+        		'--button-inactive': 'invert(87%) sepia(10%) saturate(225%) hue-rotate(191deg) brightness(92%) contrast(88%)',
+        		'--button-active': 'invert(68%) sepia(92%) saturate(2532%) hue-rotate(213deg) brightness(101%) contrast(103%)',
+            },
+            "edge": {
+                '--color-foreground-1': '#F8F8F8',
+                '--color-foreground-2': '#B9B9B9',
+                '--color-background-1': '#6B6B6B',
+                '--color-background-2': '#3B3B3B',
+                '--color-background-3': '#2B2B2B',
+                '--color-accent-1': '#C9C9C9',
+                '--color-accent-2': '#9B9B9B33',
+                '--color-shadow-1': '#2B2B2B',
+                '--color-shadow-2': '#B9B9B9',
+        		'--button-inactive': 'invert(44%) sepia(1%) saturate(0%) hue-rotate(105deg) brightness(93%) contrast(95%)',
+        		'--button-active': 'invert(83%) sepia(3%) saturate(26%) hue-rotate(41deg) brightness(104%) contrast(80%)',
+            },
+            "gruvbox": {
+                '--color-foreground-1': '#D4BE98',
+                '--color-foreground-2': '#DDC7A1',
+                '--color-background-1': '#3c3836',
+                '--color-background-2': '#504945',
+                '--color-background-3': '#282828',
+                '--color-accent-1': '#E78A4E',
+                '--color-accent-2': '#E78A4E33',
+                '--color-shadow-1': '#1d2021',
+                '--color-shadow-2': '#A89984',
+        		'--button-inactive': 'invert(7%) sepia(10%) saturate(402%) hue-rotate(156deg) brightness(94%) contrast(96%)',
+        		'--button-active': 'invert(60%) sepia(75%) saturate(483%) hue-rotate(332deg) brightness(95%) contrast(90%)',
+            }
         };
 
-        // Add event listener for Ctrl+A to reveal hidden links
-        document.addEventListener('keydown', function(event) {
-            if (event.ctrlKey && event.key === 'a') {
-                // Reveal hidden links
-                const hiddenLinks = document.querySelectorAll('.hidden-link');
-                hiddenLinks.forEach(link => {
-                    link.style.display = 'block';
-                });
+        // Applies a scheme by name. Deliberately touches nothing but <html>, so this
+        // file is safe to run from <head> before the settings <select> exists - that is
+        // what stops the saved theme from flashing in after paint.
+        function applyColorscheme(name) {
+            var scheme = colorschemeList[name] || colorschemeList["dracula-dark"];
+            var root = document.documentElement;
+
+            for (var property in scheme) {
+                root.style.setProperty(property, scheme[property]);
             }
-        });
+        }
+
+        function savedColorscheme() {
+            try {
+                return localStorage.getItem("selectedColorscheme") || "dracula-dark";
+            } catch (e) {
+                return "dracula-dark";
+            }
+        }
+
+        function changeColorScheme() {
+            var colorscheme = document.getElementById("colorscheme-selector");
+
+            applyColorscheme(colorscheme.value);
+
+            try {
+                localStorage.setItem("selectedColorscheme", colorscheme.value);
+            } catch (e) { /* private browsing */ }
+        }
+
+        // Call once the <select> has been parsed. Safe to call more than once.
+        function syncColorschemeSelector() {
+            var colorscheme = document.getElementById("colorscheme-selector");
+
+            if (colorscheme) {
+                colorscheme.value = savedColorscheme();
+            }
+        }
+
+        applyColorscheme(savedColorscheme());
+        document.addEventListener("DOMContentLoaded", syncColorschemeSelector);
+    </script>
+
+    <!-- BUILD:HERO - picks the image and starts fetching it before the body is parsed -->
+    <script>
+        var HERO_IMAGES = ["anime.webp", "car.webp", "spice1.webp", "spice2.webp"];
+        var HERO_SRC = (function () {
+            function getCookie(name) {
+                var value = '; ' + document.cookie;
+                var parts = value.split('; ' + name + '=');
+                if (parts.length === 2) return parts.pop().split(';').shift();
+                return null;
+            }
+            var last = getCookie('lastImage');
+            var pool = HERO_IMAGES.filter(function (f) { return f !== last; });
+            if (!pool.length) pool = HERO_IMAGES;
+            var pick = pool[Math.floor(Math.random() * pool.length)];
+
+            var expires = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+            document.cookie = 'lastImage=' + pick + ';expires=' + expires.toUTCString() + ';path=/';
+
+            var src = 'static/images/' + pick;
+            var link = document.createElement('link');
+            link.rel = 'preload';
+            link.as = 'image';
+            link.href = src;
+            link.fetchPriority = 'high';
+            document.head.appendChild(link);
+            return src;
+        })();
     </script>
 </head>
 
@@ -89,116 +572,245 @@
             </div>
 
             <button onclick="hideSettings()" id="settings-hide">
-                <img src="static/icons/close.svg" class="svg-icon" alt="Settings Icon">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2026%2026%22%20width%3D%2296px%22%20height%3D%2296px%22%3E%3Cpath%20d%3D%22M%2021.734375%2019.640625%20L%2019.636719%2021.734375%20C%2019.253906%2022.121094%2018.628906%2022.121094%2018.242188%2021.734375%20L%2013%2016.496094%20L%207.761719%2021.734375%20C%207.375%2022.121094%206.746094%2022.121094%206.363281%2021.734375%20L%204.265625%2019.640625%20C%203.878906%2019.253906%203.878906%2018.628906%204.265625%2018.242188%20L%209.503906%2013%20L%204.265625%207.761719%20C%203.882813%207.371094%203.882813%206.742188%204.265625%206.363281%20L%206.363281%204.265625%20C%206.746094%203.878906%207.375%203.878906%207.761719%204.265625%20L%2013%209.507813%20L%2018.242188%204.265625%20C%2018.628906%203.878906%2019.257813%203.878906%2019.636719%204.265625%20L%2021.734375%206.359375%20C%2022.121094%206.746094%2022.121094%207.375%2021.738281%207.761719%20L%2016.496094%2013%20L%2021.734375%2018.242188%20C%2022.121094%2018.628906%2022.121094%2019.253906%2021.734375%2019.640625%20Z%22%2F%3E%3C%2Fsvg%3E" class="svg-icon" alt="Close settings">
             </button>
         </div>
     </header>
+    <script>syncColorschemeSelector();</script>
 
     <button onclick="showSettings()" id="settings-display">
-        <img src="static/icons/settings.svg" class="svg-icon" alt="Settings Icon">
+        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2296px%22%20height%3D%2296px%22%3E%3Cpath%20d%3D%22M%209.6660156%202%20L%209.1757812%204.5234375%20C%208.3516137%204.8342536%207.5947862%205.2699307%206.9316406%205.8144531%20L%204.5078125%204.9785156%20L%202.171875%209.0214844%20L%204.1132812%2010.708984%20C%204.0386488%2011.16721%204%2011.591845%204%2012%20C%204%2012.408768%204.0398071%2012.832626%204.1132812%2013.291016%20L%204.1132812%2013.292969%20L%202.171875%2014.980469%20L%204.5078125%2019.021484%20L%206.9296875%2018.1875%20C%207.5928951%2018.732319%208.3514346%2019.165567%209.1757812%2019.476562%20L%209.6660156%2022%20L%2014.333984%2022%20L%2014.824219%2019.476562%20C%2015.648925%2019.165543%2016.404903%2018.73057%2017.068359%2018.185547%20L%2019.492188%2019.021484%20L%2021.826172%2014.980469%20L%2019.886719%2013.291016%20C%2019.961351%2012.83279%2020%2012.408155%2020%2012%20C%2020%2011.592457%2019.96113%2011.168374%2019.886719%2010.710938%20L%2019.886719%2010.708984%20L%2021.828125%209.0195312%20L%2019.492188%204.9785156%20L%2017.070312%205.8125%20C%2016.407106%205.2676813%2015.648565%204.8344327%2014.824219%204.5234375%20L%2014.333984%202%20L%209.6660156%202%20z%20M%2011.314453%204%20L%2012.685547%204%20L%2013.074219%206%20L%2014.117188%206.3945312%20C%2014.745852%206.63147%2015.310672%206.9567546%2015.800781%207.359375%20L%2016.664062%208.0664062%20L%2018.585938%207.40625%20L%2019.271484%208.5917969%20L%2017.736328%209.9277344%20L%2017.912109%2011.027344%20L%2017.912109%2011.029297%20C%2017.973258%2011.404235%2018%2011.718768%2018%2012%20C%2018%2012.281232%2017.973259%2012.595718%2017.912109%2012.970703%20L%2017.734375%2014.070312%20L%2019.269531%2015.40625%20L%2018.583984%2016.59375%20L%2016.664062%2015.931641%20L%2015.798828%2016.640625%20C%2015.308719%2017.043245%2014.745852%2017.36853%2014.117188%2017.605469%20L%2014.115234%2017.605469%20L%2013.072266%2018%20L%2012.683594%2020%20L%2011.314453%2020%20L%2010.925781%2018%20L%209.8828125%2017.605469%20C%209.2541467%2017.36853%208.6893282%2017.043245%208.1992188%2016.640625%20L%207.3359375%2015.933594%20L%205.4140625%2016.59375%20L%204.7285156%2015.408203%20L%206.265625%2014.070312%20L%206.0878906%2012.974609%20L%206.0878906%2012.972656%20C%206.0276183%2012.596088%206%2012.280673%206%2012%20C%206%2011.718768%206.026742%2011.404282%206.0878906%2011.029297%20L%206.265625%209.9296875%20L%204.7285156%208.59375%20L%205.4140625%207.40625%20L%207.3359375%208.0683594%20L%208.1992188%207.359375%20C%208.6893282%206.9567546%209.2541467%206.6314701%209.8828125%206.3945312%20L%2010.925781%206%20L%2011.314453%204%20z%20M%2012%208%20C%209.8034768%208%208%209.8034768%208%2012%20C%208%2014.196523%209.8034768%2016%2012%2016%20C%2014.196523%2016%2016%2014.196523%2016%2012%20C%2016%209.8034768%2014.196523%208%2012%208%20z%20M%2012%2010%20C%2013.111477%2010%2014%2010.888523%2014%2012%20C%2014%2013.111477%2013.111477%2014%2012%2014%20C%2010.888523%2014%2010%2013.111477%2010%2012%20C%2010%2010.888523%2010.888523%2010%2012%2010%20z%22%2F%3E%3C%2Fsvg%3E" class="svg-icon" alt="Settings">
     </button>
 
     <nav id="shortcuts-container">
         <h1 id="title-display">Welcome back!</h1>
-        <h2 id="date-display"></h2>
+        <h2 id="date-display">&nbsp;</h2>
 
         <form id="search-form" method="get" onsubmit="return handleSearch(event)">
-            <input type="text" id="search-input" placeholder="Search" name="q" autofocus />
+            <input type="text" id="search-input" placeholder="Search" name="q" autofocus>
         </form>
-        
-	<!--    
-	<h2><br />I don't know how this will work out, but I believe that it will.</h2>
-	-->
 
-        <!-- Dynamic links will be injected here -->
-        <div id="dynamic-links"></div>
-	
+        <!-- BUILD:SEARCH - inlined here so the engine/placeholder is set before paint -->
+        <script>
+            function hideSettings() {
+            	document.getElementById("settings-container").style.display = 'none';
+            }
+
+
+            function showSettings() {
+            	document.getElementById("settings-container").style.display = 'flex';
+            }
+
+
+            function changeSearchEngine() {
+            	var form = document.getElementById('search-form');
+            	var input = document.getElementById('search-input');
+            	var searchEngine = document.getElementById("search-engine-selector");
+
+            	form.action = searchEngine.value;
+            	input.placeholder = "Search with " + searchEngine.options[searchEngine.selectedIndex].text;
+
+            	localStorage.setItem('selectedSearchEngine', searchEngine.value);
+            }
+
+
+            function loadSavedSearchEngine() {
+            	var savedSearchEngine = localStorage.getItem('selectedSearchEngine');
+            	var searchEngine = document.getElementById('search-engine-selector');
+
+            	if (savedSearchEngine) {
+            		searchEngine.value = savedSearchEngine;
+            	} else {
+            		searchEngine.value = 'https://duckduckgo.com/';
+            	}
+            	changeSearchEngine();
+            }
+
+
+            function clearSearchInput() {
+            	document.getElementById('search-input').value = '';
+            	document.getElementById('search-input').focus();
+            	highlightMatchingLinks();
+            }
+
+
+            function highlightMatchingLinks() {
+            	const query = document.getElementById('search-input').value.toLowerCase();
+            	const links = document.querySelectorAll('ul li a');
+
+            	links.forEach(link => {
+            		const linkText = link.textContent.toLowerCase();
+            		if (!linkText.includes(query)) {
+            			link.style.color = 'var(--color-background-1)';
+            		} else {
+            			link.style.color = 'var(--color-foreground-1)';
+            		}
+            	});
+            }
+
+
+            document.addEventListener('keydown', function(event) {
+            	if (event.key === 'Escape') {
+            		hideSettings();
+                } else if (event.key === ' ' && event.altKey) {
+                    document.getElementById('search-input').focus();
+            	} else if (event.key === 'Enter') {
+            		handleSearch(event);
+            	} else if (event.key === 'c' && event.ctrlKey) {
+            		clearSearchInput();
+            	}
+            });
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+            	const shortcuts = {
+            		'Reddit': 'https://reddit.com/',
+            		'Daily Dev': 'https://app.daily.dev/',
+            		'Modrinth': 'https://modrinth.com/dashboard',
+            		'Ivanime': 'https://www.ivanime.com/',
+            		'Ditlep': 'https://www.ditlep.com/',
+            		'GitHub': 'https://github.com/druxorey',
+            		'DevDocs': 'https://devdocs.io/',
+            		'W3Schools': 'https://w3schools.com',
+            		'Letcode': 'https://leetcode.com/problemset/',
+            		'VirusTotal': 'https://www.virustotal.com/gui/home/upload',
+            		'Conest': 'https://conest.ciens.ucv.ve/webapp/',
+            		'PortalAsig2': 'https://portalasig2.ciens.ucv.ve/#/',
+            		'Campus Virtual': 'https://campusvirtualucv.org/ead/login/index.php',
+            		'CiensMail': 'https://correo.ciens.ucv.ve',
+            		'Geogebra': 'https://www.geogebra.org/calculator',
+            		'Dotfiles': 'https://github.com/druxorey/dotfiles',
+            		'Arch Wiki': 'https://wiki.archlinux.org/',
+            		'Explain Shell': 'https://explainshell.com/#',
+            		'Techthings': 'https://www.reddit.com/user/devdruxorey/m/techthings/',
+            		'Deepseek': 'https://chat.deepseek.com/',
+            		'Calendar': 'https://calendar.google.com/calendar/u/0/r',
+            		'Tasks': 'https://tasks.google.com/tasks/',
+            		'Drive': 'https://drive.google.com/drive/my-drive',
+            		'Notion': 'https://notion.so/',
+            	};
+
+            	window.handleSearch = function(event) {
+            		event.preventDefault();
+            		const query = document.getElementById('search-input').value.toLowerCase();
+            		const searchEngine = document.getElementById('search-engine-selector').value;
+
+            		if (query.startsWith('s:')) {
+            			const searchQuery = query.substring(2);
+            			window.location.href = `${searchEngine}?q=${encodeURIComponent(searchQuery)}`;
+
+            		} else if (query.startsWith('r:')) {
+            			const searchQuery = query.substring(2);
+            			window.location.href = `https://www.reddit.com/search/?q=${encodeURIComponent(searchQuery)}`;
+
+            		} else if (query.startsWith('g:')) {
+            			const searchQuery = query.substring(2);
+            			window.location.href = `https://www.github.com/search/?q=${encodeURIComponent(searchQuery)}`;
+
+            		} else if (query.startsWith('i:')) {
+            			const searchQuery = query.substring(2);
+            			window.location.href = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(searchQuery)}`;
+
+            		} else {
+            			const shortcut = Object.keys(shortcuts).find(key => key.toLowerCase().includes(query));
+            			if (shortcut) {
+            				window.location.href = shortcuts[shortcut];
+            			} else {
+            				window.location.href = `${searchEngine}?q=${encodeURIComponent(query)}`;
+            			}
+            		}
+            	};
+
+            	document.getElementById('search-input').addEventListener('input', highlightMatchingLinks);
+            });
+
+
+            loadSavedSearchEngine();
+        </script>
+
+        <!-- BUILD:LINKS - generated from scripts/links.js at build time -->
+        <div id="dynamic-links">
+            <ul>
+                <li>~/gaming </li>
+                <li><a href="https://store.steampowered.com/">Steam</a></li>
+                <li><a href="https://steamcommunity.com/id/raylinth/home">Steam/raylinth</a></li>
+            </ul>
+            <ul>
+                <li>~/reading 🕮</li>
+                <li><a href="https://app.thestorygraph.com/">storygraph</a></li>
+                <li><a href="https://www.overdrive.com/account/libraries">Overdrive</a></li>
+                <li class="hidden-link"><a href="https://annas-archive.gd/">Anna&#x27;s Archive</a></li>
+                <li class="hidden-link"><a href="https://z-lib.gd/">z-lib</a></li>
+                <li><a href="https://www.gutenberg.org/">Project Gutenberg</a></li>
+                <li class="hidden-link"><a href="https://audiobookbay.lu/">ABB</a></li>
+                <li class="hidden-link"><a href="https://audiobooks4soul.com/">audiobook4soul</a></li>
+            </ul>
+            <ul>
+                <li>~/media 🖭</li>
+                <li><a href="https://youtube.home.chrisincode.com">youtube-zero</a></li>
+                <li><a href="https://listen.tidal.com/">Tidal</a></li>
+                <li><a href="https://www.last.fm/user/raylinth">Last.FM</a></li>
+                <li><a href="https://www.youtube.com/feed/subscriptions">Youtube Subs</a></li>
+                <li><a href="https://app.plex.tv/desktop/#/">Plex</a></li>
+                <li><a href="https://wallhaven.cc/">Wallhaven</a></li>
+            </ul>
+            <ul>
+                <li>~/anime 萌</li>
+                <li><a href="https://manga.home.chrisincode.com/">manga.home</a></li>
+                <li><a href="https://onepiece.home.chrisincode.com/">onepiece.home</a></li>
+                <li><a href="https://www.crunchyroll.com/">Crunchyroll</a></li>
+                <li><a href="https://mangadex.org/">MangaDex</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Image container -->
     <div id="image-container">
-        <!-- Main image link -->
         <a href="https://chrisbrasington.github.io/home">
-            <img id="image-display" alt="">
+            <img id="image-display" alt="" fetchpriority="high" decoding="async">
         </a>
+        <script>document.getElementById('image-display').src = HERO_SRC;</script>
 
-        <!-- Icons links rendered dynamically -->
         <div id="icons-box"></div>
     </div>
 
-    <!-- External scripts -->
-    <script src="scripts/get_date.js"></script>
-    <script src="scripts/get_search_engine.js"></script>
-    <script src="scripts/set_colorscheme.js"></script>
-    <script src="scripts/links.js"></script>
-
-    <!-- Dynamic links and image container generator -->
     <script>
-        const container = document.getElementById("dynamic-links");
+        // Single clock. There used to be two of these writing to #date-display -
+        // one of them on a setTimeout(fn, 0) busy loop, which is what made it stutter.
+        (function () {
+            var el = document.getElementById('date-display');
 
-        for (const [section, links] of Object.entries(linkData)) {
-            const ul = document.createElement("ul");
-
-            const titleLi = document.createElement("li");
-            titleLi.textContent = section;
-            ul.appendChild(titleLi);
-
-            for (const link of links) {
-                const li = document.createElement("li");
-                const a = document.createElement("a");
-                a.href = link.url;
-                a.textContent = link.name;
-                
-                // Apply the 'hidden-link' class if the link is hidden
-                if (link.hidden) {
-                    li.classList.add("hidden-link");
-                }
-
-                li.appendChild(a);
-                ul.appendChild(li);
+            function render() {
+                var now = new Date();
+                el.textContent =
+                    now.toLocaleDateString(undefined, { weekday: 'long' }) + ', ' +
+                    now.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit', hour12: true }) + ' | ' +
+                    now.toLocaleDateString(undefined, { month: '2-digit', day: '2-digit', year: 'numeric' });
             }
 
-            container.appendChild(ul);
-        }
-    </script>
+            function tick() {
+                render();
+                // re-align to the next real second instead of drifting
+                setTimeout(tick, 1000 - (Date.now() % 1000));
+            }
 
-    <script>
-        if (window.innerHeight <= 1080) {
-            document.body.style.transform = "scale(0.9)";
-            document.body.style.transformOrigin = "center center";
-        }
-    </script>
+            tick();
+        })();
 
-    <script>
-        function updateDateTime() {
-            const now = new Date();
-
-            // Day of the week
-            const weekday = now.toLocaleDateString(undefined, { weekday: 'long' });
-
-            // Time (12h format with AM/PM)
-            const timeString = now.toLocaleTimeString(undefined, { 
-                hour: '2-digit', 
-                minute: '2-digit', 
-                hour12: true 
+        // Cache the font and all hero images locally so repeat loads paint at once.
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('sw.js').catch(function () { /* http:// or unsupported */ });
             });
-
-            // Date (MM/DD/YYYY)
-            const dateString = now.toLocaleDateString(undefined, { 
-                month: '2-digit', 
-                day: '2-digit', 
-                year: 'numeric' 
-            });
-
-            document.getElementById('date-display').textContent = 
-                `${weekday}, ${timeString} | ${dateString}`;
         }
 
-        // Update immediately
-        updateDateTime();
-
-        // Update every second
-        setInterval(updateDateTime, 1000);
+        // Ctrl+A reveals hidden links
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && event.key === 'a') {
+                document.querySelectorAll('.hidden-link').forEach(function (link) {
+                    link.style.display = 'block';
+                });
+            }
+        });
     </script>
 
 </body>

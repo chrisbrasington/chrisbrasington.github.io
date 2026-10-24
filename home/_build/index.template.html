@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <title>~/startpage</title>
+    <link rel="icon" href="static/icons/icon.svg" type="image/svg+xml">
+    <link rel="preload" href="static/fonts/hack.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- BUILD:STYLE -->
+    <style>
+{{STYLE}}
+        .hidden-link { display: none; }
+    </style>
+
+    <!-- BUILD:COLORSCHEME - runs before first paint so the saved theme never flashes -->
+    <script>
+{{SCRIPT_COLORSCHEME}}
+    </script>
+
+    <!-- BUILD:HERO - picks the image and starts fetching it before the body is parsed -->
+    <script>
+        var HERO_IMAGES = {{IMAGES}};
+        var HERO_SRC = (function () {
+            function getCookie(name) {
+                var value = '; ' + document.cookie;
+                var parts = value.split('; ' + name + '=');
+                if (parts.length === 2) return parts.pop().split(';').shift();
+                return null;
+            }
+            var last = getCookie('lastImage');
+            var pool = HERO_IMAGES.filter(function (f) { return f !== last; });
+            if (!pool.length) pool = HERO_IMAGES;
+            var pick = pool[Math.floor(Math.random() * pool.length)];
+
+            var expires = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+            document.cookie = 'lastImage=' + pick + ';expires=' + expires.toUTCString() + ';path=/';
+
+            var src = 'static/images/' + pick;
+            var link = document.createElement('link');
+            link.rel = 'preload';
+            link.as = 'image';
+            link.href = src;
+            link.fetchPriority = 'high';
+            document.head.appendChild(link);
+            return src;
+        })();
+    </script>
+</head>
+
+<body>
+
+    <header id="settings-container">
+        <div id="settings-box">
+            <div id="settings-content">
+                <div class="settings-options">
+                    <h1>Search Engine</h1>
+                    <h1>Colorscheme</h1>
+                </div>
+                <div class="settings-options">
+                    <select id="search-engine-selector" class="settings-selector" onchange="changeSearchEngine()">
+                        <option value="https://search.brave.com/search">Brave</option>
+                        <option value="https://www.google.com/search">Google</option>
+                        <option value="https://duckduckgo.com/">DuckDuckGo</option>
+                    </select>
+
+                    <select id="colorscheme-selector" class="settings-selector" onchange="changeColorScheme()">
+                        <option value="dracula-dark">Dracula Dark</option>
+                        <option value="dracula-light">Dracula Light</option>
+                        <option value="edge">Edge</option>
+                        <option value="gruvbox">Gruvbox</option>
+                    </select>
+                </div>
+            </div>
+
+            <button onclick="hideSettings()" id="settings-hide">
+                <img src="{{ICON_CLOSE}}" class="svg-icon" alt="Close settings">
+            </button>
+        </div>
+    </header>
+    <script>syncColorschemeSelector();</script>
+
+    <button onclick="showSettings()" id="settings-display">
+        <img src="{{ICON_SETTINGS}}" class="svg-icon" alt="Settings">
+    </button>
+
+    <nav id="shortcuts-container">
+        <h1 id="title-display">Welcome back!</h1>
+        <h2 id="date-display">&nbsp;</h2>
+
+        <form id="search-form" method="get" onsubmit="return handleSearch(event)">
+            <input type="text" id="search-input" placeholder="Search" name="q" autofocus>
+        </form>
+
+        <!-- BUILD:SEARCH - inlined here so the engine/placeholder is set before paint -->
+        <script>
+{{SCRIPT_SEARCH}}
+        </script>
+
+        <!-- BUILD:LINKS - generated from scripts/links.js at build time -->
+        <div id="dynamic-links">
+{{LINKS}}
+        </div>
+    </nav>
+
+    <div id="image-container">
+        <a href="https://chrisbrasington.github.io/home">
+            <img id="image-display" alt="" fetchpriority="high" decoding="async">
+        </a>
+        <script>document.getElementById('image-display').src = HERO_SRC;</script>
+
+        <div id="icons-box"></div>
+    </div>
+
+    <script>
+        // Single clock. There used to be two of these writing to #date-display -
+        // one of them on a setTimeout(fn, 0) busy loop, which is what made it stutter.
+        (function () {
+            var el = document.getElementById('date-display');
+
+            function render() {
+                var now = new Date();
+                el.textContent =
+                    now.toLocaleDateString(undefined, { weekday: 'long' }) + ', ' +
+                    now.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit', hour12: true }) + ' | ' +
+                    now.toLocaleDateString(undefined, { month: '2-digit', day: '2-digit', year: 'numeric' });
+            }
+
+            function tick() {
+                render();
+                // re-align to the next real second instead of drifting
+                setTimeout(tick, 1000 - (Date.now() % 1000));
+            }
+
+            tick();
+        })();
+
+        // Cache the font and all hero images locally so repeat loads paint at once.
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('sw.js').catch(function () { /* http:// or unsupported */ });
+            });
+        }
+
+        // Ctrl+A reveals hidden links
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && event.key === 'a') {
+                document.querySelectorAll('.hidden-link').forEach(function (link) {
+                    link.style.display = 'block';
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -53,29 +53,44 @@ var colorschemeList = {
     }
 };
 
-function changeColorScheme() {
+// Applies a scheme by name. Deliberately touches nothing but <html>, so this
+// file is safe to run from <head> before the settings <select> exists - that is
+// what stops the saved theme from flashing in after paint.
+function applyColorscheme(name) {
+    var scheme = colorschemeList[name] || colorschemeList["dracula-dark"];
     var root = document.documentElement;
-    var colorscheme = document.getElementById("colorscheme-selector");
-    var selectedScheme = colorschemeList[colorscheme.value];
 
-    for (var property in selectedScheme) {
-        root.style.setProperty(property, selectedScheme[property]);
+    for (var property in scheme) {
+        root.style.setProperty(property, scheme[property]);
     }
-
-    localStorage.setItem("selectedColorscheme", colorscheme.value);
 }
 
-function loadSavedColorscheme() {
-    var savedColorscheme = localStorage.getItem("selectedColorscheme");
-    var colorscheme = document.getElementById("colorscheme-selector");
-
-    if (savedColorscheme) {
-        colorscheme.value = savedColorscheme;
-    } else {
-        colorscheme.value = "dracula-dark";
+function savedColorscheme() {
+    try {
+        return localStorage.getItem("selectedColorscheme") || "dracula-dark";
+    } catch (e) {
+        return "dracula-dark";
     }
-
-    changeColorScheme();
 }
 
-loadSavedColorscheme();
+function changeColorScheme() {
+    var colorscheme = document.getElementById("colorscheme-selector");
+
+    applyColorscheme(colorscheme.value);
+
+    try {
+        localStorage.setItem("selectedColorscheme", colorscheme.value);
+    } catch (e) { /* private browsing */ }
+}
+
+// Call once the <select> has been parsed. Safe to call more than once.
+function syncColorschemeSelector() {
+    var colorscheme = document.getElementById("colorscheme-selector");
+
+    if (colorscheme) {
+        colorscheme.value = savedColorscheme();
+    }
+}
+
+applyColorscheme(savedColorscheme());
+document.addEventListener("DOMContentLoaded", syncColorschemeSelector);
